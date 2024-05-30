@@ -1,0 +1,708 @@
+<!--Jqury used for Header & Footer Fatch data-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("header").load("header.html");
+        $("footer").load("footer.html");
+    }); 
+</script>
+<!--===== Start Header Section =====-->
+<header></header>
+<!--===== End Header Section =====-->
+<!--===== Start Search Reasult page =====-->
+<section id="search-result">
+    <div class="container">
+        <div class="row m-1">
+
+            <div class="pt-md-5 pt-3">
+                <h4 class="text-color fw-bold">Buy & sell Car Parts in Dubai</h4>
+                <p class="text-muted ">Thousands of New and used cars for sale in UAE - Sell your car with X Cars, the
+                    UAE's most trusted marketplace</p>
+            </div>
+            <!--Top Bar Filter Section-->
+            <div
+                class="col-12 mb-2 pt-3 pb-2 bg-white position-relative border-black img-radius d-md-block border border-2 ">
+
+                <form action="#" class="pb-md-0">
+
+                    <div class="d-md-flex">
+                        <!--Filter Input Field-->
+                        <div class="col-md-2 mx-0 mx-md-2 pb-md-0 pb-5 position-relative ">
+                            <span class="text-color filter-label fw-bold "><i
+                                    class="fa-solid fa-city mx-2 d-md-none"></i>Location</span>
+                            <div class="wide mt-1 mb-3 mb-md-0 filter-parts-location">
+                                <select class="form-select form-select-md rounded-0">
+                                    <option selected value="">All Cities (UAE)</option>
+                                    <option value="Dubai">Dubai</option>
+                                    <option value="Abu Dhabi">Abu Dhabi</option>
+                                    <option value="Ras al Khaimah">Ras al Khaimah</option>
+                                    <option value="Fujairah">Fujairah</option>
+                                    <option value="Sharjah">Sharjah</option>
+                                    <option value="Ajman">Ajman</option>
+                                    <option value="Umm al Quwain">Umm al Quwain</option>
+                                    <option value="Al Ain">Al Ain</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <!--==Field Hide on Mobile===-->
+                        <div class="d-md-flex col justify-content-between align-items-center hide" id="hide-filter">
+
+                            <div class="col-md-2 mx-0 mx-md-2 pb-md-0 pb-5 position-relative ">
+                                <span class="text-color filter-label fw-bold"><i
+                                        class="fa-solid fa-screwdriver-wrench mx-2 d-md-none"></i>Type</span>
+                                <div class="wide mt-1 mb-3 mb-md-0 filter-parts-type">
+                                    <select class="form-select form-select-md rounded-0">
+                                        <option value="">Bumper</option>
+                                        <option value="">A/C Condensers</option>
+                                        <option value="">Piston</option>
+                                        <option value="">Air Filter</option>
+                                        <option value="">Steering Wheel</option>
+                                        <option value="">Radiator Support</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2 mx-0 mx-md-2 pb-5 pb-md-0 position-relative ">
+                                <span class="text-color filter-label fw-bold"><i
+                                        class="fa-solid fa-bandage mx-2 d-md-none"></i>Price</span>
+                                <div class="wide mt-1 mb-3 mb-md-0 filter-parts-price">
+                                    <select class="form-select form-select-md rounded-0">
+                                        <option value="">
+                                        < 1000 AED</option>
+                                        <option value="">
+                                        < 2000 AED</option>
+                                        <option value="">
+                                        < 3000 AED</option>
+                                        <option value="">
+                                        < 40000 AED</option>
+                                        <option value="">
+                                        < 50000 AED</option>
+                                       
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-2 mx-0 mx-md-2 pb-5 pb-md-0 position-relative">
+                                <span class="text-color filter-label fw-bold"><i
+                                        class="fa-solid fa-road mx-2 d-md-none"></i>Condtions</span>
+                                <div class="wide mt-1 mb-3 mb-md-0 filter-parts-condtions">
+                                    <select class="form-select form-select-md rounded-0">
+                                        <option value="all">Average</option>
+                                        <option value="">Good</option>
+                                        <option value="">Exclent</option>
+                                        <option value="">Poor</option>
+                                        <option value="">Good</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2 mx-0 mx-md-2 pb-5 pb-md-0 position-relative">
+                                <span class="text-color filter-label fw-bold"><i
+                                        class="fa-solid fa-car d-md-none mx-2"></i>Seller Type</span>
+                                <div class="wide mt-1 mb-3 mb-md-0 filter-seller-type">
+                                    <select class="form-select form-select-md rounded-0">
+                                        <option selected value="">Owner</option>
+                                        <option value="">Delear</option>
+                                        <option value="none">Don't Apply</option>
+
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2 text-center">
+                                <button class="btn bg-color bg-hover text-light w-100 fw-bold"
+                                    style="padding: 8px 0px;"><i
+                                        class="fa-solid fa-magnifying-glass mx-1"></i>Search</button>
+                            </div>
+
+
+                        </div>
+                        <!--End Filter Input Field-->
+
+                    </div>
+
+                    <button
+                        class="position-absolute top-100 start-50 translate-middle p-2 border border-light rounded-circle d-md-none"
+                        id="filter-show"><i class="fa-solid fa-chevron-down" id="arrow-roted"></i></button>
+
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!--======Start Search Reasult Content======-->
+<section>
+    <div class="container">
+        <div class="row">
+            <!--====Quick Brand Filter Tabs=====-->
+            <div class="col-auto">
+                <ul dir="ltr" class="nav nav-pills tabess pt-2" role="tablist">
+                    <li class="nav-item px-1">
+                        <a href="#" class="nav-link px-2 border border-black  p-0 rounded-pill">Mercedes-Benz <span
+                                class="text-dark">(123)</span></a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="#" class="nav-link px-2 border border-black p-0 rounded-pill">Toyato <span
+                                class="text-dark">(134)</span></a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="#" class="nav-link px-2 border border-black p-0 rounded-pill">BMW <span
+                                class="text-dark">(12)</span></a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="#" class="nav-link px-2 border border-black p-0 rounded-pill">Land Rover <span
+                                class="text-dark">(25)</span></a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="#" class="nav-link px-2 border border-black  p-0 rounded-pill">Mercedes-Benz <span
+                                class="text-dark">(123)</span></a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="#" class="nav-link px-2 border border-black p-0 rounded-pill">Toyato <span
+                                class="text-dark">(134)</span></a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="#" class="nav-link px-2 border border-black p-0 rounded-pill">BMW <span
+                                class="text-dark">(12)</span></a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="#" class="nav-link px-2 border border-black p-0 rounded-pill">Land Rover <span
+                                class="text-dark">(25)</span></a>
+                    </li>
+
+                    <li class="nav-item px-1">
+                        <a href="#" class="nav-link px-2 border border-black  p-0 rounded-pill">Mercedes-Benz <span
+                                class="text-dark">(123)</span></a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="#" class="nav-link px-2 border border-black p-0 rounded-pill">Toyato <span
+                                class="text-dark">(134)</span></a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="#" class="nav-link px-2 border border-black p-0 rounded-pill">BMW <span
+                                class="text-dark">(12)</span></a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="#" class="nav-link px-2 border border-black p-0 rounded-pill">Land Rover <span
+                                class="text-dark">(25)</span></a>
+                    </li>
+
+                </ul>
+            </div>
+            <!--=====================Listing Item Loop====================-->
+            <div class="col-md-8">
+                <!--====Lisitng Shorting====-->
+                <div class="short my-3 clearfix">
+                    <h5 class="float-start fw-bolder">Total:<b class="text-danger mx-2">13</b></h5>
+
+                    <select class="filter-shortin rounded-pill   form-select-sm float-end w-25">
+                        <option selected>Sort: Default</option>
+                        <option value="1">Featured</option>
+                        <option value="2">Daily (high to low)</option>
+                        <option value="3">Daily (low to high)</option>
+                    </select>
+                </div>
+                <!--=====Card Listing Item====-->
+                <div class="card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-5 position-relative">
+                            <!--Verified Badge-->
+                            <span
+                                class="position-absolute start-0 top-0 z-index-1 m-3 gradient-2  p-1 rounded-3 fw-medium "><img
+                                    src="assets/img/brand/checklist.png" alt="" class="align-bottom "
+                                    width="21">Verified</span>
+
+                            <abbr title="Add to Favorite"><i
+                                    class="fa-regular fa-heart position-absolute end-0 bg-white rounded-circle top-0 p-1 m-2 fs-4 text-danger hover z-index-1"></i></abbr>
+                            <!--Car Small Images-->
+                            <div dir="ltr" class="car-search-img m-0 skeleton">
+
+                               <div class="skeleton"> <img class="img-fluid img-radius p-1" src="assets/img/parts/parts.jpeg"> </div>
+                               <div class="skeleton"> <img class="img-fluid img-radius p-1" src="assets/img/parts/engin.jpeg"> </div>
+                               <div class="skeleton"> <img class="img-fluid img-radius p-1" src="assets/img/parts/parts.jpeg"> </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-7 m-auto">
+                            <div dir="ltr" class="card-body">
+
+                                <div class="d-flex position-relative">
+                                    <h2 class="card-title fs-5 skeleton col-6"><a href="car-details.html" class="text-color3">
+                                            AED 465,000</a></h2>
+
+                                      <div class="skeleton position-absolute top-0 end-0 p-1">
+                                        <span class="rounded-3 gradient text-light p-1 fw-medium">
+                                            <i class="fa-regular fa-star"></i> Featured
+                                        </span>
+                                      </div>
+
+                                </div>
+
+                                <p class="card-text fw-medium fs-normal text-dark skeleton col-8 ">Car/4x4 Parts<i
+                                        class="fa-solid fa-circle mx-2" style="font-size: 6px;"></i>Wheels/Tires</p>
+
+                                <h6 class="text-danger fs-6 skeleton">2022 - Audi - RS6 - With Warranty and Service Contract</h6>
+
+                                <ul class="nav d-flex pt-2 skeleton">
+                                    <li class="nav-item m-2"><img src="assets/img/brand/location (2).png"
+                                            class="mx-1 align-bottom" width="20" alt="">Abu Dhabi</li>
+
+                                    <li class="nav-item m-2"><img src="assets/img/settings (2).png"
+                                            class="mx-1 align-bottom" width="20" alt="">New</li>
+
+                                </ul>
+                                <br>
+                                <div class="d-flex align-items-center">
+                                    <div class="col-9 skeleton">
+                                        <a href="#" class="btn btn-outline-danger mx-2 rounded-pill px-md-4 px-3 "><i
+                                                class="fa-solid fa-phone"></i></a>
+
+                                        <a href="#" class="btn btn-outline-success mx-2 rounded-pill px-md-4 px-3"><i
+                                                class="fa-brands fa-whatsapp"></i></a>
+
+                                        <a href="#" class="btn btn-outline-dark mx-2 rounded-pill px-md-4 px-3"><i
+                                                class="fa-solid fa-envelope"></i></a>
+                                    </div>
+                                    <div class="col-3 text-center skeleton">
+                                        <img src="assets/img/brand/make_64818542d5049_hyundai-logo.png" width="60%"
+                                            alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-5 position-relative">
+                            <!--Verified Badge-->
+                            <span class="position-absolute start-0 top-0 z-index-1 m-3 gradient-2  p-1 rounded-3 fw-medium "><img
+                                    src="assets/img/brand/checklist.png" alt="" class="align-bottom " width="21">Verified</span>
+                
+                            <abbr title="Add to Favorite"><i
+                                    class="fa-regular fa-heart position-absolute end-0 bg-white rounded-circle top-0 p-1 m-2 fs-4 text-danger hover z-index-1"></i></abbr>
+                            <!--Car Small Images-->
+                            <div dir="ltr" class="car-search-img skeleton">
+                
+                                <img class="img-fluid img-radius p-1" src="assets/img/parts/parts.jpeg">
+                                <img class="img-fluid img-radius p-1" src="assets/img/parts/engin.jpeg">
+                                <img class="img-fluid img-radius p-1" src="assets/img/parts/parts.jpeg">
+                
+                            </div>
+                        </div>
+                        <div class="col-md-7 m-auto">
+                            <div dir="ltr" class="card-body">
+                
+                                <div class="d-flex position-relative">
+                                    <h2 class="card-title fs-5 skeleton col-6"><a href="car-details.html" class="text-color3">
+                                            AED 465,000</a></h2>
+                
+                                    <span
+                                        class="position-absolute skeleton top-0 end-0 rounded-3 text-light p-0 px-1 fw-medium gradient">
+                                        <i class="fa-regular fa-star"></i> Featured
+                                    </span>
+                
+                                </div>
+                
+                                <p class="card-text fw-medium fs-normal text-dark skeleton col-8 ">Car/4x4 Parts<i
+                                        class="fa-solid fa-circle mx-2" style="font-size: 6px;"></i>Wheels/Tires</p>
+                
+                                <h6 class="text-danger fs-6 skeleton">2022 - Audi - RS6 - With Warranty and Service Contract</h6>
+                
+                                <ul class="nav d-flex pt-2 skeleton">
+                                    <li class="nav-item m-2"><img src="assets/img/brand/location (2).png" class="mx-1 align-bottom"
+                                            width="20" alt="">Abu Dhabi</li>
+                
+                                    <li class="nav-item m-2"><img src="assets/img/settings (2).png" class="mx-1 align-bottom" width="20"
+                                            alt="">New</li>
+                
+                                </ul>
+                                <br>
+                                <div class="d-flex align-items-center">
+                                    <div class="col-9">
+                                        <a href="#" class="btn btn-outline-danger mx-2 rounded-pill px-md-4 px-3 "><i
+                                                class="fa-solid fa-phone"></i></a>
+                
+                                        <a href="#" class="btn btn-outline-success mx-2 rounded-pill px-md-4 px-3"><i
+                                                class="fa-brands fa-whatsapp"></i></a>
+                
+                                        <a href="#" class="btn btn-outline-dark mx-2 rounded-pill px-md-4 px-3"><i
+                                                class="fa-solid fa-envelope"></i></a>
+                                    </div>
+                                    <div class="col-3 text-center skeleton">
+                                        <img src="assets/img/brand/make_64818542d5049_hyundai-logo.png" width="60%" alt="">
+                                    </div>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-5 position-relative">
+                            <!--Verified Badge-->
+                            <span class="position-absolute start-0 top-0 z-index-1 m-3 gradient-2  p-1 rounded-3 fw-medium "><img
+                                    src="assets/img/brand/checklist.png" alt="" class="align-bottom " width="21">Verified</span>
+                
+                            <abbr title="Add to Favorite"><i
+                                    class="fa-regular fa-heart position-absolute end-0 bg-white rounded-circle top-0 p-1 m-2 fs-4 text-danger hover z-index-1"></i></abbr>
+                            <!--Car Small Images-->
+                            <div dir="ltr" class="car-search-img">
+                                <img class="img-fluid img-radius p-1" src="assets/img/parts/engin.jpeg">
+                                <img class="img-fluid img-radius p-1" src="assets/img/parts/parts.jpeg">
+                                <img class="img-fluid img-radius p-1" src="assets/img/parts/engin.jpeg">
+                
+                            </div>
+                        </div>
+                        <div class="col-md-7 m-auto">
+                            <div dir="ltr" class="card-body">
+                
+                                <div class="d-flex position-relative">
+                                    <h2 class="card-title fs-5"><a href="car-details.html" class="text-color3">
+                                            AED 465,000</a></h2>
+                                </div>
+                
+                                <p class="card-text fw-medium fs-normal text-dark ">Car/4x4 Parts<i class="fa-solid fa-circle mx-2"
+                                        style="font-size: 6px;"></i>Wheels/Tires</p>
+                
+                                <h6 class="text-danger fs-6">2022 - Audi - RS6 - With Warranty and Service Contract</h6>
+                
+                                <ul class="nav d-flex pt-2">
+                                    <li class="nav-item m-2"><img src="assets/img/brand/location (2).png" class="mx-1 align-bottom"
+                                            width="20" alt="">Abu Dhabi</li>
+                
+                                    <li class="nav-item m-2"><img src="assets/img/settings (2).png" class="mx-1 align-bottom" width="20"
+                                            alt="">Old</li>
+                
+                                </ul>
+                                <br>
+                                <div class="d-flex align-items-center">
+                                    <div class="col-9">
+                                        <a href="#" class="btn btn-outline-danger mx-2 rounded-pill px-md-4 px-3 "><i
+                                                class="fa-solid fa-phone"></i></a>
+                
+                                        <a href="#" class="btn btn-outline-success mx-2 rounded-pill px-md-4 px-3"><i
+                                                class="fa-brands fa-whatsapp"></i></a>
+                
+                                        <a href="#" class="btn btn-outline-dark mx-2 rounded-pill px-md-4 px-3"><i
+                                                class="fa-solid fa-envelope"></i></a>
+                                    </div>
+                                    <div class="col-3 text-center ">
+                                        <img src="assets/img/brand/make_64818542d5049_hyundai-logo.png" width="60%" alt="">
+                                    </div>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-5 position-relative">
+                            <!--Verified Badge-->
+                            <span class="position-absolute start-0 top-0 z-index-1 m-3 gradient-2  p-1 rounded-3 fw-medium "><img
+                                    src="assets/img/brand/checklist.png" alt="" class="align-bottom " width="21">Verified</span>
+                
+                            <abbr title="Add to Favorite"><i
+                                    class="fa-regular fa-heart position-absolute end-0 bg-white rounded-circle top-0 p-1 m-2 fs-4 text-danger hover z-index-1"></i></abbr>
+                            <!--Car Small Images-->
+                            <div dir="ltr" class="car-search-img">
+                
+                                <img class="img-fluid img-radius p-1" src="assets/img/parts/parts.jpeg">
+                                <img class="img-fluid img-radius p-1" src="assets/img/parts/engin.jpeg">
+                                <img class="img-fluid img-radius p-1" src="assets/img/parts/parts.jpeg">
+                
+                            </div>
+                        </div>
+                        <div class="col-md-7 m-auto">
+                            <div dir="ltr" class="card-body">
+                
+                                <div class="d-flex position-relative">
+                                    <h2 class="card-title fs-5"><a href="car-details.html" class="text-color3">
+                                            AED 465,000</a></h2>
+                
+                                    <span class="position-absolute top-0 end-0 rounded-3 text-light p-0 px-1 fw-medium gradient">
+                                        <i class="fa-regular fa-star"></i> Featured
+                                    </span>
+                
+                                </div>
+                
+                                <p class="card-text fw-medium fs-normal text-dark ">Car/4x4 Parts<i class="fa-solid fa-circle mx-2"
+                                        style="font-size: 6px;"></i>Wheels/Tires</p>
+                
+                                <h6 class="text-danger fs-6">2022 - Audi - RS6 - With Warranty and Service Contract</h6>
+                
+                                <ul class="nav d-flex pt-2">
+                                    <li class="nav-item m-2"><img src="assets/img/brand/location (2).png" class="mx-1 align-bottom"
+                                            width="20" alt="">Abu Dhabi</li>
+                
+                                    <li class="nav-item m-2"><img src="assets/img/settings (2).png" class="mx-1 align-bottom" width="20"
+                                            alt="">New</li>
+                
+                                </ul>
+                                <br>
+                                <div class="d-flex align-items-center">
+                                    <div class="col-9">
+                                        <a href="#" class="btn btn-outline-danger mx-2 rounded-pill px-md-4 px-3 "><i
+                                                class="fa-solid fa-phone"></i></a>
+                
+                                        <a href="#" class="btn btn-outline-success mx-2 rounded-pill px-md-4 px-3"><i
+                                                class="fa-brands fa-whatsapp"></i></a>
+                
+                                        <a href="#" class="btn btn-outline-dark mx-2 rounded-pill px-md-4 px-3"><i
+                                                class="fa-solid fa-envelope"></i></a>
+                                    </div>
+                                    <div class="col-3 text-center ">
+                                        <img src="assets/img/brand/make_64818542d5049_hyundai-logo.png" width="60%" alt="">
+                                    </div>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-5 position-relative">
+                            <!--Verified Badge-->
+                            <span class="position-absolute start-0 top-0 z-index-1 m-3 gradient-2  p-1 rounded-3 fw-medium "><img
+                                    src="assets/img/brand/checklist.png" alt="" class="align-bottom " width="21">Verified</span>
+                
+                            <abbr title="Add to Favorite"><i
+                                    class="fa-regular fa-heart position-absolute end-0 bg-white rounded-circle top-0 p-1 m-2 fs-4 text-danger hover z-index-1"></i></abbr>
+                            <!--Car Small Images-->
+                            <div dir="ltr" class="car-search-img">
+                                <img class="img-fluid img-radius p-1" src="assets/img/parts/engin.jpeg">
+                                <img class="img-fluid img-radius p-1" src="assets/img/parts/parts.jpeg">
+                                <img class="img-fluid img-radius p-1" src="assets/img/parts/engin.jpeg">
+                
+                            </div>
+                        </div>
+                        <div class="col-md-7 m-auto">
+                            <div dir="ltr" class="card-body">
+                
+                                <div class="d-flex position-relative">
+                                    <h2 class="card-title fs-5"><a href="car-details.html" class="text-color3">
+                                            AED 465,000</a></h2>
+                                </div>
+                
+                                <p class="card-text fw-medium fs-normal text-dark ">Car/4x4 Parts<i class="fa-solid fa-circle mx-2"
+                                        style="font-size: 6px;"></i>Wheels/Tires</p>
+                
+                                <h6 class="text-danger fs-6">2022 - Audi - RS6 - With Warranty and Service Contract</h6>
+                
+                                <ul class="nav d-flex pt-2">
+                                    <li class="nav-item m-2"><img src="assets/img/brand/location (2).png" class="mx-1 align-bottom"
+                                            width="20" alt="">Abu Dhabi</li>
+                
+                                    <li class="nav-item m-2"><img src="assets/img/settings (2).png" class="mx-1 align-bottom" width="20"
+                                            alt="">Old</li>
+                
+                                </ul>
+                                <br>
+                                <div class="d-flex align-items-center">
+                                    <div class="col-9">
+                                        <a href="#" class="btn btn-outline-danger mx-2 rounded-pill px-md-4 px-3 "><i
+                                                class="fa-solid fa-phone"></i></a>
+                
+                                        <a href="#" class="btn btn-outline-success mx-2 rounded-pill px-md-4 px-3"><i
+                                                class="fa-brands fa-whatsapp"></i></a>
+                
+                                        <a href="#" class="btn btn-outline-dark mx-2 rounded-pill px-md-4 px-3"><i
+                                                class="fa-solid fa-envelope"></i></a>
+                                    </div>
+                                    <div class="col-3 text-center ">
+                                        <img src="assets/img/brand/make_64818542d5049_hyundai-logo.png" width="60%" alt="">
+                                    </div>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-5 position-relative">
+                            <!--Verified Badge-->
+                            <span class="position-absolute start-0 top-0 z-index-1 m-3 gradient-2  p-1 rounded-3 fw-medium "><img
+                                    src="assets/img/brand/checklist.png" alt="" class="align-bottom " width="21">Verified</span>
+                
+                            <abbr title="Add to Favorite"><i
+                                    class="fa-regular fa-heart position-absolute end-0 bg-white rounded-circle top-0 p-1 m-2 fs-4 text-danger hover z-index-1"></i></abbr>
+                            <!--Car Small Images-->
+                            <div dir="ltr" class="car-search-img">
+                
+                                <img class="img-fluid img-radius p-1" src="assets/img/parts/parts.jpeg">
+                                <img class="img-fluid img-radius p-1" src="assets/img/parts/engin.jpeg">
+                                <img class="img-fluid img-radius p-1" src="assets/img/parts/parts.jpeg">
+                
+                            </div>
+                        </div>
+                        <div class="col-md-7 m-auto">
+                            <div dir="ltr" class="card-body">
+                
+                                <div class="d-flex position-relative">
+                                    <h2 class="card-title fs-5"><a href="car-details.html" class="text-color3">
+                                            AED 465,000</a></h2>
+                
+                                    <span class="position-absolute top-0 end-0 rounded-3 text-light p-0 px-1 fw-medium gradient">
+                                        <i class="fa-regular fa-star"></i> Featured
+                                    </span>
+                
+                                </div>
+                
+                                <p class="card-text fw-medium fs-normal text-dark ">Car/4x4 Parts<i class="fa-solid fa-circle mx-2"
+                                        style="font-size: 6px;"></i>Wheels/Tires</p>
+                
+                                <h6 class="text-danger fs-6">2022 - Audi - RS6 - With Warranty and Service Contract</h6>
+                
+                                <ul class="nav d-flex pt-2">
+                                    <li class="nav-item m-2"><img src="assets/img/brand/location (2).png" class="mx-1 align-bottom"
+                                            width="20" alt="">Abu Dhabi</li>
+                
+                                    <li class="nav-item m-2"><img src="assets/img/settings (2).png" class="mx-1 align-bottom" width="20"
+                                            alt="">New</li>
+                
+                                </ul>
+                                <br>
+                                <div class="d-flex align-items-center">
+                                    <div class="col-9">
+                                        <a href="#" class="btn btn-outline-danger mx-2 rounded-pill px-md-4 px-3 "><i
+                                                class="fa-solid fa-phone"></i></a>
+                
+                                        <a href="#" class="btn btn-outline-success mx-2 rounded-pill px-md-4 px-3"><i
+                                                class="fa-brands fa-whatsapp"></i></a>
+                
+                                        <a href="#" class="btn btn-outline-dark mx-2 rounded-pill px-md-4 px-3"><i
+                                                class="fa-solid fa-envelope"></i></a>
+                                    </div>
+                                    <div class="col-3 text-center ">
+                                        <img src="assets/img/brand/make_64818542d5049_hyundai-logo.png" width="60%" alt="">
+                                    </div>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card mb-4">
+                    <div class="row g-0">
+                        <div class="col-md-5 position-relative">
+                            <!--Verified Badge-->
+                            <span class="position-absolute start-0 top-0 z-index-1 m-3 gradient-2  p-1 rounded-3 fw-medium "><img
+                                    src="assets/img/brand/checklist.png" alt="" class="align-bottom " width="21">Verified</span>
+                
+                            <abbr title="Add to Favorite"><i
+                                    class="fa-regular fa-heart position-absolute end-0 bg-white rounded-circle top-0 p-1 m-2 fs-4 text-danger hover z-index-1"></i></abbr>
+                            <!--Car Small Images-->
+                            <div dir="ltr" class="car-search-img">
+                                <img class="img-fluid img-radius p-1" src="assets/img/parts/engin.jpeg">
+                                <img class="img-fluid img-radius p-1" src="assets/img/parts/parts.jpeg">
+                                <img class="img-fluid img-radius p-1" src="assets/img/parts/engin.jpeg">
+                
+                            </div>
+                        </div>
+                        <div class="col-md-7 m-auto">
+                            <div dir="ltr" class="card-body">
+                
+                                <div class="d-flex position-relative">
+                                    <h2 class="card-title fs-5"><a href="car-details.html" class="text-color3">
+                                            AED 465,000</a></h2>
+                                </div>
+                
+                                <p class="card-text fw-medium fs-normal text-dark ">Car/4x4 Parts<i class="fa-solid fa-circle mx-2"
+                                        style="font-size: 6px;"></i>Wheels/Tires</p>
+                
+                                <h6 class="text-danger fs-6">2022 - Audi - RS6 - With Warranty and Service Contract</h6>
+                
+                                <ul class="nav d-flex pt-2">
+                                    <li class="nav-item m-2"><img src="assets/img/brand/location (2).png" class="mx-1 align-bottom"
+                                            width="20" alt="">Abu Dhabi</li>
+                
+                                    <li class="nav-item m-2"><img src="assets/img/settings (2).png" class="mx-1 align-bottom" width="20"
+                                            alt="">Old</li>
+                
+                                </ul>
+                                <br>
+                                <div class="d-flex align-items-center">
+                                    <div class="col-9">
+                                        <a href="#" class="btn btn-outline-danger mx-2 rounded-pill px-md-4 px-3 "><i
+                                                class="fa-solid fa-phone"></i></a>
+                
+                                        <a href="#" class="btn btn-outline-success mx-2 rounded-pill px-md-4 px-3"><i
+                                                class="fa-brands fa-whatsapp"></i></a>
+                
+                                        <a href="#" class="btn btn-outline-dark mx-2 rounded-pill px-md-4 px-3"><i
+                                                class="fa-solid fa-envelope"></i></a>
+                                    </div>
+                                    <div class="col-3 text-center ">
+                                        <img src="assets/img/brand/make_64818542d5049_hyundai-logo.png" width="60%" alt="">
+                                    </div>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--=====End Card Listing Item ====-->
+
+                <!--Search Result Pagination-->
+                <div class="row">
+                    <div class="col-auto m-auto">
+                        <nav class="my-4">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous"> <span
+                                            aria-hidden="true">&laquo;</span> </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">....</a></li>
+                                <li class="page-item"><a class="page-link" href="#">15</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next"> <span
+                                            aria-hidden="true">&raquo;</span> </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--=======FOOTER SECTION===========-->
+<footer></footer>
+<!--=======END FOOTER SECTION===========-->
+
+<script src="assets/js/nice-select.js" type=""></script>
+<script>
+    NiceSelect.bind(document.querySelector(".filter-parts-location"), { placeholder: 'Select City' });
+    NiceSelect.bind(document.querySelector(".filter-parts-type"), { placeholder: 'Select' });
+    NiceSelect.bind(document.querySelector(".filter-parts-price"), { placeholder: 'Select' });
+    NiceSelect.bind(document.querySelector(".filter-parts-condtions"), { placeholder: 'Select' });
+    NiceSelect.bind(document.querySelector(".filter-seller-type"), { placeholder: 'Select' });
+    
+</script>

@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Buy/Sell</title>
+    <!-- THESE ARE FONT-AWESOME, GOOGLE-FONT, BS-CSS, MAIN-CSS -->
+    <script src="https://kit.fontawesome.com/6685750968.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="assets/img/user.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- THESE ARE ANOTHI CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/fileUpload.css">
+    <link rel="stylesheet" href="assets/css/modal.min.c">
+    <link rel="stylesheet" href="assets/css/scrolling-tabs.css">
+
+
+</head>
+
+<body>
+
+    <!--===== Start Header Menu =====-->
+    <header>
+        <main class="top-header">
+            <!--Start Top Bar Menu-->
+            <div dir="ltr" class="container d-none d-md-block border-bottom py-2">
+                <div class="row">
+                    <div class="col-3">
+
+                    </div>
+
+                    <div class="col-6 text-end  ">
+
+                        <ul class="p-0 m-0" id="lang-selection">
+
+                            <div id="lang-select">
+                                <select class="form-select rounded-0">
+                                    <option selected value="">English</option>
+                                    <option value="">Arabic</option>
+
+                                </select>
+                            </div>
+
+
+                            <li class="d-inline mx-3"><i
+                                    class="fa-regular fa-heart mx-1 position-relative bg-white p-2 rounded-circle text-color">
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-circle text-danger">
+                                        2</span>
+                                </i><a href="user-dashboard.html" target="" class="text-dark topbar-text">Favorite</a>
+                            </li>
+
+
+
+                            <li class="d-inline mx-3"><i
+                                    class="fa-regular fa-comment position-relative  mx-1 bg-white p-2 rounded-circle text-color">
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-circle text-danger">
+                                        0</span>
+                                </i><a href="user-dashboard.html" target="" class="text-dark topbar-text">Chat</a></li>
+
+
+
+                            <li class="d-inline mx-3"><i
+                                    class="fa-regular fa-address-card position-relative  mx-1 bg-white p-2 rounded-circle text-color">
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-circle text-danger">
+                                        1</span>
+                                </i>
+                                <a href="user-dashboard.html" target="" class="text-dark topbar-text">My Ads</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+                    <div class="col-3">
+
+                        <ul class="text-ligh m-0">
+                            <li class="d-inline">
+                                <img class="align-bottom " src="assets/img/user.png" width="25px">
+                                <a href="signup-login.html" target="" class="text-dark fw-light ms-1 fw-bold user">Sing
+                                    In</a>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+        <!--Start Nav Menu Bar-->
+        <nav class="navbar navbar-light navbar-expand-md ">
+            <div class="container p-md-0">
+                <a class="navbar-brand site-logo" href="index.html">
+                    <img width="130px" alt="logo" src="assets/img/logo.png">
+                </a>
+
+                <ul class="navbar-nav fs-normal align-items-center flex-row display-media">
+
+                    <li class="nav-item dropdown mx-2"> <a class="nav-link text-dark   fw-bold py-3 dropdown-toggle"
+                            href="#">Buy Cars</a>
+
+
+                        <ul class="dropdown-menu menu-item fs-normal border border-dark border-2 shadow p-0 rounded-4 row py-3"
+                            style="width: 300px;">
+                            <li
+                                class="dropdown-headey pb-2 align-items-center  justify-content-between d-flex border-bottom border-secondary ">
+                                <div class="mt-2">
+                                    <h5 class="text-dark fs-6 ">
+                                        <i class="fa-solid fa-car"></i>
+                                        Used Cars
+                                    </h5>
+                                </div>
+                                <div class="">
+                                    <a href="car-search-result.html" class="btn border-0 btn-dark bg-hover">View All</a>
+                                </div>
+
+                            </li>
+                            <!--Dropdown Menu Item-->
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Toyota Hilux</a></li>
+
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Toyota Prado</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Toyota Camry</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Toyota Fortuner</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Nissan Patrol</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">Ford
+                                    Mustang</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Toyota Corolla</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Toyota Nore</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Toyota Nore</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Toyota Nore</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown mx-2"> <a class="nav-link text-dark   fw-bold py-3 dropdown-toggle"
+                            href="#">Car Parts</a>
+
+
+                        <ul class="dropdown-menu menu-item fs-normal border border-dark border-2 shadow p-0 rounded-4 row py-3"
+                            style="width: 300px;">
+                            <li
+                                class="dropdown-headey pb-2 align-items-center  justify-content-between d-flex border-bottom border-secondary ">
+                                <div class="mt-2">
+                                    <h5 class="text-dark fs-6 ">
+                                        <i class="fa-solid fa-gears"></i>
+                                        Cars Parts
+                                    </h5>
+                                </div>
+                                <div class="">
+                                    <a href="car-parts-result.html" class="btn border-0 btn-dark bg-hover">View All</a>
+                                </div>
+
+                            </li>
+                            <!--Dropdown Menu Item-->
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Hood</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Radiator Support</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Bumpers</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">A/C
+                                    Condensers</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Axle</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Piston</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">Air
+                                    Filter</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">Oil
+                                    Filter</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">Oil
+                                    Filter</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Steering Wheel</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a class="nav-link fw-bold text-dark" href="car-video.html">Car Videos</a>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a class="nav-link fw-bold text-dark" href="about-us.html">
+                            About Us</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link fw-bold text-dark" href="contact.html">Support</a>
+                    </li>
+
+                </ul>
+
+                <form class="hidden m-0 display-media" action="">
+
+                    <div dir="ltr"
+                        class="position-relative d-flex align-items-center  bg-light border border-dark border-2"
+                        style="width: 280px; border-radius: 10px;">
+
+                        <div class="mx-2">
+                            <img src="https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png"
+                                width="18">
+
+                        </div>
+
+                        <!-- Search Input Field -->
+                        <input type="search" class="input border-0 p-2 form-contro bg-transparent ">
+
+                        <div class="placeholder-text">
+                            <div class="m-1">
+                                <p class="m-0 p-0">Search for</p>
+                            </div>
+                            <div class="slider_box position-relative ">
+                                <div class="slider-text"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+
+                <a href="add-car.html"
+                    class="btn display-media bg-color bg-hover text-light btn-md rounded d-md-block fw-bold px-lg-3 py-2"><i
+                        class="fa-solid fa-plus mx-1"></i>Sell Your Car</a>
+
+                <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <!--========Start OffCanvas Menu========-->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Hi, <b>Username!</b></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+
+                        <div class="mobile-sidebar">
+
+                            <ul class="ps-2">
+                                <li class="d-inline me-2 position-relative">
+                                    <span
+                                        class="position-absolute top-0 start-0 translate-middle badge rounded-circle bg-color">
+                                        3
+                                    </span>
+                                    <a href="user-dashboard.html" target=""
+                                        class="text-color shadow-sm p-2 rounded-pill"><i
+                                            class="fa-regular fa-heart p-2 rounded-circle"></i>Favorite</a>
+                                </li>
+
+                                <li class="d-inline mx-2 position-relative">
+                                    <span
+                                        class="position-absolute top-0 start-0 translate-middle badge rounded-circle bg-color">
+                                        1
+                                    </span><a href="user-dashboard.html" target=""
+                                        class=" text-color p-2 rounded-pill shadow-sm"><i
+                                            class="fa-regular fa-comment p-2 rounded-circle "></i>Chat</a>
+                                </li>
+
+
+                                <li class="d-inline mx-3 position-relative">
+                                    <span
+                                        class="position-absolute top-0 start-0 translate-middle badge rounded-circle bg-color">
+                                        0
+                                    </span><a href="user-dashboard.html" target=""
+                                        class="text-color shadow-sm p-2 rounded-pill"><i
+                                            class="fa-regular fa-address-card p-2 rounded-circle"></i>Ads</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link fw-bold dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Used Cars</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Toyota</a></li>
+                                    <li><a class="dropdown-item" href="#">Mercedes-Benz</a></li>
+                                    <li><a class="dropdown-item" href="#">Lexus</a></li>
+                                    <li><a class="dropdown-item" href="#">Nissan</a></li>
+                                    <li><a class="dropdown-item" href="#">Volkswagen</a></li>
+                                    <li><a class="dropdown-item" href="#">Suzuki</a></li>
+                                    <li><a class="dropdown-item" href="#">Mitsubishi</a></li>
+                                    <li class="border-1 border-top"><a href="#" class="ps-3 text-danger bg-white">View
+                                            More</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  fw-bold dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Car Parts</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Hood</a></li>
+                                    <li><a class="dropdown-item" href="#">Radiator Support</a></li>
+                                    <li><a class="dropdown-item" href="#">Bumpers</a></li>
+                                    <li><a class="dropdown-item" href="#">A/C Condensers</a></li>
+                                    <li><a class="dropdown-item" href="#">Axle</a></li>
+                                    <li><a class="dropdown-item" href="#">Piston</a></li>
+                                    <li><a class="dropdown-item" href="#">Air Filter</a></li>
+                                    <li><a class="dropdown-item" href="#">Oil Filter</a></li>
+                                    <li><a class="dropdown-item" href="#">Steering Wheel</a></li>
+                                    <li class="border-1 border-top"><a href="#" class="ps-3 text-danger bg-white">View
+                                            More</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="about-us.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="contact.html">Support</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="contact.html">Terms of Conditions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bold" href="contact.html">Privacy Pollicy</a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <span class="me-3 fw-bold text-color">Language:</span>
+                        <div class="form-check my-2 form-check-inline">
+
+                            <input class="form-check-input" type="radio" value="" name="lang" id="english" checked>
+                            <label class="form-check-label" for="english">
+                                English
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" value="" name="lang" id="arabic">
+                            <label class="form-check-label" for="arabic">
+                                عربي
+                            </label>
+                        </div>
+                        <br>
+                        <span class="me-3 fw-bold text-color">Currancy:</span>
+                        <div class="form-check mt-3 form-check-inline">
+                            <input class="form-check-input" type="radio" value="" name="currency" id="usd">
+                            <label class="form-check-label" for="usd">
+                                USD
+                            </label>
+                        </div>
+                        <div class="form-check mt-3 form-check-inline">
+                            <input class="form-check-input" type="radio" name="currency" id="aed" checked>
+                            <label class="form-check-label" for="aed">
+                                AED
+                            </label>
+                        </div>
+
+                        <!-- Socile link -->
+                        <ul class="social-link d-flex mt-5 justify-content-center">
+                            <li class="bg-light m-2 rounded-2"><a href="#" target="_blank"><i
+                                        class="fab fa-facebook-f "></i></a>
+                            <li>
+                            <li class="bg-light m-2"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="bg-light m-2 rounded-2"><a href="#" target="_blank"><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li class="bg-light m-2 rounded-2"><a href="#" target="_blank"><i
+                                        class="fab fa-linkedin"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+    <!--===== End Header Menu =====-->
+
+
+    <!--=========Breadcrumb Starat========-->
+    <section>
+        <div class="container py-2 mt-4 border-bottom">
+            <div class="row">
+                <div class="col">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb m-0 p-0">
+                            <li class="breadcrumb-item"><a href="index.html"><i
+                                        class="fa-solid fa-house-user mx-1"></i>Home</a></li>
+                            <li class="breadcrumb-item"><a href="index.html">Listing</a></li>
+                            <li class="breadcrumb-item active">Infiniti QX50 Luxury</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===== Start Car Details Section =====-->
+    <section>
+        <div class="container py-3">
+            <div class="row p-0 m-0">
+                <div class="col-12 col-md-8">
+                    <h1 class="fs-4 border-start border-5 border-dark rounded-3 py-1 mb-4 ps-2">Hyundai Tucson 1.6L G4FD Petrol Complete Engine 2013-2018</h1>
+
+                    <div class="position-relative">
+                        <!-- The Modal -->
+                        <div class="modal fade" id="myModal">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content rounded-4 ">
+
+                                    <div dir="ltr" class="modal-header position-relative">
+                                        <h5 class="modal-title">Share this listing <i class="fa-solid fa-share"></i>
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <ul class="nav justify-content-center ">
+                                            <li class="nav-item">
+                                                <a class="nav-link p-2 text-dark d-flex flex-column align-items-center"
+                                                    href="#"><img src="assets/img/brand/facebook.png"
+                                                        width="40">FaceBook</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link p-2 text-dark d-flex flex-column align-items-center"
+                                                    href="#"><img src="assets/img/brand/twitter.png"
+                                                        width="40">Twitter</a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a class="nav-link p-2 text-dark d-flex flex-column align-items-center"
+                                                    href="#"><img src="assets/img/brand/linkedin.png"
+                                                        width="40">Linkedin</a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a class="nav-link p-2 text-dark d-flex flex-column align-items-center"
+                                                    href="#"><img src="assets/img/brand/whatsapp.png"
+                                                        width="40">WhatsApp</a>
+                                            </li>
+                                            <li class="nav-item ">
+                                                <a class="nav-link p-2 text-dark d-flex flex-column align-items-center"
+                                                    href="#"><img src="assets/img/brand/email.png" width="40">Email</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="col d-flex py-3">
+                                            <input type="text" class="form-control  border-2 border-secondary " readonly
+                                                value="https://www.w3schools.com" id="myInput1">
+                                            <button type="button" class="btn btn-dark btn-lg rounded- border-"
+                                                id="copy-link">Copy</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--Car Share & Save Button-->
+                        <div class="btn btn-light  car-share position-absolute" data-bs-toggle="modal"
+                            data-bs-target="#myModal"><i class="fa-solid fa-share mx-1"></i>Share</div>
+                        <div class="btn btn-light  car-save position-absolute"><i
+                                class="fa-regular fa-heart text-danger mx-1"></i>Save</div>
+
+                        <div class="img-arrow-prev d-none d-md-block position-absolute"><button
+                                class="prev-btn btn btn-light"><i class="fa-solid fa-arrow-left"></i></button></div>
+                        <div class="img-arrow-next d-none d-md-block position-absolute"><button
+                                class="next-btn btn bg-light text-dark"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                        <!--Slider Counter-->
+                        <span class="slider_counter"></span>
+                        <!--Car Images-->
+                        <div dir="ltr" class="car-img-slider">
+                            <div class="card"><img class="img-fluid img-radius w-100" src="assets/img/parts/parts.jpeg"></div>
+                            <div class="card"><img class="img-fluid img-radius w-100" src="assets/img/parts/parts1.avif"></div>
+                            <div class="card"><img class="img-fluid img-radius w-100" src="assets/img/parts/parts2.avif"></div> 
+                            <div class="card"><img class="img-fluid img-radius w-100" src="assets/img/parts/parts-4.avif"></div>
+                            <div class="card"><img class="img-fluid img-radius w-100" src="assets/img/parts/engin.jpeg"></div>
+                            
+
+                        </div>
+                    </div>
+
+                    <!--Car Small Images-->
+                    <div dir="ltr" class="slider-nav mt-2 ">
+
+                        <img class="img-fluid img-radius p-1" src="assets/img/parts/parts.jpeg">
+                        <img class="img-fluid img-radius p-1" src="assets/img/parts/parts1.avif">
+                        <img class="img-fluid img-radius p-1" src="assets/img/parts/parts2.avif">
+                        <img class="img-fluid img-radius p-1" src="assets/img/parts/parts-4.avif">
+                        <img class="img-fluid img-radius p-1" src="assets/img/parts/engin.jpeg">
+                       
+                    </div>
+
+
+
+                    <!--=======Car Overview========-->
+                    <div class="car-overview my-5">
+                        <h4 class="py-3 text-color">Overview</h4>
+
+<div class="row g-4">
+    <div class="card col-md-6  border-0">
+        <div class="row g-0 border-0 rounded-3 bg-white shadow-medium ">
+            <div class="col-2">
+                <div class="card-img">
+                    <img src="assets/img/parts/car-parts.png" class="img-fluid p-3">
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="card-body p-0 pt-4">
+                    <h5 class="card-text text-dark mt-1">Parts Uages<i
+                            class="fa-solid fa-arrow-right-long mx-4"></i><b>50 days</b></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card col-md-6 border-0">
+        <div class="row g-0 border-0 rounded-3 bg-white shadow-medium">
+            <div class="col-2">
+                <div class="card-img">
+                    <img src="assets/img/parts/settings-gears.png" class="img-fluid p-3">
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="card-body p-0 pt-4">
+                    <h5 class="card-text text-dark  mt-1">Parts Condtions<i
+                            class="fa-solid fa-arrow-right-long mx-4"></i><b>Used</b></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card col-md-6 border-0">
+        <div class="row g-0 border-0 rounded-3 bg-white shadow-medium">
+            <div class="col-2">
+                <div class="card-img">
+                    <img src="assets/img/parts/dealership.png" class="img-fluid p-3">
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="card-body p-0 pt-4">
+                    <h5 class="card-text text-dark  mt-1">Seller Type<i
+                            class="fa-solid fa-arrow-right-long mx-4"></i><b>Deller</b></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Car Item End-->
+
+</div>
+
+                    </div>
+
+                    <!--=====Car Description========-->
+                    <div class="car-description">
+                        <h4 class="text-color">Description</h4>
+                        <p class="card-text text-muted  fs-6">
+                            How the adventure ended will be seen anon. Aouda was anxious, though she said nothing. As
+                            for Passepartout, he thought
+                            Mr. Fogg’s manoeuvre simply glorious. The captain had said “between eleven and twelve
+                            knots,” and the Henrietta
+                            confirmed his prediction.
+                            <br><br>
+                            If, then—for there were “ifs” still—the sea did not become too boisterous, if the wind did
+                            not veer round to the east,
+                            if no accident happened to the boat or its machinery, the Henrietta might cross the
+                            three<span id="dots">...</span><span id="more">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit.
+                                <br><br>
+                                Nulla deserunt repudiandae nemo dolore nobis voluptas, error, cum, distinctio voluptate
+                                doloremque corporis quo? Quod reprehenderit nemo quos sapiente facere voluptas officia
+                                id m axime atque eaque voluptatum illo aspernatur quam sunt soluta officiis ullam cum,
+                                consectetur quas, autem magnam magni. Corporis, quod?
+                            </span>
+                        </p>
+                        <button class="btn btn-outline-dark rounded-0  " id="read-more">Read more</button>
+                    </div>
+
+
+                </div>
+
+
+                <!--======Right SideBar Content=====-->
+                <div class="col-12 col-md-4">
+                    <div class="content text-dark pt-3 h-100">
+
+                        <div class="card py-2 shadow-medium mt-5">
+                            <h3 class="card-title p-3 text-danger fw-bold border-bottom border-5 border-danger ">AED
+                                798,000</h3>
+                            <div class="row g-0 align-items-center bg-inf">
+                                <div class="col p-3"><img src="/assets/img/brand/Stoub_Biz_Motors_L.L.C_Logo.jpeg"
+                                        class="w-75 "></div>
+                                <div class="col p-1">
+                                    <h6 class=" ">Posted By <b>Stoub</b></h6>
+                                    <p class="text-en"><i class="fa-solid fa-blog mx-1"></i>Date: 23 Feb, 2023</p>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <button class="btn bg-primary text-light fs-normal p-1"><i
+                                        class="fa-solid fa-shield-halved px-1"></i>Verified Seller</button>
+                                <p class="card-text"><a href="#" class="link-danger">See more ads by Stoub.biz</a>
+                                </p>
+
+                                <div class="action-btn">
+                                    <a href="tel:01745837384"
+                                        class="btn btn-bg phone-call text-light fw-medium  my-2 d-block"><i
+                                            class="fa-solid fa-phone px-2"></i><span class="hide-number">Show
+                                            Number</span><span class="show-number">+9783937384</span></a>
+                                    <a href="https://wa.me/1625390635"
+                                        class="btn text-light fw-medium  chat-whatsapp my-2 d-block"><i
+                                            class="fa-brands fa-whatsapp px-2"></i>WhatsApp</a>
+                                    <a href="#quick-contact"
+                                        class="btn btn-dark fw-medium  send-message text-light my-2 d-block"><i
+                                            class="fa-regular fa-message px-2"></i>Send Email </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!--=======Car Features====-->
+                                 
+
+                        <div>
+                            <button class="btn btn-outline-danger w-100 mt-5" data-bs-toggle="modal"
+                                data-bs-target="#report-listing">Report this ads</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="report-listing" data-bs-backdrop="static" tabindex="-1"
+                                aria-hidden="true">
+                                <div dir="ltr" class="modal-dialog" style="max-width: 650px!important;">
+                                    <div class="modal-content rounded-4 ">
+                                        <div class="modal-header border-bottom border-2  border-danger">
+                                            <h3 class="modal-title fs-5" id="exampleModalLabel">Report Listing</h3>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <!--Listing Report Form-->
+                                            <form action="" class="text-start">
+
+                                                <div class="row g-4">
+
+                                                    <div class="col-md-6">
+                                                        <label for="" class="form-label">Name</label>
+                                                        <input type="text" class="form-control rounded-0 py-2"
+                                                            placeholder="Full Name" required>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <label for="" class="form-label">Phone</label>
+                                                        <div dir="lt"
+                                                            class="position-relative d-flex align-items-center  bg-white border">
+
+                                                            <div class="mx-2">
+                                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/2560px-Flag_of_the_United_Arab_Emirates.svg.png"
+                                                                    width="35">
+
+                                                            </div>
+
+                                                            <!-- Phone Input Field -->
+                                                            <input type="number" placeholder="(+971) 393783984"
+                                                                value="+971"
+                                                                class="input w-100 border-0 p-2 bg-transparent ">
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                        <label for="inputEmail4" class="form-label">Email</label>
+                                                        <input type="email" placeholder="@mail"
+                                                            class="form-control rounded-0 py-2" required
+                                                            id="inputEmail4">
+                                                    </div>
+
+                                                    <div dir="ltr" class="col-md-6">
+                                                        <label for="inputEmail4" class="form-label">Query</label>
+                                                        <select class="form-select fw-normal text-color">
+                                                            <option value="1">Not Available</option>
+                                                            <option value="2">Repetitive Listing</option>
+                                                            <option value="3">Fraud</option>
+                                                            <option value="3">Parts specifications are wrong</option>
+                                                            <option value="3">Price is not accurate</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="col-12">
+                                                        <label for="" class="form-label">Message</label>
+                                                        <textarea placeholder="Please detail your specific issue..."
+                                                            class="form-control rounded-0 " rows="4"></textarea>
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="modal-footer justify-content-center">
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger  my-2 px-5 ">Submit
+                                                    </button>
+                                                </div>
+
+                                            </form>
+                                            <!--End Listing Report Form-->
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Quick Contac Formt-->
+                        <div id="quick-contact" class="card my-5 p-4">
+                            <div class="col">
+                                <h5 class="border-start px-2 border-dark mb-3">Quick Message</h5>
+
+                                <form action="">
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Name</label>
+                                        <input type="text" id="" class="form-control rounded-0 py-2"
+                                            placeholder="Full Name">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Phone</label>
+                                        <div class="position-relative d-flex align-items-center  bg-white border">
+
+                                            <div class="mx-2">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Flag_of_the_United_Arab_Emirates.svg/2560px-Flag_of_the_United_Arab_Emirates.svg.png"
+                                                    width="40">
+
+                                            </div>
+
+                                            <!-- Search Input Field -->
+                                            <input type="number" max="10" placeholder="(+971) 393783984" value="+971"
+                                                class="input w-100  border-0 p-2 bg-transparent ">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="" class="form-label">Message</label>
+                                        <textarea placeholder="Write your message..." class="form-control rounded-0 "
+                                            rows="3"></textarea>
+                                    </div>
+                                    <a href="#quick-contact" class="btn btn-outline-dark my-2 px-4 ">Send Now</a>
+                                </form>
+
+                            </div>
+                        </div>
+<!--Seller Location Map-->
+<div class="car-location py-3">
+    <h4 class="text-color ">Location</h4>
+    <p>Al Quoz Industrial Area 1, Al Quoz, Dubai, UAE
+    </p>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.178510207637!2d55.2718014748906!3d25.197201831701445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2sbd!4v1707229885432!5m2!1sen!2sbd"
+        width="100%" height="200" style="border:0; border-radius: 15px;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Related Ads-->
+        <div class="container">
+            <div class="row">
+                <div class="col-auto pb-4 p-0 m-0">
+                    <h4 class="text-colo fs-4 border-2 border-danger w-2 pb-2 border-bottom ">Similar Parts</h4>
+
+                    <div class="related-cars">
+                        <!--Car Item Loop-->
+            <div class="col position-relative col-md-3 col-12 featured-car">
+                <div class="card p-2 m-2 shadow-sm">
+                    <div dir="ltr">
+            
+                        <abbr title="Add to Favorite"><i
+                                class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger z-index-1 hover"></i></abbr>
+                    </div>
+            
+                    <a href="#" class="position-relative ">
+                        <span class="position-absolute bottom-0 m-2 text-light fw-thik"><i
+                                class="fa-solid fa-location-dot mx-1"></i>Abu Dhabi</span>
+                        <img class="card-img" src="assets/img/parts/parts.jpeg" class="card-img-top" alt=""></a>
+                    <div class="card-body">
+                        <h2 class="card-title fs-6 "><a href="#" class="text-color3">
+                                5 Sets of Jeep Wrangler 2023...</a></h2>
+                        <h6 class="text-danger fs-6">AED 258,000</h6>
+                        <p class="card-text fw-medium fs-normal  text-dark ">Car/4x4 Parts <i class="fa-solid fa-circle mx-2"
+                                style="font-size: 6px;"></i> Wheels/Tires </p>
+                    </div>
+                </div>
+            </div>
+
+        <div class="col position-relative col-md-3 col-12 featured-car">
+            <div class="card p-2 m-2 shadow-sm">
+                <div dir="ltr">
+        
+                    <abbr title="Add to Favorite"><i
+                            class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger z-index-1 hover"></i></abbr>
+                </div>
+        
+                <a href="#" class="position-relative ">
+                    <span class="position-absolute bottom-0 m-2 text-light fw-thik"><i
+                            class="fa-solid fa-location-dot mx-1"></i>Abu Dhabi</span>
+                    <img class="card-img" src="assets/img/parts/parts.jpeg" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h2 class="card-title fs-6 "><a href="#" class="text-color3">
+                            5 Sets of Jeep Wrangler 2023...</a></h2>
+                    <h6 class="text-danger fs-6">AED 258,000</h6>
+                    <p class="card-text fw-medium fs-normal  text-dark ">Car/4x4 Parts <i class="fa-solid fa-circle mx-2"
+                            style="font-size: 6px;"></i> Wheels/Tires </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col position-relative col-md-3 col-12 featured-car">
+            <div class="card p-2 m-2 shadow-sm">
+                <div dir="ltr">
+        
+                    <abbr title="Add to Favorite"><i
+                            class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger z-index-1 hover"></i></abbr>
+                </div>
+        
+                <a href="#" class="position-relative ">
+                    <span class="position-absolute bottom-0 m-2 text-light fw-thik"><i
+                            class="fa-solid fa-location-dot mx-1"></i>Abu Dhabi</span>
+                    <img class="card-img" src="assets/img/parts/parts.jpeg" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h2 class="card-title fs-6 "><a href="#" class="text-color3">
+                            5 Sets of Jeep Wrangler 2023...</a></h2>
+                    <h6 class="text-danger fs-6">AED 258,000</h6>
+                    <p class="card-text fw-medium fs-normal  text-dark ">Car/4x4 Parts <i class="fa-solid fa-circle mx-2"
+                            style="font-size: 6px;"></i> Wheels/Tires </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col position-relative col-md-3 col-12 featured-car">
+            <div class="card m-2 p-2 shadow-sm">
+                <div dir="ltr">
+        
+                    <abbr title="Add to Favorite"><i
+                            class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger z-index-1 hover"></i></abbr>
+                </div>
+        
+                <a href="#" class="position-relative ">
+                    <span class="position-absolute bottom-0 m-2 text-light fw-thik"><i
+                            class="fa-solid fa-location-dot mx-1"></i>Abu Dhabi</span>
+                    <img class="card-img" src="assets/img/parts/parts.jpeg" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h2 class="card-title fs-6 "><a href="#" class="text-color3">
+                            5 Sets of Jeep Wrangler 2023...</a></h2>
+                    <h6 class="text-danger fs-6">AED 258,000</h6>
+                    <p class="card-text fw-medium fs-normal  text-dark ">Car/4x4 Parts <i class="fa-solid fa-circle mx-2"
+                            style="font-size: 6px;"></i> Wheels/Tires </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col position-relative col-md-3 col-12 featured-car">
+            <div class="card p-2 m-2 shadow-sm">
+                <div dir="ltr">
+        
+                    <abbr title="Add to Favorite"><i
+                            class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger z-index-1 hover"></i></abbr>
+                </div>
+        
+                <a href="#" class="position-relative ">
+                    <span class="position-absolute bottom-0 m-2 text-light fw-thik"><i
+                            class="fa-solid fa-location-dot mx-1"></i>Abu Dhabi</span>
+                    <img class="card-img" src="assets/img/parts/parts.jpeg" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h2 class="card-title fs-6 "><a href="#" class="text-color3">
+                            5 Sets of Jeep Wrangler 2023...</a></h2>
+                    <h6 class="text-danger fs-6">AED 258,000</h6>
+                    <p class="card-text fw-medium fs-normal  text-dark ">Car/4x4 Parts <i class="fa-solid fa-circle mx-2"
+                            style="font-size: 6px;"></i> Wheels/Tires </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col position-relative col-md-3 col-12 featured-car">
+            <div class="card p-2 m-2 shadow-sm">
+                <div dir="ltr">
+        
+                    <abbr title="Add to Favorite"><i
+                            class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger z-index-1 hover"></i></abbr>
+                </div>
+        
+                <a href="#" class="position-relative ">
+                    <span class="position-absolute bottom-0 m-2 text-light fw-thik"><i
+                            class="fa-solid fa-location-dot mx-1"></i>Abu Dhabi</span>
+                    <img class="card-img" src="assets/img/parts/parts.jpeg" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h2 class="card-title fs-6 "><a href="#" class="text-color3">
+                            5 Sets of Jeep Wrangler 2023...</a></h2>
+                    <h6 class="text-danger fs-6">AED 258,000</h6>
+                    <p class="card-text fw-medium fs-normal  text-dark ">Car/4x4 Parts <i class="fa-solid fa-circle mx-2"
+                            style="font-size: 6px;"></i> Wheels/Tires </p>
+                </div>
+            </div>
+        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+
+
+    <!--=======FOOTER SECTION===========-->
+    <section class="footer">
+        <div class="container text-light pb-5 pb-md-1">
+            <div class="row gy-3">
+                <!-- ====Footer Widget 1===-->
+                <div class="col-12 col-md-3 ">
+                    <!--Site Logo-->
+                    <div class="d-flex align-items-center   ">
+                        <img src="assets/img/footer-logo.png" class="py-3 w-50" alt="Logo">
+                    </div>
+                    <p class="fs-normal" style="color:#fffefed4">Find the best deals for budget and luxury /
+                        sports car
+                        rentals, chauffeur service and driver on hire service.
+                    </p>
+                    <div class="row g-0">
+                        <div class="col-5"> <img class="rounded-3 img-fluid "
+                                src="assets/img/Rent-a-Car-Dubai-Cheap-Car-Rental-Dubai-AED-30-Day-Car-Hire-UAE (1).png"
+                                alt="">
+                        </div>
+                        <div class="col-5 ms-3 "> <img class="rounded-3 img-fluid  "
+                                src="assets/img/Rent-a-Car-Dubai-Cheap-Car-Rental-Dubai-AED-30-Day-Car-Hire-UAE.png"
+                                alt="">
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <!-- ====Footer Widget 2 ===-->
+                <div class="col-6 col-md-2">
+                    <h6 class="mb-2 border-start border-3 p-1 border-secondary  rounded-3 ">Our Company
+                    </h6>
+                    <ul class="footer-link p-0">
+                        <li class="nav-link p-0 py-1"><a href="about-us.html"
+                                class="fw-lihgt fs-normal text-light">About Us</a>
+                        </li>
+                        <li class="nav-link p-0 py-1"><a href="contact.html"
+                                class="fw-lihgt fs-normal text-light">Contact
+                                Us</a>
+                        </li>
+                        <li class="nav-link p-0 py-1"><a href="#" class="fw-lihgt fs-normal text-light">Add
+                                Listing</a></li>
+                        <li class="nav-link p-0 py-1"><a href="#" class="fw-lihgt fs-normal text-light">Vendor
+                                Dashboard</a></li>
+                        <li class="nav-link p-0 py-1"><a href="#" class="fw-lihgt fs-normal text-light">User Account</a>
+                        </li>
+                        <li class="nav-link p-0 py-1"><a href="#" class="fw-lihgt fs-normal text-light">X.car FAQ</a>
+                        </li>
+                        <li class="nav-link p-0 py-1"><a href="#" class="fw-lihgt fs-normal text-light">Refund
+                                Policy</a></li>
+                    </ul>
+                </div>
+                <!-- ====Footer Widget 3 ===-->
+                <div class="col-6 col-md-2">
+                    <h6 class="mb-2 border-start border-3 p-1 border-secondary rounded-3  ">Used cars Location
+                    </h6>
+                    <ul class="footer-link p-0 p-0">
+
+                        <li class="nav-link p-0 py-1"><a href="#" class="fw-lihgt fs-normal text-light">Dubai</a></li>
+                        <li class="nav-link p-0 py-1"><a href="#" class="fw-lihgt fs-normal text-light">Abu Dhabi</a>
+                        </li>
+                        <li class="nav-link p-0 py-1"><a href="#" class="fw-lihgt fs-normal text-light">Ras al
+                                Khaimah</a>
+                        </li>
+                        <li class="nav-link p-0 py-1"><a href="#" class="fw-lihgt fs-normal text-light">Fujairah</a>
+                        </li>
+                        <li class="nav-link p-0 py-1"><a href="#" class="fw-lihgt fs-normal text-light">Sharjah</a></li>
+                        <li class="nav-link p-0 py-1"><a href="#" class="fw-lihgt fs-normal text-light">Ajmal</a></li>
+                        <li class="nav-link p-0 py-1"><a href="#" class="fw-lihgt fs-normal text-light">Umm al
+                                Quwain</a></li>
+
+                    </ul>
+                </div>
+                <!-- ====Footer Widget 4 ===-->
+                <div class="col-12 col-md-2">
+                    <h6 class="mb-2 border-start border-3 p-1 border-secondary rounded-3">For Support & Inquiries
+                    </h6>
+                    <ul class="nav">
+                        <li class="my-1 list-unstyled "><i class="far fa-envelope fs-6 text-light"></i>
+                            <a href="mailto:info@ucconnectservices.in"
+                                class="ms-1 text-light fw-light">info@nervices.in</a>
+                        </li>
+                        <li class="my-1 ms-md-0 ms-3 list-unstyled "><i class="fas fa-phone fs-6 text-light fs-5"></i><a
+                                href="tel: +91 8287551900" class="ms-1 text-light fw-light">+91
+                                8287551900</a></li>
+                    </ul>
+                    <br>
+                    <span class="text-muted fs-normal ">Support Hotline</span>
+                    <ul class="nav">
+                        <li class="my-1 list-unstyled "><i class="fas fa-phone fs-6 text-light fs-5"></i><a
+                                href="tel: +91 8287551900" class="ms-1 text-light fw-light">+971585782509</a></li>
+                    </ul>
+
+                    <span class="text-muted fs-normal ">Advertise With Us</span>
+                    <ul class="nav">
+                        <li class="my-1 list-unstyled "><i class="fas fa-phone fs-6 text-light fs-5"></i><a
+                                href="tel: +91 8287551900" class="ms-1 text-light fw-light">+971567691449</a></li>
+                    </ul>
+
+                </div>
+                <!-- ====Footer Widget 5 ===-->
+                <div class="col-12 col-md-3 ">
+                    <div class="mb-2">
+                        <h6 class=" border-start border-3 p-1 border-secondary rounded-3">Our Address
+                        </h6>
+                        <a href="#" class="fs-normal text-light"><i class="fa-solid fa-location-dot me-2"></i> 1501,
+                            Bayswater Tower, Marasi Drive, Business Bay, Dubai, UAE</a>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d115537.95764644654!2d55.264059!3d25.184291!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6caafcff169b%3A0xc2d193b01a8ef809!2sOneClickDrive%20-%20Rent%20A%20Car%20Dubai%2C%20Chauffeur%20Service%2C%20Yacht%20Rental!5e0!3m2!1sen!2sae!4v1709391151654!5m2!1sen!2sae"
+                            width="100%" height="120" style="border:0; border-radius: 12px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+                    </div>
+
+                    <div class="col-12">
+                        <!--Social Media Share-->
+                        <ul class="nav ">
+                            <li class="nav-item">
+                                <sub>Flow Us:</sub>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2 text-dark d-flex flex-column align-items-center" href="#"
+                                    target="_blank"><img src="assets/img/brand/facebook.png" target="blank"
+                                        width="30"></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link p-2 text-dark d-flex flex-column align-items-center" href="#"
+                                    target="_blank"><img src="assets/img/brand/linkedin.png" target="blank"
+                                        width="30"></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link p-2 text-dark d-flex flex-column align-items-center" href="#"
+                                    target="_blank"><img src="assets/img/instagram.png" target="blank" width="30"></a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link p-2 text-dark d-flex flex-column align-items-center" href="#"
+                                    target="_blank"><img src="assets/img/youtube.png" target="blank" width="30"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="row">
+
+                <div class="col-md-6 order-md-0 order-1">
+                    <ul class="d-flex m-0 p-0">
+                        <li class="nav-link p-0"><a href="terms-condtions.html"
+                                class="fw-lihgt fs-normal text-light">Terms &
+                                Contions</a>
+                        </li>
+                        <span class="mx-2">-</span>
+                        <li class="nav-link p-0"><a href="privacy-policy.html"
+                                class="fw-lihgt fs-normal text-light">Privacy
+                                Pollicy</a>
+                        </li>
+                    </ul>
+                    <div class="p-0 m-0 text-">
+                        <p class="text-light fs-normal ">© X.car 2024. All
+                            Right Reserver.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 order-md-1 order-0">
+                    <span class="text-muted ">We Accept Payment Method</span>
+                    <div class="d-flex ">
+                        <img src="assets/img/visa.png" width="60" height="30" class="bg-light p-2 m-2 rounded-3 "
+                            alt="">
+                        <img src="assets/img/mater-card.png" width="60" height="30" class=" bg-light p-2 m-2 rounded-3 "
+                            alt="">
+                        <img src="assets/img/union.png" width="60" height="30" class="bg-light p-2 m-2 rounded-3 "
+                            alt="">
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <!--=======END FOOTER SECTION===========-->
+
+    <!-- THIS IS JQUERY BOOTSTRAP MAIN JS -->
+    <script type="text/javascript" src="assets/js/jquery.slim.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery migrate 3-4-0.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <!-- THIS IS JQUERY BOOTSTRAP MAIN JS -->
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <!-- THIS JS FILE USED FOR USERDASHBOARD  PAGE -->
+    <script type="text/javascript" src="assets/js/fileUpload.js"></script>
+    <script type="text/javascript" src="assets/js/si-tabs.js"></script>
+    <script type="text/javascript" src="assets/js/intlTelInput.min.js"></script>
+    <script type="text/javascript" src="assets/js/scrolling-tabs.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/nice-select.js"></script>
+    <script>
+        NiceSelect.bind(document.getElementById("lang-select"), { searchable: false, placeholder: 'Select Condtion' });
+    </script>
+</body>
+
+</html>

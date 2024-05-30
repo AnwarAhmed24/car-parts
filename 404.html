@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Buy/Sell</title>
+    <!-- THESE ARE FONT-AWESOME, GOOGLE-FONT, BS-CSS, MAIN-CSS -->
+    <script src="https://kit.fontawesome.com/6685750968.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- THESE ARE ANOTHI CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/nice-select2.css">
+
+</head>
+
+<body>
+<!--===== Start Header Menu =====-->
+
+<header id="header">
+    <div class="container d-none d-md-block border-bottom py-2">
+
+
+        <div class="row ">
+            <div class="col-5">
+
+                <ul class="p-0 m-0  bg-dange">
+                    <li class="d-inline mx-"><i class="fa-solid fa-location-dot"></i>
+                        <select class="form-selec fw-bol location form-select-sm mb- w-2 border-0 p-0 "
+                            aria-label="Large select example">
+                            <option selected>Abu Dhabi</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </li>
+                    <li class="d-inline mx-2"><i class="fa-solid fa-language"></i>
+                        <select class="form-selec fw-bol location form-select-sm mb- w-2 border-0 p-0 "
+                            aria-label="Large select example">
+                            <option selected>English</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="col-5 text-end ">
+
+                <ul class="p-0 m-0">
+                    <li class="d-inline mx-3 position-relative"><i class="fa-regular fa-heart fs- me-1"></i><a
+                            href="tel:+91 8287551900" target="_blank" class="text-dark fw-light ms-">Wishlist</a>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-circl bg-danger">1</span>
+                    </li>
+
+
+
+                    <li class="d-block mx-3 d-md-inline"><i class="fa-regular fa-comment"></i><a
+                            href="tel:+91 8287551900" target="_blank" class="text-dark fw-light ms-2">Chat</a></li>
+
+
+
+                    <li class="d-block mx-3 d-md-inline position-relative"><i class="fa-regular fa-address-card"></i><a
+                            href="tel:+91 8287551900" target="_blank" class="text-dark fw-light ms-2">My Ads</a>
+
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="col-2 border-2">
+
+                <ul class="bg-dar text-ligh m-0">
+                    <span> | </span>
+                    <li class="d-inline "><i class="fa-regular fa-circle-user fs-"></i><a
+                            href="mailto:info@ucconnectservices.in" target="_blank"
+                            class="text-dark fw-light ms-2 fw-bol">Signup/ Login</a></li>
+
+                </ul>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <nav class="navbar bg-ligh navbar-light navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand logo w-25 bg-inf" href="#">
+                <img width="130px" src="assets/img/logo.png">
+            </a>
+
+            <ul class="navbar-nav align-items-center   bg-dange me-auto flex-row">
+                <li class="nav-item p-2">
+                    <a class="nav-link fw-bold" href="#">Home</a>
+                </li>
+                <li class="nav-item px-3 dropdown ">
+                    <a class="nav-link fw-bold dropdown-toggle" data-bs-toggle="dropdown" href="#">Cars</a>
+                    <ul class="dropdown-menu mt-4" style="width: 200px;">
+                        <li>
+                            <h5 class="dropdown-header">Dropdown header 1</h5>
+                        </li>
+
+                        <li><a class="dropdown-item" href="#">Link 1</a></li>
+                        <li><a class="dropdown-item" href="#">Link 2</a></li>
+                        <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        <li>
+                            <h5 class="dropdown-header">Dropdown header 2</h5>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Another link</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item px-3 dropdown ">
+                    <a class="nav-link fw-bold dropdown-toggle" data-bs-toggle="dropdown" href="#">Parts</a>
+                    <ul class="dropdown-menu mt-4" style="width: 200px;">
+                        <li>
+                            <h5 class="dropdown-header">Dropdown header 1</h5>
+                        </li>
+
+                        <li><a class="dropdown-item" href="#">Link 1</a></li>
+                        <li><a class="dropdown-item" href="#">Link 2</a></li>
+                        <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        <li>
+                            <h5 class="dropdown-header">Dropdown header 2</h5>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Another link</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link fw-bold" href="#">FAQ</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link fw-bold" href="#">Support</a>
+                </li>
+
+            </ul>
+
+            <form class="d-flex me-auto" role="search">
+                <input class="form-control border-2 rounded-3 me-1" type="search" placeholder="Search for Cars/Parts"
+                    aria-label="Search">
+                <button class="btn btn-outline-danger " type="submit"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <button class="btn primary-color text-light btn-md d-none rounded d-md-block fw-bol px-3"><i
+                    class="fa-solid fa-cart-shopping"></i>Sell Car </button>
+
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--===== End Header Menu =====-->
+
+<!--=========Breadcrumb Start ========-->
+<section id="breadcrumb">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col">
+                <nav aria-label="breadcrumb">
+                    <h3 class="text-light">ABOUT US</h3>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active">About</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-md-6 breadcrumb-title m-0 pt-0 pt-md-4 text-white">
+                <h5>We freight to all over the world The best company, <span class="text-warning">FAST</span> and <span
+                        class="text-warning">SAFELY!</span></h5>
+            </div>
+        </div>
+    </div>
+</section>
+<!--=========Breadcrumb End ========-->
+
+
+<div class="container">
+    <div class="row">
+        <div class="col"><h3>404 Not fount</h3></div>
+    </div>
+</div>
+
+
+
+
+
+
+<!--=======FOOTER SECTION===========-->
+
+<footer>
+    <div class="container text-light">
+        <div class="row gy-3">
+            <!-- ====Footer Widget 1===-->
+            <div class="col-12 col-md-6 col-lg-3 bg-dange ">
+                <p>We offers you excellent solutions for Export/Import Data information.</p>
+                <ul class="list-group">
+                    <li class="my-1"><i class="far fa-envelope fs-5 text-light"></i> <a
+                            href="mailto:info@ucconnectservices.in"
+                            class="ms-2 text-warning fw-light">info@ucconnectservices.in</a></li>
+                    <li class="my-1"><i class="fas fa-phone text-light fs-5"></i><a href="tel: +91 8287551900"
+                            class="ms-2 text-warning fw-light">+91 8287551900</a></li>
+                    <li class="my-1"><i class="fa fa-building fs-5"></i><a href="tel: 011-41040505"
+                            class="ms-2 text-warning fw-light">011-41040505</a></li>
+                </ul>
+
+                <br>
+                <!-- Socile link -->
+                <ul class="social-link d-flex p-0">
+                    <li class="bg-light m-2"><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <li>
+                    <li class="bg-light m-2"><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li class="bg-light m-2"><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li class="bg-light m-2"><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+
+            </div>
+
+            <!-- ====Footer Widget 2 ===-->
+            <div class="col-12 col-md-6 col-lg-3 bg-warnin">
+                <h5 class="footer-title mb-3 position-relative border-start border-3 p-1 border-warning">OUR COMPANY
+                </h5>
+                <ul class="list-group footer-link position-relative">
+                    <li><a href="#" class="fw-lihgt">Return & Pollicy</a></li>
+                    <li><a href="#" class="fw-lihgt">Shipping Policy</a></li>
+                    <li><a href="#" class="fw-lihgt">Terms & Conditions</a></li>
+                    <li><a href="#" class="fw-lihgt">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- ====Footer Widget 3 ===-->
+            <div class="col-12 col-md-6 col-lg-3 bg-warnin">
+                <h5 class="footer-title mb-3 position-relative border-start border-3 p-1 border-warning">USEFULL LINKS
+                </h5>
+                <ul class="list-group footer-link position-relative">
+                    <li><a href="#" class="fw-lihgt">Import & Export Consultancy</a></li>
+                    <li><a href="#" class="fw-lihgt">Import</a></li>
+                    <li><a href="#" class="fw-lihgt">Export</a></li>
+                    <li><a href="#" class="fw-lihgt">Tracking</a></li>
+                </ul>
+            </div>
+
+            <!-- ====Footer Widget 4 ===-->
+            <div class="col-12 col-md-6 col-lg-3 bg-warnin">
+                <span class="fw-light my-2">Mon to Fri: 10:00AM to 06:30PM</span>
+                <hr>
+                <span class="fw-light my- py-">Sun: Closed</span>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="copy-right p-2 m-0 text-center">
+        <p class="text-light m-0">COPYRIGHT © 2022 <span class="text-primary">U.C CONNECT SERVICES</span> ALL RIGHTS
+            RESERVED</p>
+    </div>
+</footer>
+
+<!-- Scroll to top -->
+<div id="scroll-top">
+    <a href="#header" class="btn border-0 bg-primary fs-4 text-light">
+        <i class="fas fa-chevron-up"></i></a>
+</div>
+
+<!--=======END FOOTER SECTION===========-->
+
+
+<!-- THIS IS JQUERY BOOTSTRAP MAIN JS -->
+<script src="assets/js/jquery.slim.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery migrate 3-4-0.js"></script>
+<script src="assets/js/main.js"></script>
+<!-- THIS IS JQUERY BOOTSTRAP MAIN JS -->
+<script type="text/javascript" src="assets/js/slick.min.js"></script>
+<script src="assets/js/nice-select2.js"></script>
+</body>
+
+</html>

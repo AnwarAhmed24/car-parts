@@ -1,0 +1,113 @@
+<!--Jqury used for Header & Footer Fatch data-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("header").load("header.html");
+        $("footer").load("footer.html");
+    });
+</script>
+<!--===== Start Header Section =====-->
+<header></header>
+<!--===== End Header Section =====-->
+<!--===== Start Login Signup Form Section =====-->
+<section class="bg-light ">
+    <div class="container py-5 mt-5 mb-3">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div dir="ltr" class="text-center py-3"> <img src="assets/img/logo.png" class="img-fluid" alt="">
+                    <h4 class="fw-bold fs-4">Welcome to <span class="text-color2">EmiratesNumber!</span></h4>
+                </div>
+                <!--------Auth Tab Button------->
+                <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link px-5 rounded-0  active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#signup" type="button" role="tab" aria-selected="true">Sign Up</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link px-5 rounded-0" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#login" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Login</button>
+                    </li>
+                </ul>
+                <!--Tab Panel-->
+                <div class="tab-content text-center box-shadow rounded-5  bg-white">
+                    <!--====Start Tab Content Signup-->
+                    <div class="tab-pane fade show active p-md-5 p-4 text-start" id="signup" role="tabpanel"
+                        tabindex="0">
+                        <form action="#">
+                            <!--Signup Form Filed-->
+                            <div class="form-floating mb-4">
+                                <input type="text" class="form-control" required id="full-name" placeholder="">
+                                <label for="full-name">Full Name*</label>
+                            </div>
+                            <div class="col-12 rounded-3 mb-4">
+                                <label for="mobile_number" class="form-label  d-block">Mobile Number*</label>
+                                <input id="mobile_number" required class="form-control rounded py-3" type="tel"
+                                    placeholder="">
+                            </div>
+                            <div class="form-floating mb-4">
+                                <input type="password" class="form-control" id="password" placeholder="">
+                                <label for="password">Password*</label>
+                            </div>
+                            <div class="form-floating mb-4">
+                                <input type="password" class="form-control" id="confirm-passowrd" placeholder="">
+                                <label for="confirm-passowrd">Confirm Password</label>
+                            </div>
+
+                            <!--Sign up terms below-->
+                            <div class="form-check mt-4">
+                                <input class="form-check-input" checked required type="checkbox" value="" id="check">
+                                <label class="form-check-label" for="check"> <span class="text-secondary fs-normal">By
+                                        signing up I agree to the</span> <a href="terms-condtions.html"
+                                        class="fs-normal link-info">Terms &
+                                        Conditions</a> and <a href="privacy-policy.html"
+                                        class="fs-normal link-info">Privacy
+                                        Policy</a> </label>
+                            </div>
+
+                            <!--Form Submit Button-->
+                            <div class="text-center my-3">
+                                <button type="submit" class="btn bg-color bg-hover2 text-light fw-bold px-5">Sign up<i
+                                        class="bi bi-check-circle-fill mx-1"></i></button>
+                            </div>
+
+                        </form>
+                    </div>
+                    <!---====End Tab Content Signup===-->
+                    <!--======Tab Content Login=========-->
+                    <div class="tab-pane fade  p-md-5 p-4 text-start " id="login" role="tabpanel" tabindex="0">
+                        <div class="card-img text-center mb-3">
+                            <img src="assets/img/emiratesnumber/login (1).png" width="100px" alt="">
+                        </div>
+                        <!--Login FOrm-->
+                        <form action="?" method="POST">
+                            <div class="col-12 rounded-3 mb-4">
+                                <label for="login_number" class="form-label d-block">Mobile Number</label>
+                                <input id="mobile_number2" required class="form-control rounded py-3" type="tel"
+                                    placeholder="">
+                            </div>
+                            <div class="form-floating mb-4">
+                                <input type="password" class="form-control" id="log-password" placeholder="">
+                                <label for="log-password">Password</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked"> Remember me </label>
+                            </div>
+                            <!--Form Login Button-->
+                            <div class="text-center my-3">
+                                <button type="submit" class="btn bg-color bg-hover2 text-light fw-bold px-5">Login<i
+                                        class="bi bi-check-circle-fill mx-1"></i></button>
+                            </div> <a href="reset-password.html" class="nav-link fs-6 m-auto border-0">Forgot your
+                                password? <span class="link-danger">reset</span></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--===== End Login Signup Form Section =====-->
+<!--=======FOOTER SECTION===========-->
+<footer></footer>
+<!--=======END FOOTER SECTION===========-->

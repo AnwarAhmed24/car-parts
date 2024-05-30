@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Buy/Sell</title>
+    <!-- THESE ARE FONT-AWESOME, GOOGLE-FONT, BS-CSS, MAIN-CSS -->
+    <script src="https://kit.fontawesome.com/6685750968.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="assets/img/user.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- THESE ARE ANOTHI CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/fileUpload.css">
+    <link rel="stylesheet" href="assets/css/scrolling-tabs.css">
+    <link rel="stylesheet" href="assets/css/filter_multi_select.css">
+</head>
+
+<body>
+    <!--===== Start Header Menu =====-->
+    <header>
+        <main class="top-header">
+            <!--Start Top Bar Menu-->
+            <div dir="ltr" class="container d-none d-md-block border-bottom py-2">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-6 text-end">
+                        <ul class="p-0 m-0" id="lang-selection">
+                            <div id="lang-select">
+                                <select class="form-select rounded-0">
+                                    <option selected value="">English</option>
+                                    <option value="">Arabic</option>
+                                </select>
+                            </div>
+                            <li class="d-inline mx-3"><i
+                                    class="fa-regular fa-heart mx-1 position-relative bg-white p-2 rounded-circle text-color">
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-circle text-dark">
+                                        2</span>
+                                </i><a href="user-dashboard.html" target="" class="text-dark topbar-text">Favorite</a>
+                            </li>
+                            <li class="d-inline mx-3"><i
+                                    class="fa-regular fa-comment position-relative  mx-1 bg-white p-2 rounded-circle text-color">
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-circle text-dark">
+                                        0</span>
+                                </i><a href="user-dashboard.html" target="" class="text-dark topbar-text">Chat</a></li>
+                            <li class="d-inline mx-3"><i
+                                    class="fa-regular fa-address-card position-relative  mx-1 bg-white p-2 rounded-circle text-color">
+                                    <span
+                                        class="position-absolute top-0 start-100 translate-middle badge rounded-circle text-dark">
+                                        1</span>
+                                </i> <a href="user-dashboard.html" target="" class="text-dark topbar-text">My Ads</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--======User Login/Sign Up Button =====-->
+                    <div class="col-3">
+                        <ul class="m-0">
+                            <li class="d-inline dropdown"> <img class="align-bottom " src="assets/img/user.png" width="25px"> <a
+                                    href="#" target="" class="text-dark fw-light mx-1 fw-bold user dropdown-toggle">Account</a> 
+
+                                <ul class="dropdown-menu menu-item fs-normal border border-secondary border-2 mt-1 p-0 rounded-4 row py-3">
+                          
+                                    <!--Dropdown Menu Item-->
+                                    <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">Toyota Hilux</a></li>
+                                    
+                                </ul>
+
+                                </li>
+                        </ul>
+                    </div>
+                    <!--======End User Login/Sign Up Button =====-->
+                </div>
+            </div>
+        </main>
+        <!--====Start Nav Menu Bar====-->
+        <nav class="navbar navbar-light navbar-expand-md">
+            <div class="container p-md-0">
+                <a class="navbar-brand site-logo" href="index.html"> <img width="125px" alt="logo"
+                        src="assets/img/logo.png"> </a>
+                <div class="col-7 d-md-none text-end">
+                    <ul class="text-ligh m-0 ">
+                        <li class="d-inline border p-2 rounded-3 border-secondary"> <img class="align-bottom "
+                                src="assets/img/user.png" width="25px"> <a href="signup-login.html" target=""
+                                class="text-dark fw-light ms-1 fw-bold user">Sing In</a> </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav fs-normal align-items-center flex-row display-media">
+                    <li class="nav-item dropdown mx-2"> <a class="nav-link text-dark   fw-bold py-3 dropdown-toggle"
+                            href="#">Buy Cars</a>
+                        <ul class="dropdown-menu menu-item fs-normal border border-secondary border-2 shadow p-0 rounded-4 row py-3"
+                            style="width: 300px;">
+                            <li
+                                class="pb-2 align-items-center  justify-content-between d-flex border-bottom border-secondary ">
+                                <div class="mt-2">
+                                    <h5 class="text-dark fs-6 ">
+                                        <i class="fa-solid fa-car"></i>
+                                        Used Cars
+                                    </h5>
+                                </div>
+                                <div class=""> <a href="car-search-result.html"
+                                        class="btn border-0 btn-dark bg-hover">View All</a> </div>
+                            </li>
+                            <!--Dropdown Menu Item-->
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Toyota Hilux</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Toyota Prado</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Toyota Camry</a> </li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Toyota Fortuner</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Nissan Patrol</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">Ford
+                                    Mustang</a> </li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Toyota Corolla</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Toyota Nore</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Toyota Nore</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Toyota Nore</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown mx-2"> <a class="nav-link text-dark fw-bold py-3 dropdown-toggle"
+                            href="#">Car Parts</a>
+                        <ul class="dropdown-menu menu-item fs-normal border border-secondary border-2 shadow p-0 rounded-4 row py-3"
+                            style="width: 300px;">
+                            <li
+                                class=" pb-2 align-items-center  justify-content-between d-flex border-bottom border-secondary ">
+                                <div class="mt-2">
+                                    <h5 class="text-dark fs-6 ">
+                                        <i class="fa-solid fa-gears"></i>
+                                        Cars Parts
+                                    </h5>
+                                </div>
+                                <div class=""> <a href="car-parts-result.html"
+                                        class="btn border-0 btn-dark bg-hover">View All</a> </div>
+                            </li>
+                            <!--Dropdown Menu Item-->
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Hood</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Radiator Support</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Bumpers</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">A/C
+                                    Condensers</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Axle</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Piston</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">Air
+                                    Filter</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">Oil
+                                    Filter</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">Oil
+                                    Filter</a></li>
+                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                    href="#">Steering Wheel</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item px-2"> <a class="nav-link fw-bold text-dark" href="car-video.html">Car
+                            Videos</a> </li>
+                    <li class="nav-item px-2"> <a class="nav-link fw-bold text-dark" href="about-us.html">
+                            About Us</a> </li>
+                    <li class="nav-item px-2"> <a class="nav-link fw-bold text-dark" href="contact.html">Support</a>
+                    </li>
+                </ul>
+                <form class="hidden m-0 display-media" action="">
+                    <div dir="ltr"
+                        class="position-relative d-flex align-items-center  bg-light border border-dark border-2"
+                        style="width: 280px; border-radius: 10px;">
+                        <div class="mx-2"> <img
+                                src="https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png"
+                                width="18"> </div>
+                        <!-- Search Input Field -->
+                        <input type="search" class="input border-0 p-2 form-contro bg-transparent ">
+                        <div class="placeholder-text">
+                            <div class="m-1">
+                                <p class="m-0 p-0">Search for</p>
+                            </div>
+                            <div class="slider_box position-relative ">
+                                <div class="slider-text"></div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!--------Sell Car Btn ===--><a href="add-car.html"
+                    class="btn display-media bg-color bg-hover text-light btn-md rounded d-md-block fw-bold px-lg-3 py-2"><i
+                        class="fa-solid fa-plus mx-1"></i>Sell Your Car</a>
+                <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span> </button>
+                <!--========Start OffCanvas Menu========-->
+                <div class="offcanvas offcanvas-end overflow-y-scroll" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <!--Start OffCanvas Header-->
+                    <div class="offcanvas-header">
+                        <form class="hidde m-0 display-medi" action="">
+                            <div dir="ltr"
+                                class="position-relative d-flex align-items-center  bg-light border border-dark border-2"
+                                style="width: 300px; border-radius: 10px;">
+                                <div class="mx-2"> <img
+                                        src="https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png"
+                                        width="18"> </div>
+                                <!-- Search Input Field -->
+                                <input type="search" placeholder="Search for anything"
+                                    class="input border-0 p-2 form-contro bg-transparent ">
+                            </div>
+                        </form>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <!--End OffCanvas Header-->
+                    <div class="offcanvas-body pt-0"> <span class="me-3 fw-bold text-color">Language:</span>
+                        <div class="form-check my-2 form-check-inline">
+                            <input class="form-check-input" type="radio" value="" name="lang" id="english" checked>
+                            <label class="form-check-label" for="english"> English </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" value="" name="lang" id="arabic">
+                            <label class="form-check-label" for="arabic"> Arabic </label>
+                        </div>
+                        <hr>
+                        <!--------Start Mobile Menu-------------->
+                        <ul dir="ltr" class="navbar-nav justify-content-end flex-grow-1 px-3">
+                            <li class="nav-item dropdown bg-white mobile-toggle"> <a
+                                    class="nav-link text-dark dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Used Cars</a>
+                                <ul
+                                    class="dropdown-menu border border-secondary border-2 shadow-sm p-0 rounded-4 row py-2">
+                                    <li><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">Toyota</a>
+                                    </li>
+                                    <li><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                            href="#">Mercedes-Benz</a></li>
+                                    <li><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">Lexus</a>
+                                    </li>
+                                    <li><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">Nissan</a>
+                                    </li>
+                                    <li><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                            href="#">Volkswagen</a></li>
+                                    <li><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">Suzuki</a>
+                                    </li>
+                                    <li><a class="nav-link link-hover fw-medium text-color3 py-2"
+                                            href="#">Mitsubishi</a></li>
+                                    <li class="border-1 border-top py-2 fw-bold"><a href="#" class="  bg-white">View
+                                            More</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown bg-white mobile-toggle"> <a
+                                    class="nav-link  text-dark dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Car Parts</a>
+                                <ul
+                                    class="dropdown-menu border border-secondary border-2 shadow-sm p-0 rounded-4 row py-2">
+                                    <li><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">Hood</a></li>
+                                    <li><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">Radiator
+                                            Support</a></li>
+                                    <li><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">Bumpers</a>
+                                    </li>
+                                    <li><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">A/C
+                                            Condensers</a></li>
+                                    <li><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">Axle</a></li>
+                                    <li><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">Piston</a>
+                                    </li>
+                                    <li><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">Air
+                                            Filter</a></li>
+                                    <li><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">Oil
+                                            Filter</a></li>
+                                    <li><a class="nav-link link-hover fw-medium text-color3 py-2" href="#">Steering
+                                            Wheel</a></li>
+                                    <li class="border-1 border-top py-2 fw-bold"><a href="#" class="bg-white">View
+                                            More</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"> <a class="nav-link text-dark" href="faq.html">FAQ</a> </li>
+                            <li class="nav-item"> <a class="nav-link text-dark" href="about-us.html">About Us</a> </li>
+                            <li class="nav-item"> <a class="nav-link text-dark" href="contact.html">Support</a> </li>
+                            <li class="nav-item"> <a class="nav-link text-dark" href="contact.html">Terms of
+                                    Conditions</a> </li>
+                            <li class="nav-item"> <a class="nav-link text-dark" href="contact.html">Refund Pollicy</a>
+                            </li>
+                        </ul>
+                        <hr>
+                        <!--------End Mobile Menu-------------->
+                        <div> <a href="add-car.html"
+                                class="btn bg-color bg-hover text-light rounded fw-bold px-lg-3 py-2 w-100"><i
+                                    class="fa-solid fa-plus mx-1"></i>Sell Your Car</a> </div>
+                        <!---------Socile link----->
+                        <ul class="nav justify-content-center mt-3">
+                            <li class="nav-item">
+                                <a class="nav-link p-2 text-dark d-flex flex-column align-items-center" href="#"
+                                    target="_blank"><img src="assets/img/brand/facebook.png" target="blank"
+                                        width="30"></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link p-2 text-dark d-flex flex-column align-items-center" href="#"
+                                    target="_blank"><img src="assets/img/brand/linkedin.png" target="blank"
+                                        width="30"></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link p-2 text-dark d-flex flex-column align-items-center" href="#"
+                                    target="_blank"><img src="assets/img/instagram.png" target="blank" width="30"></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link p-2 text-dark d-flex flex-column align-items-center" href="#"
+                                    target="_blank"><img src="assets/img/youtube.png" target="blank" width="30"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--===== End Header Menu =====-->
+    
+    <script type="text/javascript" src="assets/js/nice-select.js"></script>
+    <script>
+        //============Search bar Funciton=======//
+        let input = document.querySelector(".input");
+        let slider_box = document.querySelector(".slider_box");
+        let slider = document.querySelector(".slider-text");
+        let placeholdertext = document.querySelector(".placeholder-text");
+        let list = ["Cars", "Parts", "Accessories"];
+        let i = 0;
+        let intervals = "";
+        text_animation();
+        setintervals();
+        slider_box.style.height = slider.clientHeight + "px";
+        // Functionality to hide custom placeholder when input field is focused or it has value inside it.
+        input.onfocus = function () {
+            placeholdertext.style.display = "none";
+            clearInterval(intervals);
+        }
+        input.onblur = function () {
+            if (input.value == "") {
+                placeholdertext.style.display = "flex";
+                i = 0;
+                text_animation();
+                setintervals();
+            }
+        }
+        // Functionality to animate the text;
+        function setintervals() {
+            intervals = setInterval(() => {
+                text_animation();
+            }, 2500);
+        }
+
+        function text_animation() {
+            i++;
+            slider.innerHTML = list[i - 1];
+            slider.style.opacity = "1";
+            slider.style.left = "0px";
+            setTimeout(() => {
+                slider.style.opacity = "0";
+                slider.style.left = "-5px";
+            }, 2000);
+            if (list.length == i) {
+                i = 0;
+            }
+        }
+        //========Call Function for the Header Language ======//
+        NiceSelect.bind(document.getElementById("lang-select"), {
+            searchable: false,
+            placeholder: 'Select Condtion'
+        });
+    </script>

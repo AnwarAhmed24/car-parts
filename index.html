@@ -1,0 +1,1162 @@
+<!--Jqury used for Header & Footer Fatch data-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("header").load("header.html");
+        $("footer").load("footer.html");
+    });
+</script>
+<!--===== Start Header Section =====-->
+<header></header>
+<!--===== End Header Section =====-->
+
+<!--===== Start Hero Section =====-->
+<section>
+<div class="container hero-sec">
+   
+    <div class="row bg-overl px-3 py-4 m-md-3 g-md-4">
+ <!--Hero Title-->                                       
+<h1 class="text-light fs-2 text-cente fw-medium lh-base hero-title py-1">The best place to buy/sell your used car in <span class="text-color2">Dubai<img src="assets/img/uae.png" class="align-text-bottom " width="50" alt=""> </span> 
+   
+</h1>
+<!-- Tab Panel -->
+<div class="col-12 my-2 p-0">
+<ul class="nav nav-pills" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link text-light active px-4 fw-bold" data-bs-toggle="pill" href="#menu1">Select Car</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-light px-4 fw-bold" data-bs-toggle="pill" href="#menu2">Car Parts</a>
+    </li>
+</ul>
+</div>
+    
+<!-- Tab Content -->
+<div class="tab-content bg-white p-4 rounded-2 col-12">
+
+<!--Car Search Form-->
+<form action="" id="menu1" class="tab-pane fade show active">
+<div class="d-md-flex align-items-center">
+
+<div class="col-12 col-md-2 mx-1">
+<span class="text-color"><i class="fa-solid fa-city mx-2"></i>City</span>
+    <div class="wide mt-2 mb-3 mb-md-0" id="select-city">
+        <select class="form-select form-select-md rounded-0">
+            <option value="">All Cities (UAE)</option>
+            <option selected value="Dubai">Dubai</option>
+            <option value="Abu Dhabi">Abu Dhabi</option>
+            <option value="Ras al Khaimah">Ras al Khaimah</option>
+            <option value="Fujairah">Fujairah</option>
+            <option value="Sharjah">Sharjah</option>
+            <option value="Ajman">Ajman</option>
+            <option value="Umm al Quwain">Umm al Quwain</option>
+            <option value="Al Ain">Al Ain</option>
+           
+        </select>
+    </div>
+</div>
+
+<div class="col-12 col-md-2 mx-1">
+    <span class="text-color"><i class="fa-solid fa-screwdriver-wrench mx-2"></i>Makes</span>
+    <div class="wide mt-2 mb-3 mb-md-0" id="select-make">
+        <select class="form-select form-select-md rounded-0">
+            <option value="">All in Cars</option>
+            <option value="">Toyota</option>
+            <option value="">Acura</option>
+            <option value="">Alfa Romeo</option>
+            <option value="">Bentley</option>
+            <option value="">BMW</option>
+            <option value="">Bugatti</option>
+            <option value="">Daewoo</option>
+            <option value="">Fisker</option>
+            <option value="">Lamborghini</option>
+            <option value="">Honda</option>
+        </select>
+    </div>
+</div>
+
+<div class="col-12 col-md-2 mx-1">
+    <span class="text-color"> <i class="fa-solid fa-bandage mx-2"></i>Models</span>
+    <div class="wide mt-2 mb-3 mb-md-0" id="select-model">
+        <select class="form-select form-select-md rounded-0">
+            <option value="">All in Models</option>
+            <option value="">Toyota Land Cruiser</option>
+            <option value="">Nissan Patrol</option>
+            <option value="">Toyota Prado</option>
+            <option value="">Nissan Altima</option>
+            <option value="">Toyota RAV 4</option>
+            <option value="">Toyota Corolla</option>
+        </select>
+    </div>
+</div>
+
+
+<div class="col-12 col-md-2 mx-1">
+    <span class="text-color "><i class="fa-solid fa-car mx-2"></i>Transmission</span>
+    <div class="wide mt-2 mb-3 mb-md-0" id="select-transmission">
+        <select class="form-select form-select-md rounded-0">
+            <option selected value="">Automatic</option>
+            <option value="">Manual</option>
+
+        </select>
+    </div>
+</div>
+<div class="row mt-4 col">
+    <div class="col-6">
+        <a href="car-search-result.html" type="submit" class="btn bg-color text-light btn-md advance-search bg-hover"><i
+                class="fa-solid fa-magnifying-glass m-1"></i>Search</a>
+    </div>
+    <div class="col-6">
+        <a href="car-search-result.html" class="btn btn-outline-dark btn-md advance-search"><i
+                class="fa-solid fa-arrow-up-wide-short"></i>Advance Search</a>
+    </div>
+</div>
+
+</div>
+</form>
+
+<!--Car Parts Form-->
+<form action="" id="menu2" class="tab-pane fade">
+<div class="d-md-flex justify-content-between align-items-center">
+
+    <div class="col-12 col-md-2 mx-2">
+        <span class="text-color"><i class="fa-solid fa-city mx-2"></i>Location</span>
+        <div class="wide mt-2 mb-3 mb-md-0" id="parts-city">
+            <select class="form-select form-select-md rounded-0">
+                <option selected value="">All Cities (UAE)</option>
+                <option value="Dubai">Dubai</option>
+                <option value="Abu Dhabi">Abu Dhabi</option>
+                <option value="Ras al Khaimah">Ras al Khaimah</option>
+                <option value="Fujairah">Fujairah</option>
+                <option value="Sharjah">Sharjah</option>
+                <option value="Ajman">Ajman</option>
+                <option value="Umm al Quwain">Umm al Quwain</option>
+                <option value="Al Ain">Al Ain</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-2 mx-2">
+        <span class="text-color"><i class="fa-solid fa-screwdriver-wrench mx-2"></i>Parts Type</span>
+        <div class="wide mt-2 mb-3 mb-md-0" id="parts-type">
+        <select class="form-select form-select-md rounded-0">
+                    <option value="">Bumper</option>
+                    <option value="">A/C Condensers</option>
+                    <option value="">Piston</option>
+                    <option value="">Air Filter</option>
+                    <option value="">Steering Wheel</option>
+                    <option value="">Radiator Support</option>
+        </select>
+        </div>
+    </div>
+
+
+    <div class="col-12 col-md-2 mx-2">
+        <span class="text-color "><i class="fa-solid fa-money-check-dollar mx-2"></i>Price</span>
+        <div class="wide mt-2 mb-3 mb-md-0" id="parts-price">
+            <select class="form-select form-select-md rounded-0">
+                <option selected value="">
+                    < 1000 AED</option>
+                <option value="">
+                    < 2000 AED</option>
+                <option value="">
+                    < 3000 AED</option>
+                <option value="">
+                    < 40000 AED</option>
+                <option value="">
+                    < 50000 AED</option>
+
+            </select>
+        </div>
+    </div>
+
+
+<div class="col-12 col-md-2 mx-2">
+    <span class="text-color "><i class="fa-solid fa-wheelchair mx-2"></i>Condtions</span>
+    <div class="wide mt-2 mb-3 mb-md-0" id="parts-condtion">
+        <select class="form-select form-select-md rounded-0">
+            <option value="">Average</option>
+            <option value="">Good</option>
+            <option value="">Exclent</option>
+            <option value="">Poor</option>
+            <option value="">Good</option>
+
+        </select>
+    </div>
+</div>
+
+<div class="col-12 col-md-2 mx-2">
+    <span class="text-color"> <i class="fa-solid fa-users mx-2"></i>Seller Type</span>
+    <div class="wide mt-2 mb-3 mb-md-0" id="parts-seller">
+        <select class="form-select form-select-md rounded-0">
+            <option  value="">Owner</option>
+            <option value="">Delear</option>
+            <option selected value="none">Don't Apply</option>
+        </select>
+    </div>
+</div>
+    <div class="col-12 col-md-1 text-md-center pb-3 pb-md-0 mt-4">
+        <a href="car-search-result.html" type="submit" class="btn mt-1 bg-color bg-hover text-light btn-md advance-searc p-2 w-100"><i
+                class="fa-solid fa-magnifying-glass m-1"></i>Search</a>
+    </div>
+
+</div>
+</form>
+
+
+</div>
+<!--End Tab Content -->
+</div>
+
+    </div>
+
+</section>
+<!--===== End Hero Section =====-->
+
+<!--===== Start Car Brand Section =====-->
+<section>
+    <div class="container py-5 overflow-hidde">
+        <div class="row">
+            <h1 class="text-color fs-4 text-center fw-bold py-4">Most Propuller Brands
+            </h1>
+            <div class="col-auto p-0">
+                <div dir="ltr" class="brand-slider">
+                    <!--Slider Item Start-->
+                  <div class="position-relative cursor-pointer">
+                    <a href="" class="link-dark m-0 p-0">
+                    <img class="brand-img" src="assets/img/brand/make_64818876ea09e_mercedes-benz-logo.png">
+                <h6 class="brand-title start-50 translate-middle">Mercedes-Benz <b>(23)</b></h6>
+                </a>
+                </div>
+
+                <div class="cursor-pointer position-relative ">
+                    <a href="" class="link-dark m-0 p-0">
+                    <img class="brand-img"
+                        src="assets/img/brand/make_6493f1164f12a_toyota-logo.png">
+                    <h6 class="brand-title start-50 translate-middle">Toyota <b>(14)</b></h6>
+                        </a>
+                </div>
+
+                <div class="cursor-pointer position-relative ">
+                    <a href="" class="link-dark m-0 p-0">
+                    <img class="brand-img"
+                        src="assets/img/brand/make_64818542d5049_hyundai-logo.png">
+                    <h6 class="brand-title start-50 translate-middle">Hyundai <b>(24)</b></h6>
+                    </a>
+                </div>
+
+            <div class="cursor-pointer position-relative ">
+                    <a href="" class="link-dark m-0 p-0">
+                <img class="brand-img"
+                    src="assets/img/brand/make_648186f78a84a_land-rover-logo.png">
+                <h6 class="brand-title start-50 translate-middle">Land Rover <b>(20)</b></h6>
+                </a>
+            </div>
+                   
+<div class="cursor-pointer position-relative ">
+        <a href="" class="link-dark m-0 p-0">
+    <img class="brand-img"
+        src="assets/img/brand/make_64818b686420c_suzuki-logo.png">
+    <h6 class="brand-title start-50 translate-middle">Suzuki <b>(18)</b></h6>
+    </a>
+</div>
+
+<div class="cursor-pointer position-relative ">
+                    <a href="" class="link-dark m-0 p-0">
+    <img class="brand-img"
+        src="assets/img/brand/make_64818b686420c_suzuki-logo.png">
+    <h6 class="brand-title start-50 translate-middle">Suzuki <b>(14)</b></h6>
+    </a>
+</div>
+                <!--Slider Item End-->
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</section>
+<!--===== End Car Brand Section =====-->
+
+<!--===== Start Propuller Car Section =====-->
+<section>
+    <div class="container py-5">
+        <div class="row">
+            <div dir="ltr" class="col-auto">
+
+              <div class="row pb-3">
+                <div class="col-8">
+                    <h2 class="text-color d-inline fw-bold align-middle fs-3">Propuller in Car</h2>
+                </div>
+                <div class="col-4">
+                    <div class="text-end">
+                        <button class="prev-btn btn bg-color bg-hover px-md-4 px-3 text-light mx-2"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="next-btn btn bg-color bg-hover px-md-4 px-3 text-light mx-2"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+              </div>
+<!--==Car Slider Item==-->
+<div class="propuller-cars">
+
+         <div class="position-relative">
+            <div class="card m-2 p-2 card-content">
+                <abbr title="Add to Favorite">
+                <i class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+                <a href="#" class="skeleton"><img class="card-img" src="assets/img/featured-car.webp" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h2 class="card-title fs-6 skeleton col-11"><a href="#" class="text-color3">Cadillac CT4</a></h2>
+                    <h6 class="text-danger skeleton col-9 fs-6">AED 34,344</h6>
+                    <p class="card-text skeleton">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                </div>
+            </div>
+         </div>
+
+<div class="position-relative">
+    <div class="card m-2 p-2 card-content ">
+        <abbr title="Add to Favorite">
+            <i class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger  hover"></i></abbr>
+        <a href="#" class="skeleton"><img class="card-img" src="assets/img/featured-car.webp" class="card-img-top" alt=""></a>
+        <div class="card-body">
+            <h2 class="card-title fs-6 skeleton col-11"><a href="#" class="text-color3">Cadillac CT4</a></h2>
+            <h6 class="text-danger fs-6 skeleton col-9">AED 34,344</h6>
+            <p class="card-text skeleton">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+        </div>
+    </div>
+</div>
+
+<div class="position-relative">
+    <div class="card m-2 p-2 card-content ">
+        <abbr title="Add to Favorite">
+            <i class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+        <a href="#" class="skeleton"><img class="card-img" src="assets/img/featured-car.webp" class="card-img-top" alt=""></a>
+        <div class="card-body">
+            <h2 class="card-title fs-6 skeleton col-11"><a href="#" class="text-color3">Cadillac CT4</a></h2>
+            <h6 class="text-danger fs-6 skeleton col-9">AED 34,344</h6>
+            <p class="card-text skeleton">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+        </div>
+    </div>
+</div>
+
+<div class="position-relative">
+    <div class="card m-2 p-2 card-content ">
+        <abbr title="Add to Favorite">
+            <i class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+        <a href="#" class="skeleton"><img class="card-img" src="assets/img/featured-car.webp" class="card-img-top" alt=""></a>
+        <div class="card-body">
+            <h2 class="card-title fs-6  skeleton col-11"><a href="#" class="text-color3">Cadillac CT4</a></h2>
+            <h6 class="text-danger fs-6  skeleton col-9">AED 34,344</h6>
+            <p class="card-text  skeleton">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="position-relative">
+    <div class="card m-2 p-2 card-content ">
+        <abbr title="Add to Favorite">
+            <i class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+        <a href="#" class="skeleton"><img class="card-img" src="assets/img/featured-car.webp" class="card-img-top" alt=""></a>
+        <div class="card-body">
+            <h2 class="card-title fs-6 skeleton col-11"><a href="#" class="text-color3">Cadillac CT4</a></h2>
+            <h6 class="text-danger fs-6 skeleton col-9">AED 34,344</h6>
+            <p class="card-text skeleton">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+        </div>
+    </div>
+</div>
+
+            </div>
+<!--==End Car Slider Item==-->
+
+        </div>
+
+    </div>
+</div>
+</section>
+<!--===== End Propuller Car Section =====-->
+
+<!--=====Car Auto Parts Category Section =====-->
+<section>
+    <div class="container my-3">
+<h3 class="text-color pb-2 fw-bold fs-3">Top <span class="border-bottom border-3 border-warning ">Auto Parts</span></h3>
+    <!--Auto Parts Item Loop-->
+        <div class="row row-cols-2 row-cols-md-6 g-3">
+      
+            <div class="col">
+                <div class="card car-parts text-center">
+                   <a href="#">
+                    <img src="assets/img/parts/batteries-2-d.avif" class="card-img w-75 p-3 m-auto" alt="">
+                    <div class="card-body p-0 px-1 pb-2">
+                        <h4 class="card-subtitle fs-5 text-dark">BATTERIES</h4>
+                    </div>
+                   </a>
+                </div>
+            </div>
+
+                <div class="col">
+                    <div class="card car-parts text-center">
+                  <a href="">
+                        <img src="assets/img/parts/Pads-v2-d.avif" class="card-img p-3 w-75 m-auto" alt="">
+                        <div class="card-body p-0 px-1 pb-2">
+                            <h4 class="card-subtitle fs-5 text-dark">BRECK PADS</h4>
+                        </div>
+                  </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card car-parts text-center ">
+                       <a href="">
+                        <img src="assets/img/parts/engine-oil-d.avif" class="card-img p-3 w-75 m-auto" alt="">
+                        <div class="card-body p-0 px-1 pb-2">
+                            <h4 class="card-subtitle fs-5 text-dark">ENGINE OIL</h4>
+                        </div>
+                       </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card car-parts text-center ">
+                       <a href="">
+                        <img src="assets/img/parts/breck-rotors-d.avif" class="card-img p-3 w-75 m-auto" alt="">
+                        <div class="card-body p-0 px-1 pb-2">
+                            <h4 class="card-subtitle fs-5 text-dark">BRECK ROTORS</h4>
+                        </div>
+                       </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card car-parts text-center">
+                        <a href="">
+                            <img src="assets/img/parts/sunpension-shocks-d.avif" class="card-img p-3 w-75 m-auto" alt="">
+                            <div class="card-body p-0 px-1 pb-2">
+                                <h4 class="card-subtitle fs-5 text-dark">SUSPENSION</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card car-parts text-center">
+                       <a href="">
+                        <img src="assets/img/parts/washwax-2-d.avif" class="card-img p-3 w-75 m-auto" alt="">
+                        <div class="card-body p-0 px-1 pb-2">
+                            <h4 class="card-subtitle fs-5 text-dark">WASH & WAX</h4>
+                        </div>
+                       </a>
+                    </div>
+                </div>
+
+                
+        </div>
+    <!--End Auto Parts Item Loop-->
+       
+    </div>
+</section>
+<!--=====End Car Auto Parts Category Section =====-->
+
+    <!--===== Start Car Parts Section =====-->
+    <section>
+        <div class="container py-2 pt-5">
+            <h2 class="text-color fw-bold fs-3">Cars Parts in
+                UAE
+            </h2>
+            <p class="text-muted card-subtitle">Drive in style! Make your first car rental a great experience with luxury
+                rental vehicles from top brands such as Rolls Royce, BMW, Land Rover, among others.</p>
+                
+            <div  dir="ltr" class="row p-0 m-0 mb-3">
+                <div class="col-md-6 p-0 m-0">
+                    <!--Tab Item Panel-->
+                    <ul  class="nav nav-pills mb-3 tabess" role="tablist">
+                        <li class="nav-item px-3" role="presentation">
+                            <button class="nav-link px-2 active" data-bs-toggle="pill" data-bs-target="#engine-parts"
+                                type="button" role="tab" aria-selected="true">Engine Parts</button>
+                        </li>
+                        <li class="nav-item px-3" role="presentation">
+                            <button class="nav-link px-2" data-bs-toggle="pill" data-bs-target="#exterior-parts"
+                                type="button" role="tab" aria-selected="false">Exterior Parts</button>
+                        </li>
+                        <li class="nav-item px-3" role="presentation">
+                            <button class="nav-link px-2" data-bs-toggle="pill" data-bs-target="#interior-parts" type="button"
+                                role="tab" aria-selected="false">Interior Parts</button>
+                        </li>
+                        <li class="nav-item px-3" role="presentation">
+                            <button class="nav-link px-2" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" 
+                                aria-selected="false">Lighting</button>
+                        </li>
+                        <li class="nav-item px-3" role="presentation">
+                            <button class="nav-link px-2" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab"
+                                aria-selected="false">Wheels/Tires</button>
+                        </li> 
+                        
+                        <li class="nav-item px-3" role="presentation">
+                            <button class="nav-link px-2" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" 
+                                aria-selected="false">Suspension</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-5 d-flex align-items-center justify-content-end  ">
+            <a href="car-parts-result.html"
+        class="btn  text-light p-2 mx-md-3 mx-0 fw-bold bg-color bg-hover shadow  d-md-inline d-none">View All<i
+        class="fa-solid fa-arrow-right-long mx-2"></i></a>
+                </div>
+            </div>
+
+            <div class="row tab-content" id="pills-tabContent">
+                <!--=======Car Tab For Engine Parts=======-->
+                <div class="tab-pane  fade show active" id="engine-parts" role="tabpanel">
+                    <div class="row d-flex gy-4 ">
+
+                        <div class="col position-relative col-md-3 col-12 featured-car">
+                            <div class="card p-2 shadow-sm">
+                                <div dir="ltr">
+                           
+                                    <abbr title="Add to Favorite"><i
+                                            class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger z-index-1 hover"></i></abbr>
+                                </div>
+                                
+                                <a href="#" class="position-relative skeleton">
+                                    <span class="position-absolute bottom-0 m-2 text-light fw-thik"><i
+                                            class="fa-solid fa-location-dot mx-1"></i>Abu Dhabi</span>
+                                    <img class="card-img" src="assets/img/parts/parts.jpeg"
+                                        class="card-img-top" alt=""></a>
+                                <div class="card-body">
+                                    <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">
+                                        5 Sets of Jeep Wrangler 2023...</a></h2>
+                                    <h6 class="text-danger fs-6 skeleton col-8">AED 258,000</h6>
+                                    <p class="card-text fw-medium fs-normal  text-dark skeleton">Car/4x4 Parts <i class="fa-solid fa-circle mx-2" style="font-size: 6px;"></i> Wheels/Tires </p>
+                                </div>
+                            </div>
+                        </div>
+
+                            <div class="col position-relative col-md-3 col-12 featured-car">
+                                <div class="card p-2 shadow-sm">
+                                    <div dir="ltr">
+                            
+                                        <abbr title="Add to Favorite"><i
+                                                class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger  z-index-1 hover"></i></abbr>
+                                    </div>
+                                    <a href="#" class="position-relative skeleton">
+                                        <span class="position-absolute bottom-0 m-2 text-light fw-thik"><i class="fa-solid fa-location-dot mx-1"></i>
+                                            Dhabi</span>
+                                        <img class="card-img" src="assets/img/parts/engin.jpeg" class="card-img-top" alt=""></a>
+                                    <div class="card-body">
+                                        <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">
+                                                Hyundai Tucson 1.6L G4FD Petrol...</a></h2>
+                                        <h6 class="text-danger fs-6 skeleton col-8">AED 218,000</h6>
+                                        <p class="card-text fw-medium fs-normal  text-dark skeleton">Car/4x4 Parts <i class="fa-solid fa-circle mx-2"
+                                                style="font-size: 6px;"></i>Engine Parts</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col position-relative col-md-3 col-12 featured-car">
+                                <div class="card p-2 shadow-sm">
+                                    <div dir="ltr">
+                            
+                                        <abbr title="Add to Favorite"><i
+                                                class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger z-index-1 hover"></i></abbr>
+                                    </div>
+                            
+                                    <a href="#" class="position-relative skeleton">
+                                        <span class="position-absolute bottom-0 m-2 text-light fw-thik"><i
+                                                class="fa-solid fa-location-dot mx-1"></i>Abu Dhabi</span>
+                                        <img class="card-img" src="assets/img/parts/parts.jpeg" class="card-img-top" alt=""></a>
+                                    <div class="card-body">
+                                        <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">
+                                                5 Sets of Jeep Wrangler 2023...</a></h2>
+                                        <h6 class="text-danger fs-6 skeleton col-8">AED 258,000</h6>
+                                        <p class="card-text fw-medium fs-normal  text-dark skeleton">Car/4x4 Parts <i class="fa-solid fa-circle mx-2"
+                                                style="font-size: 6px;"></i> Wheels/Tires </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col position-relative col-md-3 col-12 featured-car">
+                                <div class="card p-2 shadow-sm">
+                                    <div dir="ltr">
+                            
+                                        <abbr title="Add to Favorite"><i
+                                                class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger  z-index-1 hover"></i></abbr>
+                                    </div>
+                                    <a href="#" class="position-relative skeleton">
+                                        <span class="position-absolute bottom-0 m-2 text-light fw-thik"><i
+                                                class="fa-solid fa-location-dot mx-1"></i>
+                                            Dhabi</span>
+                                        <img class="card-img" src="assets/img/parts/engin.jpeg" class="card-img-top" alt=""></a>
+                                    <div class="card-body">
+                                        <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">
+                                                Hyundai Tucson 1.6L G4FD Petrol...</a></h2>
+                                        <h6 class="text-danger fs-6 skeleton col-8">AED 218,000</h6>
+                                        <p class="card-text fw-medium fs-normal  text-dark skeleton">Car/4x4 Parts <i class="fa-solid fa-circle mx-2"
+                                                style="font-size: 6px;"></i>Engine Parts</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                    </div>
+                </div>
+                <!--=======End Car Tab For Engine Parts=======-->
+
+                <!--=====Car Tab For Exterior Parts=========-->
+                <div class="tab-pane fade" id="exterior-parts" role="tabpanel">
+                    <div class="row gy-4">
+  
+            <div class="col position-relative col-md-3 col-12 featured-car">
+                <div class="card p-2 shadow-sm">
+                    <div dir="ltr">
+            
+                        <abbr title="Add to Favorite"><i
+                                class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger  z-index-1 hover"></i></abbr>
+                    </div>
+                    <a href="#" class="position-relative skeleton">
+                        <span class="position-absolute bottom-0 m-2 text-light fw-thik"><i
+                                class="fa-solid fa-location-dot mx-1"></i>
+                            Dhabi</span>
+                        <img class="card-img" src="assets/img/parts/engin.jpeg" class="card-img-top" alt=""></a>
+                    <div class="card-body">
+                        <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">
+                                Hyundai Tucson 1.6L G4FD Petrol...</a></h2>
+                        <h6 class="text-danger fs-6 skeleton col-8">AED 218,000</h6>
+                        <p class="card-text fw-medium fs-normal  text-dark skeleton">Car/4x4 Parts <i class="fa-solid fa-circle mx-2"
+                                style="font-size: 6px;"></i>Engine Parts</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col position-relative col-md-3 col-12 featured-car">
+                <div class="card p-2 shadow-sm">
+                    <div dir="ltr">
+            
+                        <abbr title="Add to Favorite"><i
+                                class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger z-index-1 hover"></i></abbr>
+                    </div>
+            
+                    <a href="#" class="position-relative skeleton">
+                        <span class="position-absolute bottom-0 m-2 text-light fw-thik"><i
+                                class="fa-solid fa-location-dot mx-1"></i>Abu Dhabi</span>
+                        <img class="card-img" src="assets/img/parts/parts.jpeg" class="card-img-top" alt=""></a>
+                    <div class="card-body">
+                        <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">
+                                5 Sets of Jeep Wrangler 2023...</a></h2>
+                        <h6 class="text-danger fs-6 skeleton col-8">AED 258,000</h6>
+                        <p class="card-text fw-medium fs-normal  text-dark skeleton">Car/4x4 Parts <i class="fa-solid fa-circle mx-2"
+                                style="font-size: 6px;"></i> Wheels/Tires </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col position-relative col-md-3 col-12 featured-car">
+                <div class="card p-2 shadow-sm">
+                    <div dir="ltr">
+            
+                        <abbr title="Add to Favorite"><i
+                                class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger  z-index-1 hover"></i></abbr>
+                    </div>
+                    <a href="#" class="position-relative skeleton">
+                        <span class="position-absolute bottom-0 m-2 text-light fw-thik"><i
+                                class="fa-solid fa-location-dot mx-1"></i>
+                            Dhabi</span>
+                        <img class="card-img" src="assets/img/parts/engin.jpeg" class="card-img-top" alt=""></a>
+                    <div class="card-body">
+                        <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">
+                                Hyundai Tucson 1.6L G4FD Petrol...</a></h2>
+                        <h6 class="text-danger fs-6 skeleton col-8">AED 218,000</h6>
+                        <p class="card-text fw-medium fs-normal  text-dark skeleton">Car/4x4 Parts <i class="fa-solid fa-circle mx-2"
+                                style="font-size: 6px;"></i>Engine Parts</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col position-relative col-md-3 col-12 featured-car">
+                <div class="card p-2 shadow-sm">
+                    <div dir="ltr">
+            
+                        <abbr title="Add to Favorite"><i
+                                class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger z-index-1 hover"></i></abbr>
+                    </div>
+            
+                    <a href="#" class="position-relative skeleton">
+                        <span class="position-absolute bottom-0 m-2 text-light fw-thik"><i
+                                class="fa-solid fa-location-dot mx-1"></i>Abu Dhabi</span>
+                        <img class="card-img" src="assets/img/parts/parts.jpeg" class="card-img-top" alt=""></a>
+                    <div class="card-body">
+                        <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">
+                                5 Sets of Jeep Wrangler 2023...</a></h2>
+                        <h6 class="text-danger fs-6 skeleton col-8">AED 258,000</h6>
+                        <p class="card-text fw-medium fs-normal  text-dark skeleton">Car/4x4 Parts <i class="fa-solid fa-circle mx-2"
+                                style="font-size: 6px;"></i> Wheels/Tires </p>
+                    </div>
+                </div>
+            </div>
+
+                    </div>
+                </div>
+                <!--=====End Car Tab For Exterior Parts=========-->
+<!-----=============----->
+<div class="tab-pane fade" id="interior-parts" role="tabpanel">
+    <div class="row gy-4">
+
+Hello
+    </div>
+    </div>
+<!---=================--->
+            </div>
+             <div dir="ltr" class="col mt-5 text-end ">
+                        <a href="car-parts-result.html"
+                            class="btn text-light p-2 mx-md-3 mx-0 fw-bold bg-color bg-hover shadow d-md-none d-inline ">View All<i
+                                class="fa-solid fa-arrow-right-long mx-2"></i></a>
+                    </div>
+        </div>
+    </section>
+    <!--===== End Car Parts Section =====-->
+
+    <!--======Start Call To Action======-->
+    <section class="p-md-0 p-3">
+        <div class="container rounded-4 py-2" style="background:#f6f0e9;">
+            <div class="row">
+                <div class="col-md-8 p-4">
+                    <h2 class="fs-4">Sell your car for the best price</h2>
+                    <p class="text-dark-50">Post an ad and receive offers from thousands of buyers</p>
+                    <a href="add-car.html" class="btn bg-color shadow bg-hover text-light fw-bold">Sell my car<i
+                            class="fa-solid fa-arrow-right-long mx-1"></i></a>
+                </div>
+                <div class="col-md-4 text-center"> <img src="assets/img/sell.webp" alt="" class="img-fluid "> </div>
+            </div>
+        </div>
+    </section>
+    <!--======End Call To Action======-->
+
+<!--===== Start Featured Car Section =====-->
+<section>
+    <div class="container py-2 pt-5 mt-2">
+     <div class="row">
+
+        <h3 class="text-color fw-bold mobile-title fs-3">Featured Cars in Dubai</h3>
+
+     <div id="feature-tab">
+            <ul class="nav nav-pills mb-3 tabess border-bottom border-danger border-2" role="tablist">
+                <li class="nav-item pe-5" role="presentation">
+                    <button class="nav-link px-2 active fw-medium" data-bs-toggle="pill" data-bs-target="#bmw" type="button"
+                        role="tab" aria-selected="true">BMW</button>
+                </li>
+                <li class="nav-item pe-5" role="presentation">
+                    <button class="nav-link px-2 fw-medium" data-bs-toggle="pill" data-bs-target="#toyota" type="button" role="tab"
+                        aria-selected="false">Toyota</button>
+                </li>
+                <li class="nav-item pe-5 " role="presentation">
+                    <button class="nav-link px-2 fw-medium" data-bs-toggle="pill" data-bs-target="#" type="button" role="tab"
+                        aria-selected="false">Suzike</button>
+                </li>
+                
+            
+            </ul>
+     </div>
+
+
+
+<!--====Start Tab Content=====-->
+<div class="tab-content pt-3" id="pills-tabContent">
+<!--Tab Item 1-->
+    <div class="tab-pane fade show active" id="bmw" role="tabpanel"
+        tabindex="0">
+    
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 gy-5 p-2 p-md-0">
+            
+                <div class="col position-relative featured-car">
+                    <div class="card p-2 shadow-sm">
+                        <div dir="ltr">
+                            <span class="position-absolute top-0 mt-3 featured-badge gradient m-2 text-light fw-bold"><i
+                                    class="fa-regular fa-star fw-bold p-1"></i>Featured</span>
+                            <abbr title="Add to Favorite"><i
+                                    class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+                        </div>
+                        <a href="#" class="skeleton"><img class="card-img" src="assets/img/brand/6525065aab6540f1a97fa4790d03a2f4-.avif"
+                                class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">Nissan • Patrol • LE PL2</a></h2>
+                            <h6 class="text-danger fs-6 skeleton col-9">AED 258,000</h6>
+                            <p class="card-text skeleton">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col position-relative featured-car">
+                    <div class="card p-2 shadow-sm">
+                        <div dir="ltr">
+                            <span class="position-absolute top-0 mt-3 featured-badge gradient m-2 text-light fw-bold"><i
+                                    class="fa-regular fa-star fw-bold p-1"></i>Featured</span>
+                            <abbr title="Add to Favorite"><i
+                                    class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger  hover"></i></abbr>
+                        </div>
+                        <a href="#" class="skeleton"><img class="card-img" src="assets/img/cars/fea-car.jpeg"
+                                class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">Nissan • Patrol • LE PL2</a></h2>
+                            <h6 class="text-danger fs-6 skeleton col-9">AED 258,000</h6>
+                            <p class="card-text skeleton">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col position-relative featured-car">
+                    <div class="card p-2 shadow-sm">
+                        <div dir="ltr">
+                            <span class="position-absolute top-0 mt-3 featured-badge gradient m-2 text-light fw-bold"><i
+                                    class="fa-regular fa-star fw-bold p-1"></i>Featured</span>
+                            <abbr title="Add to Favorite"><i
+                                    class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger  hover"></i></abbr>
+                        </div>
+                        <a href="#" class="skeleton"><img class="card-img" src="assets/img/brand/6525065aab6540f1a97fa4790d03a2f4-.avif"
+                                class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">Nissan • Patrol • LE PL2</a></h2>
+                            <h6 class="text-danger fs-6 skeleton col-9">AED 258,000</h6>
+                            <p class="card-text skeleton">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                        </div>
+                    </div>
+                </div>
+            
+            
+                <div class="col position-relative featured-car">
+                    <div class="card p-2 shadow-sm">
+                        <div dir="ltr">
+                            <span class="position-absolute top-0 mt-3 featured-badge gradient m-2 text-light fw-bold"><i
+                                    class="fa-regular fa-star fw-bold p-1"></i>Featured</span>
+                            <abbr title="Add to Favorite"><i
+                                    class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger  hover"></i></abbr>
+                        </div>
+                        <a href="#" class="skeleton"><img class="card-img" src="assets/img/cars/fea-car.jpeg"
+                                class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">Nissan • Patrol • LE PL2</a></h2>
+                            <h6 class="text-danger fs-6 skeleton col-9">AED 258,000</h6>
+                            <p class="card-text skeleton">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col position-relative featured-car">
+                    <div class="card p-2 shadow-sm">
+                        <div dir="ltr">
+                            <span class="position-absolute top-0 mt-3 featured-badge gradient m-2 text-light fw-bold"><i
+                                    class="fa-regular fa-star fw-bold p-1"></i>Featured</span>
+                            <abbr title="Add to Favorite"><i
+                                    class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger  hover"></i></abbr>
+                        </div>
+                        <a href="#" class="skeleton"><img class="card-img" src="assets/img/brand/6525065aab6540f1a97fa4790d03a2f4-.avif"
+                                class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">Nissan • Patrol • LE PL2</a></h2>
+                            <h6 class="text-danger fs-6 skeleton col-9">AED 258,000</h6>
+                            <p class="card-text skeleton">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col position-relative featured-car">
+                    <div class="card p-2 shadow-sm">
+                        <div dir="ltr">
+                            <span class="position-absolute top-0 mt-3 featured-badge gradient m-2 text-light fw-bold"><i
+                                    class="fa-regular fa-star fw-bold p-1"></i>Featured</span>
+                            <abbr title="Add to Favorite"><i
+                                    class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger  hover"></i></abbr>
+                        </div>
+                        <a href="#" class="skeleton"><img class="card-img" src="assets/img/cars/fea-car.jpeg"
+                                class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">Nissan • Patrol • LE PL2</a></h2>
+                            <h6 class="text-danger fs-6 skeleton col-9">AED 258,000</h6>
+                            <p class="card-text skeleton">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col position-relative featured-car">
+                    <div class="card p-2 shadow-sm">
+                        <div dir="ltr">
+                            <span class="position-absolute top-0 mt-3 featured-badge gradient m-2 text-light fw-bold"><i
+                                    class="fa-regular fa-star fw-bold p-1"></i>Featured</span>
+                            <abbr title="Add to Favorite"><i
+                                    class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger  hover"></i></abbr>
+                        </div>
+                        <a href="#" class="skeleton"><img class="card-img" src="assets/img/brand/6525065aab6540f1a97fa4790d03a2f4-.avif"
+                                class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">Nissan • Patrol • LE PL2</a></h2>
+                            <h6 class="text-danger fs-6 skeleton col-9">AED 258,000</h6>
+                            <p class="card-text skeleton">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col bg-light pt-1" style="border-radius: 28px;">
+                    <div dir="ltr" class="mt-0 mt-md-5 p-3 text-center view-more">
+                        <img src="assets/img/logo.png" width="160px">
+                        <button class="btn rounded-pill text-color p-3 fw-bold bg-white btn-large shadow">View More Car<i
+                                class="fa-solid fa-arrow-right-long ms-2"></i></button>
+                    </div>
+            
+                </div>
+            
+            </div>
+    
+    </div>
+
+<!--Tab Item 2-->
+    <div class="tab-pane fade" id="toyota" role="tabpanel" tabindex="0">
+    
+    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 gy-5 p-2 p-md-0">
+    
+        <div class="col position-relative featured-car">
+            <div class="card p-2 shadow-sm">
+                <div dir="ltr">
+                    <span class="position-absolute top-0 mt-3 featured-badge gradient m-2 text-light fw-bold"><i
+                            class="fa-regular fa-star fw-bold p-1"></i>Featured</span>
+                    <abbr title="Add to Favorite"><i
+                            class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+                </div>
+                <a href="#" class="skeleton"><img class="card-img"
+                        src="assets/img/brand/6525065aab6540f1a97fa4790d03a2f4-.avif" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">Nissan • Patrol • LE PL2</a></h2>
+                    <h6 class="text-danger fs-6 skeleton col-9">AED 258,000</h6>
+                    <p class="card-text skeleton">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col position-relative featured-car">
+            <div class="card p-2 shadow-sm">
+                <div dir="ltr">
+                    <span class="position-absolute top-0 mt-3 featured-badge gradient m-2 text-light fw-bold"><i
+                            class="fa-regular fa-star fw-bold p-1"></i>Featured</span>
+                    <abbr title="Add to Favorite"><i
+                            class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger  hover"></i></abbr>
+                </div>
+                <a href="#" class="skeleton"><img class="card-img" src="assets/img/cars/fea-car.jpeg" class="card-img-top"
+                        alt=""></a>
+                <div class="card-body">
+                    <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">Nissan • Patrol • LE PL2</a></h2>
+                    <h6 class="text-danger fs-6 skeleton col-9">AED 258,000</h6>
+                    <p class="card-text skeleton">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col position-relative featured-car">
+            <div class="card p-2 shadow-sm">
+                <div dir="ltr">
+                    <span class="position-absolute top-0 mt-3 featured-badge gradient m-2 text-light fw-bold"><i
+                            class="fa-regular fa-star fw-bold p-1"></i>Featured</span>
+                    <abbr title="Add to Favorite"><i
+                            class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger  hover"></i></abbr>
+                </div>
+                <a href="#" class="skeleton"><img class="card-img"
+                        src="assets/img/brand/6525065aab6540f1a97fa4790d03a2f4-.avif" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">Nissan • Patrol • LE PL2</a></h2>
+                    <h6 class="text-danger fs-6 skeleton col-9">AED 258,000</h6>
+                    <p class="card-text skeleton">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="col position-relative featured-car">
+            <div class="card p-2 shadow-sm">
+                <div dir="ltr">
+                    <span class="position-absolute top-0 mt-3 featured-badge gradient m-2 text-light fw-bold"><i
+                            class="fa-regular fa-star fw-bold p-1"></i>Featured</span>
+                    <abbr title="Add to Favorite"><i
+                            class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger  hover"></i></abbr>
+                </div>
+                <a href="#" class="skeleton"><img class="card-img" src="assets/img/cars/fea-car.jpeg" class="card-img-top"
+                        alt=""></a>
+                <div class="card-body">
+                    <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">Nissan • Patrol • LE PL2</a></h2>
+                    <h6 class="text-danger fs-6 skeleton col-9">AED 258,000</h6>
+                    <p class="card-text skeleton">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col position-relative featured-car">
+            <div class="card p-2 shadow-sm">
+                <div dir="ltr">
+                    <span class="position-absolute top-0 mt-3 featured-badge gradient m-2 text-light fw-bold"><i
+                            class="fa-regular fa-star fw-bold p-1"></i>Featured</span>
+                    <abbr title="Add to Favorite"><i
+                            class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger  hover"></i></abbr>
+                </div>
+                <a href="#" class="skeleton"><img class="card-img"
+                        src="assets/img/brand/6525065aab6540f1a97fa4790d03a2f4-.avif" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">Nissan • Patrol • LE PL2</a></h2>
+                    <h6 class="text-danger fs-6 skeleton col-9">AED 258,000</h6>
+                    <p class="card-text skeleton">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col position-relative featured-car">
+            <div class="card p-2 shadow-sm">
+                <div dir="ltr">
+                    <span class="position-absolute top-0 mt-3 featured-badge gradient m-2 text-light fw-bold"><i
+                            class="fa-regular fa-star fw-bold p-1"></i>Featured</span>
+                    <abbr title="Add to Favorite"><i
+                            class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger  hover"></i></abbr>
+                </div>
+                <a href="#" class="skeleton"><img class="card-img" src="assets/img/cars/fea-car.jpeg" class="card-img-top"
+                        alt=""></a>
+                <div class="card-body">
+                    <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">Nissan • Patrol • LE PL2</a></h2>
+                    <h6 class="text-danger fs-6 skeleton col-9">AED 258,000</h6>
+                    <p class="card-text skeleton">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col position-relative featured-car">
+            <div class="card p-2 shadow-sm">
+                <div dir="ltr">
+                    <span class="position-absolute top-0 mt-3 featured-badge gradient m-2 text-light fw-bold"><i
+                            class="fa-regular fa-star fw-bold p-1"></i>Featured</span>
+                    <abbr title="Add to Favorite"><i
+                            class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger  hover"></i></abbr>
+                </div>
+                <a href="#" class="skeleton"><img class="card-img"
+                        src="assets/img/brand/6525065aab6540f1a97fa4790d03a2f4-.avif" class="card-img-top" alt=""></a>
+                <div class="card-body">
+                    <h2 class="card-title fs-6 skeleton"><a href="#" class="text-color3">Nissan • Patrol • LE PL2</a></h2>
+                    <h6 class="text-danger fs-6 skeleton col-9">AED 258,000</h6>
+                    <p class="card-text skeleton">2013 <span>|</span> 200,839km <span>|</span> Sprots</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col bg-light pt-1" style="border-radius: 28px;">
+            <div dir="ltr" class="mt-0 mt-md-5 p-3 text-center view-more">
+                <img src="assets/img/logo.png" width="160px">
+                <button class="btn rounded-pill text-color p-3 fw-bold bg-white btn-large shadow">View More Car<i
+                        class="fa-solid fa-arrow-right-long ms-2"></i></button>
+            </div>
+    
+        </div>
+    
+    </div>
+    
+    </div>
+
+</div>
+<!--====End Tab Content=====-->
+</div>
+    </div>
+</section>
+<!--===== End Featured Car Section =====-->
+
+<!--===== Start Benifits Car Section =====-->
+<section class="bg-light ">
+    <div class="container py-5 mt-5">
+                    <h2 class="text-center text-color fw-bold fs-3">Why sell your car with <span class="text-danger">XCars?</span>
+                    </h2>
+                    <p class="pb-4 text-center">Drive in style! Make your first car rental a great experience with luxury rental vehicles from top brands such as
+                        Rolls
+                        Royce, BMW, Land Rover, among others.
+                    </p>
+        <div class="row g-4 g-md-5">
+            <div class="col-lg-3 col-md-6 px-md-3 px-4">
+<div class="card text-center shadow border-0">
+    <img src="assets/img/brand/experience.png" class="card-img-top pt-3 w-25 m-auto">
+    <div class="card-body">
+        <h6 class="card-subtitle mb-2">Smoothest experience</h6>
+        <p class="card-text text-muted">Sold with absolute ease, fast and secure. we promise!
+</p>
+    </div>
+</div>
+        </div>
+
+                <div class="col-lg-3 col-md-6 px-md-3 px-4">
+                    <div class="card text-center shadow border-0">
+                        <img src="assets/img/brand/trust.png" class="card-img-top pt-3 w-25 m-auto">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2">Your expert advisors
+</h6>
+                            <p class="card-text text-muted">From valuation to transfer, we're with you at every step.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="col-lg-3 col-md-6 px-md-3 px-4">
+                        <div class="card text-center shadow border-0">
+                            <img src="assets/img/brand/save-money.png" class="card-img-top pt-3 w-25 m-auto">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2">3 year selling experience
+</h6>
+                                <p class="card-text text-muted">Serving thousands of dealers & customers for more than 3 years.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="col-lg-3 col-md-6 px-md-3 px-4">
+                            <div class="card text-center shadow border-0">
+                                <img src="assets/img/brand/no-money.png" class="card-img-top pt-3 w-25 m-auto">
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-2">No additional fee
+</h6>
+                                    <p class="card-text text-muted">Some classifieds take a large additional fee, we don’t.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                   <div class="text-center">
+                        <a href="add-car.html" class="btn btn-dark bg-hover border-0 fw-bold m-auto mt-5 sell-car-btn text-center">Sell your car
+                            now<img src="assets/img/brand/checklist.png" class="mx-2" width="30px"></a>
+                   </div>
+        </div>
+    </div>
+</section>
+<!--===== End Benifits Car Section =====-->
+
+<!--===== Car  Google Review Section =====-->
+<section>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col">
+       
+<script defer async src='https://cdn.trustindex.io/loader.js?257a27329afc710bdb46cc835cb'></script>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--===== End Car  Google Review Section =====-->
+
+
+<!--=======FOOTER SECTION===========-->
+<footer></footer>
+<!--=======END FOOTER SECTION===========-->
+
+<script src="assets/js/nice-select.js" type=""></script>
+<script>
+    
+    //====Search For Car=====//
+    NiceSelect.bind(document.getElementById("select-city"), { searchable: true, placeholder: 'Select City' });
+    NiceSelect.bind(document.getElementById("select-make"), { searchable: true, placeholder: 'Select Make' });
+    NiceSelect.bind(document.getElementById("select-model"), { searchable: true, placeholder: 'Select Model' }); 
+    NiceSelect.bind(document.getElementById("select-transmission"), { searchable: false, placeholder: 'Select Transmission' });
+    //Search For Car Parts//
+    NiceSelect.bind(document.querySelector("#parts-city"), { searchable: false, placeholder: 'Select' });
+    NiceSelect.bind(document.querySelector("#parts-type"), { searchable: true, placeholder: 'Select' });
+    NiceSelect.bind(document.querySelector("#parts-price"), { searchable: false, placeholder: 'Select' });
+    NiceSelect.bind(document.querySelector("#parts-condtion"), { searchable: false, placeholder: 'Select Condtion' });
+    NiceSelect.bind(document.querySelector("#parts-seller"), { searchable: false, placeholder: 'Select Condtion' });
+
+</script>
