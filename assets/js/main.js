@@ -1,13 +1,14 @@
-    const allSkeleton = document.querySelectorAll('.skeleton')
+     const allSkeleton = document.querySelectorAll('.skeleton')
 
 window.addEventListener('load', function () {
   allSkeleton.forEach(item => {
     item.classList.remove('skeleton')
   })
 })  
-   
+  
 
 $(document).ready(function () {
+
 
 //=====Brand Image Slider=====//
   $('.brand-slider').slick({
@@ -249,7 +250,41 @@ $(document).ready(function () {
   });
 
 
+  //User Dashboard Tab
+  new SiTabs({
+    tabClass: 'tab',
+    tabbedClass: 'tabbed',
+    defaultTabClass: 'tabbed_default',
+    activeTabClass: 'tab_active',
+    disabledTabClass: 'tab_disabled'
+  });
 
+
+  $(function () {
+    // SmartWizard initialize
+    $('#smartwizard').smartWizard();
+  });
+
+
+  //Internation Phone Code//
+  let phone_number = document.querySelector("#mobile_number");
+  window.intlTelInput(phone_number, {
+    showSelectedDialCode: true,
+    initialCountry: "ae",
+    //onlyCountries: ["ae", "bh", "kw", "qa", "sa", "bd"],
+    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.16/build/js/utils.js"
+  });
+
+  //Internation Phone Code//
+  let phone_number2 = document.querySelector("#mobile_number2");
+  window.intlTelInput(phone_number2, {
+    showSelectedDialCode: true,
+    initialCountry: "ae",
+    //onlyCountries: ["ae", "bh", "kw", "qa", "sa", "bd"],
+    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.16/build/js/utils.js"
+  });
+
+  
   //=======Search Result Tamplate FIlter========//
   document.querySelector("#filter-show").addEventListener("click", hide_show);
   function hide_show() {
@@ -261,11 +296,12 @@ $(document).ready(function () {
 
   }
 
+  
   //3Dots Funciton//
   $("#read-more").on("click", function () {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("read-more");
+    var dots = document.querySelector("#dots");
+    var moreText = document.querySelector("#more");
+    var btnText = document.querySelector("#read-more");
 
     if (dots.style.display === "none") {
       dots.style.display = "inline";
@@ -280,15 +316,8 @@ $(document).ready(function () {
 
 
 
+  
 
-//User Dashboard Tab
-    new SiTabs({
-      tabClass: 'tab',
-      tabbedClass: 'tabbed',
-      defaultTabClass: 'tabbed_default',
-      activeTabClass: 'tab_active',
-      disabledTabClass: 'tab_disabled'
-    });
 
 //Car Details Slider Counter//
   var $status = $('.slider_counter');
@@ -302,7 +331,7 @@ $(document).ready(function () {
 
 //======Click to Copy Clipboard =====//
   $("#copy-link").on("click", function () {
-    var copyText = document.getElementById("myInput1");
+    var copyText = document.querySelector("#myInput1");
 
     // Select the text field
     copyText.select();
@@ -326,17 +355,9 @@ $(document).ready(function () {
   
 
 
-    
-  /* 
-  //Internation Phone Code//
-  let input1 = document.querySelector("#phone_numb");
-  window.intlTelInput(input1, {
-    showSelectedDialCode: true,
-    initialCountry: "ae",
-    //onlyCountries: ["ae", "bh", "kw", "qa", "sa", "bd"],
-    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.16/build/js/utils.js"
-  });
-  */
+
+
+
  
 });
 
