@@ -1,0 +1,594 @@
+<!--Jqury used for Header & Footer Fatch data-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("header").load("header.html");
+        $("footer").load("footer.html");
+    });
+</script>
+<!--===== Start Header Section =====-->
+<header></header>
+<!--===== End Header Section =====-->
+<!--=============Start User Dashboard=============-->
+<section class=" py-5 my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col d-block d-md-flex">
+                <!--User Left Profile Menu Desigen Starts-->
+                <div class="col-md-3 col-12 nav  flex-column nav-pills" role="tablist" aria-orientation="vertical">
+                    <div class="text-center bg- bg-opacity- bg-light  h-100 rounded-5  py-4">
+                        <!------User Profile Image Area------>
+                        <div class="position-relative"> <img src="assets/img/emiratesnumber/Brilent.png" width="100px"
+                                height="100px" class="rounded-circle" alt="">
+                            <!-- -----User Porfile Picter Upload Modal start-------->
+                            <div class="modal fade" data-bs-backdrop="static" id="photo_edit" tabindex="-1"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header border-0">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body col-12">
+                                            <h3 class="col-12 tect-color fs-5 fw-bold">Change Your Photo</h3>
+                                            <div class="d-flex justify-content-evenly align-items-center py-4 ">
+                                                <div class="col-md-4 col-5"> <img class="rounded-3"
+                                                        src="assets/img/Brilent.png" width="150px"
+                                                        height="150px" alt="image"> </div>
+                                                <!--Profile Upload Image Form-->
+                                                <form class="col-md-4 col-5" action="">
+                                                    <div class="border p-3 rounded-5 bg-info bg-opacity-10  ">
+                                                        <label class="cursor py-4" for="i-Tag"> <i
+                                                                class="bi bi-camera"></i>
+                                                            <input id="i-Tag" type="file" />
+                                                            <h6 id="imageName">Chose Image</h6>
+                                                        </label>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" id="name" data-bs-dismiss="modal"
+                                                class="btn bg-color text-light  bg-hover2 fw-bold  px-5">Update</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Model end --><span style="margin-top: -3px; font-size: 12px; padding: 2px 10px"
+                                class="position-absolute text-light cursor top-100 start-50 translate-middle bg-color rounded-3"
+                                data-bs-toggle="modal" data-bs-target="#photo_edit">
+                                Change Photo
+                                <i class="bi bi-camera"></i>
+                            </span>
+                        </div>
+                        <!-----End User Profile Image Area---->
+                        <div class="my-4">
+                            <h4 class="fs-4 fw-bold">Hi, Anwar</h4> <span class="fs-normal">Welcome back, to your
+                                Dashboard.</span>
+                        </div>
+                        <!------Dashboard Left Menu------>
+                        <ul class="nav nav-pills list-group text-start">
+                            <li class="list-group-item bg-transparent border-0">
+                                <a class="nav-link tab tab_active" href="#my-profile"> <i
+                                        class="bi bi-person-check mx-2 align-text-bottom fs-5"></i>My Profile </a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0">
+                                <a class="nav-link tab" href="#plate"> <i
+                                        class="bi bi-credit-card-2-front mx-2 align-text-bottom fs-5"></i>Plate</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0">
+                                <a class="nav-link tab" href="#plate-canvas"> <i
+                                        class="bi bi-card-image mx-2 align-text-bottom fs-5"></i>Plate Canvas</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0">
+                                <a class="nav-link tab" href="#numbers"> <i
+                                        class="bi bi-sim mx-2 align-text-bottom fs-5"></i>Number</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0">
+                                <a class="nav-link tab" href="#number-canvas"> <i
+                                        class="bi bi-card-image mx-2 align-text-bottom fs-5"></i>Number Canvas</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0">
+                                <a class="nav-link fw-bold tab" href="signup-login.html"> <i
+                                        class="bi bi-box-arrow-left mx-2 align-text-bottom fs-5"></i>Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!------End User Profile Image Area------>
+                </div>
+                <!--End User Left Profile Menu Desigen Starts-->
+                <!--=========Start User Dashboard Tab Panel========--->
+                <div class="col-12 col-md-9 p-md-4 mt-md-0 mt-3 p-0">
+                    <!--User Top Menu Tab-->
+                    <ul class="row nav nav-pills bg-dange g-md-3 g-2 mb-3">
+                        <li class="nav-item col-md-3 col-6 tab-bg">
+                            <a class="card tab py-2 link-dark bg-hover2" href="#features">
+                                <div class="card-body position-relative ">
+                                    <h4 class="card-title fw-bold ">0</h4> <i
+                                        class="bi bi-star-fill text-color3 position-absolute top-50 end-0 translate-middle mx-2 fs-4"></i>
+                                    <p class="card-text fw-bold">Features ad</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item col-md-3 col-6 tab-bg">
+                            <a class="card tab py-2 link-dark bg-hover2" href="#plate-canvas">
+                                <div class="card-body position-relative ">
+                                    <h4 class="card-title fw-bold ">0</h4> <i
+                                        class="bi bi-images text-color3 position-absolute top-50 end-0 translate-middle mx-2 fs-4"></i>
+                                    <p class="card-text fw-bold">Plate Canvas</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item col-md-3 col-6 tab-bg">
+                            <a class="card tab py-2 link-dark bg-hover2" href="#number-canvas">
+                                <div class="card-body position-relative">
+                                    <h4 class="card-title fw-bold">2</h4> <i
+                                        class="bi bi-sim  text-color3 position-absolute top-50 end-0 translate-middle mx-2 fs-4"></i>
+                                    <p class="card-text fw-bold ">Number Canvas</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item col-md-3 col-6 tab-bg">
+                            <a class="card tab py-2 link-dark bg-hover2" href="#viewed-listing">
+                                <div class="card-body position-relative ">
+                                    <h4 class="card-title fw-bold ">3</h4> <i
+                                        class="bi bi-card-checklist text-color3 position-absolute top-50 end-0 translate-middle mx-2 fs-4"></i>
+                                    <p class="card-text fw-bold ">Viewed Listing</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--End User Top Menu Tab-->
+                    <!-- =========Start Tab Content Section-========-->
+                    <div class="tab-content">
+                        <!-- ----------Start User Profile Tab---------->
+                        <div class="tab-pane tabbed tabbed_default" id="my-profile">
+                            <div class="border-top border-danger border-3 box-shadow2 mt-4 p-4 rounded-3">
+                                <!--This is Name Box-->
+                                <div class="border-secondary mb-4 border-bottom bg-secondar position-relative">
+                                    <!-- Modal start -->
+                                    <div class="modal fade" id="name_edit" data-bs-backdrop="static" tabindex="-1"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h6 class="modal-title fw-bold " id="">Update Name</h6>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!--Email Update Form-->
+                                                    <form action="" class="mx-2 text-end">
+                                                        <label for="name"
+                                                            class="w-100 text-start mb-1 fw-bold">Name</label>
+                                                        <input class="w-100 p-2 rounded-3 " id="user-name"
+                                                            value="Anwar Ahmed" placeholder="" class="form-control "
+                                                            type="text">
+                                                        <button type="button" id="name" data-bs-dismiss="modal"
+                                                            class="btn btn-dark mt-3 name">Save Changes</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Model end -->
+                                    <div class="wrapper">
+                                        <p class="fw-bold mb-0">Name</p>
+                                        <h6 class="py-1 update-name" id="name-update">Anwar Ahmed</h6> <a
+                                            class="float-end position-absolute top-50 end-0" href="#"
+                                            data-bs-toggle="modal" data-bs-target="#name_edit">Edit</a>
+                                    </div>
+                                </div>
+                                <!--End this is Name Box-->
+                                <!--This is Email Box-->
+                                <div class="border-secondary mb-4 border-bottom bg-secondar position-relative">
+                                    <!-- Start Modal -->
+                                    <div class="modal fade" id="email_edit" tabindex="-1" data-bs-backdrop="static"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h6 class="modal-title fw-bold" id="">Update Email</h6>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!--Email Update Form-->
+                                                    <form action="" class="mx-2 text-end">
+                                                        <label for="email"
+                                                            class="w-100 text-start mb-1 fw-bold ">Email</label>
+                                                        <input class="w-100 p-2 rounded-3" id="user-email"
+                                                            value="anwar182778@gmail.com" placeholder=""
+                                                            class="form-control" type="email">
+                                                        <button type="button" id="email-update" data-bs-dismiss="modal"
+                                                            class="btn btn-dark mt-3 email">Save changes</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Model end -->
+                                    <div class="wrapper">
+                                        <p class="fw-bold mb-0">Email</p>
+                                        <h6 class="py-1 update-email" id="email-update">anwar182778@gmail.com
+                                        </h6> <a class="float-end position-absolute top-50 end-0" href="#"
+                                            data-bs-toggle="modal" data-bs-target="#email_edit">Edit</a>
+                                    </div>
+                                </div>
+                                <!--This is Email Box End-->
+                                <!--This is Mobile Box-->
+                                <div class="border-secondary mb-4 border-bottom bg-secondar position-relative">
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="number_edit" tabindex="-1" data-bs-backdrop="static"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title fw-bold " id="">Update Number</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!--Mobile Number Update Form-->
+                                                    <form action="" class="mx-2 text-end">
+                                                        <label for="number" class="w-100 text-start mb-1 fw-bold">Mobile
+                                                            No.</label>
+                                                        <input style="width: 81%;" class="p-2 rounded-3"
+                                                            id="mobile_number" value="" class="form-contro " type="tel">
+                                                        <button type="button" id="number" data-bs-dismiss="modal"
+                                                            class="btn btn-dark mt-3 mobile">Save changes</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Model end -->
+                                    <div class="wrapper">
+                                        <p class="fw-bold mb-0">Profile ID</p>
+                                        <h6 class="py-1 update-number" id="number-update">+97 58-8383838</h6> <a
+                                            class="float-end position-absolute top-50 end-0" href="#"
+                                            data-bs-toggle="modal" data-bs-target="#number_edit">Edit</a>
+                                    </div>
+                                </div>
+                                <!--This is Mobile Box End-->
+                                <!--------This is BIO Box Start------>
+                                <div class="border-secondary mb-4 border-bottom bg-secondar position-relative ">
+                                    <!--Start Modal -->
+                                    <div class="modal fade" id="bio_edit" tabindex="-1" data-bs-backdrop="static"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h6 class="modal-title fw-bold " id="">Update Bio</h6>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!--User Update Biodata Form-->
+                                                    <form action="" class="mx-2 text-end">
+                                                        <label for="bio" class="w-100 text-start mb-1 fw-bold">About
+                                                            Yourself</label>
+                                                        <textarea class="w-100 p-2 rounded-3" id="user-bio"
+                                                            value=""> </textarea>
+                                                        <button type="button" id="bio" data-bs-dismiss="modal"
+                                                            class="btn btn-dark mt-3 bio">Save changes</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Model end -->
+                                    <div class="wrapper">
+                                        <p class="fw-bold mb-0">More Details</p>
+                                        <h6 class="py-1 w-75 update-bio" id="date-update">Add Your Bio</h6> <a
+                                            class="float-end position-absolute top-50 end-0" href="#"
+                                            data-bs-toggle="modal" data-bs-target="#bio_edit">Edit</a>
+                                    </div>
+                                </div>
+                                <!-------This is BIO Box End------->
+                                <!--------This is Address Box------>
+                                <div class="border-secondary mb-4 border-bottom bg-secondar position-relative ">
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="address_edit" tabindex="-1" data-bs-backdrop="static"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h6 class="modal-title fw-bold" id="">Update Address</h6>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!--User Address Update Form-->
+                                                    <form action="" class="mx-2 text-end">
+                                                        <labe class="w-100 text-start mb-1 fw-bold" for="billing_city">
+                                                            </label>
+                                                            <input class="w-100 p-2 rounded-3 " id="billing_city"
+                                                                value="" class="form-control " type="text"
+                                                                placeholder="City/State">
+                                                            <label class="w-100 text-start mb-1 fw-bold"
+                                                                for="billing_street"></label>
+                                                            <input class="w-100 p-2 rounded-3 " id="billing_street"
+                                                                value="" class="form-control" type="text"
+                                                                placeholder="Street Address">
+                                                            <button type="button " data-bs-dismiss="modal"
+                                                                class="btn btn-dark mt-3 address">Save changes</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Model end -->
+                                    <div class="wrapper">
+                                        <p class="fw-bold mb-0">Addres</p>
+                                        <h6 class="py-1 ">
+                                            <span class="street-update">Street Address</span> - <span
+                                                class="city-update">City/State</span>
+                                        </h6> <a class="float-end position-absolute top-50 end-0" href="#"
+                                            data-bs-toggle="modal" data-bs-target="#address_edit">Edit</a>
+                                    </div>
+                                </div>
+                                <!--------Enf Address Box------>
+                                <!-------Social Media Profile------>
+                                <form action="" class="row">
+                                    <h6 class="fw-bold">Social Profile</h6>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3"> <span class="input-group-text fs-5"
+                                                id="basic-addon1"><i class="bi bi-facebook"></i></span>
+                                            <input type="url" class="form-control" placeholder="https://facebook.com"
+                                                aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3"> <span class="input-group-text fs-5"
+                                                id="basic-addon1"><i class="bi bi-twitter"></i></span>
+                                            <input type="url" class="form-control" placeholder="https://twitter.com"
+                                                aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3"> <span class="input-group-text fs-5"
+                                                id="basic-addon1"><i class="bi bi-instagram"></i></span>
+                                            <input type="url" class="form-control" placeholder="https://instagram.com"
+                                                aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="input-group mb-3"> <span class="input-group-text fs-5"
+                                                id="basic-addon1"><i class="bi bi-linkedin"></i></span>
+                                            <input type="url" class="form-control" placeholder="https://linkedin.com"
+                                                aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="update-btn">
+                                        <button type="btn"
+                                            class="btn bg-color bg-hover2 text-light px-4">Update</button>
+                                    </div>
+                                </form>
+                                <!--End Social Media Profile------>
+                            </div>
+                        </div>
+                        <!-- ----------End User Profile Tab---------->
+                        <!-- ----------Licence Plate Availavle---------->
+                        <div class="tab-pane tabbed bg-info bg-opacity-10  p-4 rounded-5" id="plate">
+                            <div class="row row-cols-1 row-cols-md-2">
+                                <!--Mobile Number Loop-->
+                                <div class="col p-1 position-relative  alert alert-dismissible fade show" role="alert">
+                                    <div class="card p-2 mx-md-3 mx-0 card-content"> <span
+                                            class="position-absolute top-0 start-100  translate-middle badge rounded-3 cursor bg-color bg-hover2"
+                                            data-bs-dismiss="alert" aria-label="Close"><i
+                                                class="bi bi-trash"></i></span>
+                                        <a href="#"><img class="card-img" src="assets/img/Plates-numbers/plate2.png"
+                                                class="card-img-top" alt=""></a>
+                                        <div class="d-flex mt-2">
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <h2 class="text-dark  fw-bold  fs-6">AED 34,344</h2>
+                                                    <p class="card-text"><b>Seller:</b> Rita Gomas</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <p class="mb-1"><small class="text-body-secondary">Updated: 3 days
+                                                            ago</small></p> <a href="plates-details.html"
+                                                        class="card-link link-hover ">More details <i
+                                                            class="bi bi-arrow-right-short align-middle"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col p-1 position-relative  alert alert-dismissible fade show" role="alert">
+                                    <div class="card p-2 mx-0 mx-md-3 card-content"> <span
+                                            class="position-absolute top-0 start-100  translate-middle badge rounded-3 cursor bg-color bg-hover2"
+                                            data-bs-dismiss="alert" aria-label="Close"><i
+                                                class="bi bi-trash"></i></span>
+                                        <a href="#"><img class="card-img" src="assets/img/Plates-numbers/plate2.png"
+                                                class="card-img-top" alt=""></a>
+                                        <div class="d-flex mt-2">
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <h2 class="text-dark  fw-bold  fs-6">AED 34,344</h2>
+                                                    <p class="card-text"><b>Seller:</b> Rita Gomas</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <p class="mb-1"><small class="text-body-secondary">Updated: 3 days
+                                                            ago</small></p> <a href="plates-details.html"
+                                                        class="card-link link-hover ">More details <i
+                                                            class="bi bi-arrow-right-short align-middle"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ----------Dont Have Any Plate Canvas---------->
+                        <div class="tab-pane tabbed" id="plate-canvas">
+                            <div class="text-center"> <img width="60%" src="assets/img/dubai-image1.webp" alt="img">
+                                <p class="card-text">You haven’t saved any plates yet.</p> <a href="mobile-print.html"
+                                    class="px-3 py-1 fs-normal btn btn-dark  rounded-3 ">Get Started</a>
+                            </div>
+                        </div>
+                        <!-- ----------Start Dont Have Any Mobile Number---------->
+                        <div class="tab-pane tabbed" id="numbers">
+                            <div class="text-center"> <img width="60%" src="assets/img/dubai-image1.webp" alt="img">
+                                <p class="card-text">You haven’t saved any plates yet.</p> <a href="mobile-numbers.html"
+                                    class="px-3 py-1 fs-normal btn btn-dark  rounded-3 ">Get Started</a>
+                            </div>
+                        </div>
+                        <!-- ----------Availavle Mobile Number Canvas ---------->
+                        <div class="tab-pane tabbed bg-info bg-opacity-10  p-4 rounded-5" id="number-canvas">
+                            <div class="row row-cols-1 row-cols-md-2">
+                                <!--Mobile Number Loop-->
+                                <div class="col p-1 position-relative  alert alert-dismissible fade show" role="alert">
+                                    <div class="card p-2 mx-md-3 mx-0 card-content"> <span
+                                            class="position-absolute top-0 start-100  translate-middle badge rounded-3 cursor bg-color"
+                                            data-bs-dismiss="alert" aria-label="Close"><i
+                                                class="bi bi-trash"></i></span>
+                                        <a href="#"><img class="card-img"
+                                                src="assets/img/mobile-number/mobile-number.png" class="card-img-top"
+                                                alt=""></a>
+                                        <div class="d-flex mt-2">
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <h2 class="text-dark  fw-bold  fs-6">AED 14,344</h2>
+                                                    <p class="card-text"><b>Seller:</b> Amir Hossain</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <p class="mb-1"><small class="text-body-secondary">Updated: 1 days
+                                                            ago</small> </p> <a href="plates-details.html"
+                                                        class="card-link link-hover ">More details <i
+                                                            class="bi bi-arrow-right-short align-middle"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ----------Start Dont Have Any Features Ads---------->
+                        <div class="tab-pane tabbed " id="features">
+                            <div class="text-center"> <img width="60%" src="assets/img/dubai-image1.webp" alt="img">
+                                <p class="card-text">You haven’t saved any plates yet.</p> <a href="plate-print.html"
+                                    class="px-3 py-1 fs-normal btn btn-dark  rounded-3 ">Get Started</a>
+                            </div>
+                        </div>
+                        <!-- ---------- Viewed Licence Plate / Mobile Number ---------->
+                        <div class="tab-pane tabbed bg-info bg-opacity-10  p-4 rounded-5" id="viewed-listing">
+                            <div class="row row-cols-1 row-cols-md-2">
+                                <!--Mobile Number Loop-->
+                                <div class="col p-1 position-relative  alert alert-dismissible fade show" role="alert">
+                                    <div class="card p-2 mx-md-3 mx-0 card-content"> <span
+                                            class="position-absolute top-0 start-100  translate-middle badge rounded-3 cursor bg-color bg-hover2"
+                                            data-bs-dismiss="alert" aria-label="Close"><i
+                                                class="bi bi-trash"></i></span>
+                                        <a href="#"><img class="card-img" src="assets/img/Plates-numbers/plate2.png"
+                                                class="card-img-top" alt=""></a>
+                                        <div class="d-flex mt-2">
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <h2 class="text-dark  fw-bold  fs-6">AED 34,344</h2>
+                                                    <p class="card-text"><b>Seller:</b> Rita Gomas</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <p class="mb-1"><small class="text-body-secondary">Updated: 3 days
+                                                            ago</small></p> <a href="plates-details.html"
+                                                        class="card-link link-hover ">More details <i
+                                                            class="bi bi-arrow-right-short align-middle"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col p-1 position-relative  alert alert-dismissible fade show" role="alert">
+                                    <div class="card p-2 mx-md-3 mx-0 card-content"> <span
+                                            class="position-absolute top-0 start-100  translate-middle badge rounded-3 cursor bg-color"
+                                            data-bs-dismiss="alert" aria-label="Close"><i
+                                                class="bi bi-trash"></i></span>
+                                        <a href="#"><img class="card-img"
+                                                src="assets/img/mobile-number/mobile-number.png" class="card-img-top"
+                                                alt=""></a>
+                                        <div class="d-flex mt-2">
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <h2 class="text-dark  fw-bold  fs-6">AED 14,344</h2>
+                                                    <p class="card-text"><b>Seller:</b> Amir Hossain</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <p class="mb-1"><small class="text-body-secondary">Updated: 1 days
+                                                            ago</small> </p> <a href="plates-details.html"
+                                                        class="card-link link-hover ">More details <i
+                                                            class="bi bi-arrow-right-short align-middle"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col p-1 position-relative  alert alert-dismissible fade show" role="alert">
+                                    <div class="card p-2 mx-0 mx-md-3 card-content"> <span
+                                            class="position-absolute top-0 start-100  translate-middle badge rounded-3 cursor bg-color bg-hover2"
+                                            data-bs-dismiss="alert" aria-label="Close"><i
+                                                class="bi bi-trash"></i></span>
+                                        <a href="#"><img class="card-img" src="assets/img/Plates-numbers/plate2.png"
+                                                class="card-img-top" alt=""></a>
+                                        <div class="d-flex mt-2">
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <h2 class="text-dark  fw-bold  fs-6">AED 34,344</h2>
+                                                    <p class="card-text"><b>Seller:</b> Rita Gomas</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card-body p-1">
+                                                    <p class="mb-1"><small class="text-body-secondary">Updated: 3 days
+                                                            ago</small></p> <a href="plates-details.html"
+                                                        class="card-link link-hover ">More details <i
+                                                            class="bi bi-arrow-right-short align-middle"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Viewed Listing Pagination-->
+                            <div class="row">
+                                <div class="col-auto m-auto ">
+                                    <nav class="mt-4">
+                                        <ul class="pagination">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous"> <span
+                                                        aria-hidden="true">&laquo;</span> </a>
+                                            </li>
+                                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item "><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">....</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">15</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next"> <span
+                                                        aria-hidden="true">&raquo;</span> </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- =========End Tab Content Section-========-->
+                </div>
+                <!--=========End User Dashboard Tab Panel========--->
+            </div>
+        </div>
+    </div>
+</section>
+<!--=======FOOTER SECTION===========-->
+<footer></footer>
+<!--=======END FOOTER SECTION===========-->
