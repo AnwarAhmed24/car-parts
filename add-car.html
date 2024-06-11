@@ -9,50 +9,156 @@
 <!--===== Start Header Section =====-->
 <header></header>
 <!--===== End Header Section =====-->
+<!--===== Start Benifits Car Section =====-->
+<section id="get-add-car" style="background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);">
+    <div class="container py-5 mt-5">
+     <!--    <h2 class="text-center text-color fw-bold fs-3">Why sell your car with <span class="text-danger">XCars?</span>
+        </h2>
+        <p class="pb-4 text-center">Drive in style! Make your first car rental a great experience with luxury rental
+            vehicles from top brands such as
+            Rolls
+            Royce, BMW, Land Rover, among others.
+        </p>
+ -->
 
-<style>
-  
 
 
-</style>
 
-<!-- multistep form -->
-<form id="msform">
-    <!-- progressbar -->
-    <ul id="progressbar">
-        <li class="active">Account Setup</li>
-        <li>Social Profiles</li>
-        <li>Personal Details</li>
-    </ul>
-    <!-- fieldsets -->
-    <fieldset>
-        <h2 class="fs-title">Create your account</h2>
-        <h3 class="fs-subtitle">This is step 1</h3>
-        <input type="text" name="email" placeholder="Email" />
-        <input type="password" name="pass" placeholder="Password" />
-        <input type="password" name="cpass" placeholder="Confirm Password" />
-        <input type="button" name="next" class="next action-button" value="Next" />
-    </fieldset>
-    <fieldset>
-        <h2 class="fs-title">Social Profiles</h2>
-        <h3 class="fs-subtitle">Your presence on the social network</h3>
-        <input type="text" name="twitter" placeholder="Twitter" />
-        <input type="text" name="facebook" placeholder="Facebook" />
-        <input type="text" name="gplus" placeholder="Google Plus" />
-        <input type="button" name="previous" class="previous action-button" value="Previous" />
-        <input type="button" name="next" class="next action-button" value="Next" />
-    </fieldset>
-    <fieldset>
-        <h2 class="fs-title">Personal Details</h2>
-        <h3 class="fs-subtitle">We will never sell it</h3>
-        <input type="text" name="fname" placeholder="First Name" />
-        <input type="text" name="lname" placeholder="Last Name" />
-        <input type="text" name="phone" placeholder="Phone" />
-        <textarea name="address" placeholder="Address"></textarea>
-        <input type="button" name="previous" class="previous action-button" value="Previous" />
-        <a href="https://twitter.com/GoktepeAtakan" class="submit action-button" target="_top">Submit</a>
-    </fieldset>
-</form>
+        <div class="row g-4 g-md-5">
+
+            <div class="col px-md-3 px-4">
+
+
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item border border-2" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                        type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                        <div class="text-center">
+                            <img src="assets/img/brand/experience.png" class="card-img-top pt-3 w-25 m-auto">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2">Smoothest experience</h6>
+                                <p class="card-text text-muted">Sold with absolute ease, fast and secure. we promise!
+                                </p>
+                            </div>
+                        </div>
+                    </button>
+                </li>
+
+                <li class="nav-item border border-3" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                        <div class="text-center">
+                            <img src="assets/img/brand/experience.png" class="card-img-top pt-3 w-25 m-auto">
+                            <div class="card-body">
+                                <h6 class="card-subtitle mb-2">Smoothest experience</h6>
+                                <p class="card-text text-muted">Sold with absolute ease, fast and secure. we promise!
+                                </p>
+                            </div>
+                        </div>
+                    </button>
+                </li>
+               
+            </ul>
+            </div>
+
+
+
+        
+<div class="tab-content">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+        tabindex="0">
+    
+    
+    <!-- multistep form -->
+    <form id="add-form" class="text-center position-relative py-5">
+    
+        <!-- fieldsets -->
+        <fieldset>
+            <h2 class="fs-title">Auto-fill your car details by
+                entering your VIN / Chassis number</h2>
+            <p>What is a VIN / Chassis number?</p>
+            <img src="assets/img/vin_details.png" class="w-50" alt="">
+            <input type="text" class="form-control" name="email" placeholder="Email" />
+    
+            <input type="submit" class=" btn btn-danger" value="Auto Fill my car details" />
+            <input type="button" name="next" class="next action-button" value="No thanks, I'll do it manually">
+        </fieldset>
+        <fieldset>
+            <h2 class="fs-title">Social Profiles</h2>
+            <h3 class="fs-subtitle">Your presence on the social network</h3>
+            <input type="text" name="twitter" placeholder="Twitter" />
+            <input type="text" name="facebook" placeholder="Facebook" />
+            <input type="text" name="gplus" placeholder="Google Plus" />
+            <input type="button" name="previous" class="previous action-button" value="Previous" />
+            <input type="button" name="next" class="next action-button" value="Next" />
+        </fieldset>
+        <fieldset>
+            <h2 class="fs-title">Business Profiles</h2>
+            <h3 class="fs-subtitle">Your presence on the social network</h3>
+            <input type="text" name="twitter" placeholder="Twitter" />
+            <input type="text" name="facebook" placeholder="Facebook" />
+            <input type="text" name="gplus" placeholder="Google Plus" />
+            <input type="button" name="previous" class="previous action-button" value="Previous" />
+            <input type="button" name="next" class="next action-button" value="Next" />
+        </fieldset>
+    
+        <fieldset>
+            <h2 class="fs-title">Personal Details</h2>
+            <h3 class="fs-subtitle">We will never sell it</h3>
+            <input type="text" name="fname" placeholder="First Name" />
+            <input type="text" name="lname" placeholder="Last Name" />
+            <input type="text" name="phone" placeholder="Phone" />
+            <textarea name="address" placeholder="Address"></textarea>
+            <input type="button" name="previous" class="previous action-button" value="Previous" />
+            <a href="https://twitter.com/GoktepeAtakan" class="submit action-button" target="_top">Submit</a>
+        </fieldset>
+    
+    </form>
+
+    </div>
+        
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+
+            <!-- multistep form -->
+            <form id="add-form" class="text-center position-relative py-5">
+            
+                <!-- fieldsets -->
+                <fieldset>
+                    <h2 class="fs-title">Social Profiles</h2>
+                    <h3 class="fs-subtitle">Your presence on the social network</h3>
+                    <input type="text" name="twitter" placeholder="Twitter" />
+                    <input type="text" name="facebook" placeholder="Facebook" />
+                    <input type="text" name="gplus" placeholder="Google Plus" />
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset>
+                    <h2 class="fs-title">Business Profiles</h2>
+                    <h3 class="fs-subtitle">Your presence on the social network</h3>
+                    <input type="text" name="twitter" placeholder="Twitter" />
+                    <input type="text" name="facebook" placeholder="Facebook" />
+                    <input type="text" name="gplus" placeholder="Google Plus" />
+                    <input type="button" name="previous" class="previous action-button" value="Previous" />
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+            
+                <fieldset>
+                    <h2 class="fs-title">Personal Details</h2>
+                    <h3 class="fs-subtitle">We will never sell it</h3>
+                    <input type="text" name="fname" placeholder="First Name" />
+                    <input type="text" name="lname" placeholder="Last Name" />
+                    <input type="text" name="phone" placeholder="Phone" />
+                    <textarea name="address" placeholder="Address"></textarea>
+                    <input type="button" name="previous" class="previous action-button" value="Previous" />
+                    <a href="https://twitter.com/GoktepeAtakan" class="submit action-button" target="_top">Submit</a>
+                </fieldset>
+            
+            </form>
+</div>
+
+        </div>
+    </div>
+</section>
+<!--===== End Benifits Car Section =====-->
 
 
 <!--=======FOOTER SECTION===========-->
