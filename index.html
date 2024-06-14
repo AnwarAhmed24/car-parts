@@ -22,10 +22,10 @@
 <!-- Tab Panel -->
 <div class="col-12 my-2 p-0">
 <ul class="nav nav-pills" role="tablist">
-    <li class="nav-item">
+    <li class="nav-item mx-1 border rounded">
         <a class="nav-link text-light active px-4 fw-bold" data-bs-toggle="pill" href="#menu1">Select Car</a>
     </li>
-    <li class="nav-item">
+    <li class="nav-item mx-1 border rounded">
         <a class="nav-link text-light px-4 fw-bold" data-bs-toggle="pill" href="#menu2">Car Parts</a>
     </li>
 </ul>
@@ -381,16 +381,7 @@
     <!--Auto Parts Item Loop-->
         <div class="row row-cols-2 row-cols-md-6 g-3">
       
-            <div class="col">
-                <div class="card car-parts text-center">
-                   <a href="#">
-                    <img src="assets/img/parts/batteries-2-d.avif" class="card-img w-75 p-3 m-auto" alt="">
-                    <div class="card-body p-0 px-1 pb-2">
-                        <h4 class="card-subtitle fs-5 text-dark">BATTERIES</h4>
-                    </div>
-                   </a>
-                </div>
-            </div>
+
 
                 <div class="col">
                     <div class="card car-parts text-center">
@@ -402,6 +393,17 @@
                   </a>
                     </div>
                 </div>
+
+                            <div class="col">
+                                <div class="card car-parts text-center">
+                                    <a href="#">
+                                        <img src="assets/img/parts/batteries-2-d.avif" class="card-img w-75 p-3 m-auto" alt="">
+                                        <div class="card-body p-0 px-1 pb-2">
+                                            <h4 class="card-subtitle fs-5 text-dark">BATTERIES</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
 
                 <div class="col">
                     <div class="card car-parts text-center ">
@@ -447,6 +449,89 @@
                     </div>
                 </div>
 
+
+<!--======View More Section=======-->
+                          <div class="col-12">
+                            <div class="collapse mt-2" id="collapseExample">
+ 
+                                <div class="row row-cols-2 row-cols-md-6 g-3">
+<div class="col">
+    <div class="card car-parts text-center">
+        <a href="#">
+            <img src="assets/img/parts/batteries-2-d.avif" class="card-img w-75 p-3 m-auto" alt="">
+            <div class="card-body p-0 px-1 pb-2">
+                <h4 class="card-subtitle fs-5 text-dark">BATTERIES</h4>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card car-parts text-center ">
+        <a href="">
+            <img src="assets/img/parts/breck-rotors-d.avif" class="card-img p-3 w-75 m-auto" alt="">
+            <div class="card-body p-0 px-1 pb-2">
+                <h4 class="card-subtitle fs-5 text-dark">BRECK ROTORS</h4>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card car-parts text-center ">
+        <a href="">
+            <img src="assets/img/parts/engine-oil-d.avif" class="card-img p-3 w-75 m-auto" alt="">
+            <div class="card-body p-0 px-1 pb-2">
+                <h4 class="card-subtitle fs-5 text-dark">ENGINE OIL</h4>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card car-parts text-center">
+        <a href="">
+            <img src="assets/img/parts/washwax-2-d.avif" class="card-img p-3 w-75 m-auto" alt="">
+            <div class="card-body p-0 px-1 pb-2">
+                <h4 class="card-subtitle fs-5 text-dark">WASH & WAX</h4>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card car-parts text-center">
+        <a href="">
+            <img src="assets/img/parts/sunpension-shocks-d.avif" class="card-img p-3 w-75 m-auto" alt="">
+            <div class="card-body p-0 px-1 pb-2">
+                <h4 class="card-subtitle fs-5 text-dark">SUSPENSION</h4>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="col">
+    <div class="card car-parts text-center">
+        <a href="">
+            <img src="assets/img/parts/washwax-2-d.avif" class="card-img p-3 w-75 m-auto" alt="">
+            <div class="card-body p-0 px-1 pb-2">
+                <h4 class="card-subtitle fs-5 text-dark">WASH & WAX</h4>
+            </div>
+        </a>
+    </div>
+</div>
+
+
+
+                                </div>
+                            </div>
+                          </div>
+<!--====View more Button====-->
+                            <div class="text-center m-auto">
+                                <button class="btn bg- btn-outline-dark px-4 mt-3 text-center m-auto" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> View More <i
+                                        class="fa-solid fa-angle-down"></i> </button>
+                            </div>
                 
         </div>
     <!--End Auto Parts Item Loop-->
@@ -741,16 +826,16 @@ Hello
      <div id="feature-tab">
             <ul class="nav nav-pills mb-3 tabess border-bottom border-danger border-2" role="tablist">
                 <li class="nav-item pe-5" role="presentation">
-                    <button class="nav-link px-2 fs-6 active fw-medium" data-bs-toggle="pill" data-bs-target="#bmw" type="button"
-                        role="tab" aria-selected="true"><img src="https://www.dubicars.com/images/homepage/icons/car-make.png?cruide" width="20" alt=""> Toyota</button>
+                    <button class="nav-link px-2 active fw-medium" data-bs-toggle="pill" data-bs-target="#bmw" type="button"
+                        role="tab" aria-selected="true"><img src="assets/img/brand/make_6493f1164f12a_toyota-logo.png" width="23" class="align-bottom mx-1" alt="">Toyota</button>
                 </li>
                 <li class="nav-item pe-5" role="presentation">
                     <button class="nav-link px-2 fw-medium" data-bs-toggle="pill" data-bs-target="#toyota" type="button" role="tab"
-                        aria-selected="false"><img src="https://www.dubicars.com/images/homepage/icons/car-make.png?cruide" width="20" alt="">Mercedes</button>
+                        aria-selected="false"><img src="assets/img/brand/make_64818876ea09e_mercedes-benz-logo.png" width="17" class="align-text-bottom mx-1" alt="">Mercedes</button>
                 </li>
                 <li class="nav-item pe-5 " role="presentation">
                     <button class="nav-link px-2 fw-medium" data-bs-toggle="pill" data-bs-target="#" type="button" role="tab"
-                        aria-selected="false"><img src="https://www.dubicars.com/images/homepage/icons/car-make.png?cruide" width="20" alt="">Suzike</button>
+                        aria-selected="false"><img src="assets/img/brand/make_64818b686420c_suzuki-logo.png" width="20" class="align-bottom mx-1" alt="">Suzike</button>
                 </li>
                 
             

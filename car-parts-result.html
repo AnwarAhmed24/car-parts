@@ -519,8 +519,21 @@
 <!--=======FOOTER SECTION===========-->
 <footer></footer>
 <!--=======END FOOTER SECTION===========-->
+
 <script src="assets/js/nice-select.js" type=""></script>
 <script>
+      //=======Search Result Tamplate FIlter========//
+  document.querySelector("#filter-show").addEventListener("click", hide_show);
+
+  function hide_show() {
+    var element = document.querySelector("#hide-filter");
+    element.classList.toggle("show");
+
+    var element2 = document.querySelector("#arrow-roted");
+    element2.classList.toggle("rotate");
+
+  }
+  
     NiceSelect.bind(document.querySelector(".filter-parts-location"), {
         placeholder: 'Select City'
     });

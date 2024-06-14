@@ -49,20 +49,22 @@ a {text-decoration: none;}
     border-radius: 16px;
     cursor: pointer;
 }
+
 /*====== START HOME PAGE CSS =====*/
 .top-header{background: #faebd754;}
+header {
+    background-color: aliceblue;
+}
 .site-logo{width:15%}
 .dropdown{background-color:#faebd721 ;min-width:80px}
 
-/* .topbar-text{font-size: 14px; font-weight: 500;}
-.toolbar > ul > li{font-weight: 600;color: #546476;font-size: 16px;} */
 #lang-selection>.nice-select::before {
     font-family: "Font Awesome 5 Free";
     content: "\f1ab";
     font-weight: 700;
     vertical-align: middle;
     border: 0;
-    font-size: 16px;
+    font-size: 18px;
 }
 #lang-selection>.nice-select {
     height: 30px;
@@ -84,6 +86,8 @@ a {text-decoration: none;}
 .mobile-toggle > .dropdown-toggle::after { transform: rotate(270deg); position: absolute; right: 0;}
 #features-car-tab > ul > li > .nav-link.active{color: #dc3545!important;}
 #feature-tab > .nav > .nav-item > .nav-link.active {border-bottom: 3px solid tomato!important} 
+#mega-menu > .nav > .nav-link.active {border: 1px solid black!important} 
+
 #features-car-tab > .nav{display: none;}
 .dropdown-menu.show {
     display: block !important;
@@ -103,7 +107,6 @@ a {text-decoration: none;}
     transition: .3s ease !important;
     overflow: hidden;
 }
-header{background-color: aliceblue;}
 .dropdown:hover .menu-item {
     opacity: 1;
     visibility: visible;
@@ -195,7 +198,7 @@ transition: .3s;
 
 }
 /*=================================
-    Design for Car Details Page
+    Design for Details Page
 ===================================*/
 .breadcrumb-item>a {color: black !important;}
 .slider-nav>.slick-list>.slick-track>.slick-current {
@@ -250,6 +253,7 @@ padding: 12px 0px;
 /*===================================
 Design for Search Result Page
 ==================================*/
+/*Car Body Selector*/
 .vehicle-selector {
     text-align: justify;
 }
@@ -487,7 +491,14 @@ input[type="number"]::-webkit-inner-spin-button {
         top: 3px;
         padding: 0px 5px;
     }
-
+.post-feature-label {
+    position: absolute;
+    background: white;
+    z-index: 1;
+    left: 10px;
+    top: -12px;
+    padding: 0px 5px;
+}
 
 .accordion-button:focus {
     border-color: none; 
@@ -550,7 +561,7 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-bottom: 10px;
 }
 
-/*Horser Power Selector*/
+/*Horse Power Selector*/
 .power-selector input {
     appearance: none;
 }
@@ -646,8 +657,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .card:hover .slick-prev, .card:hover .slick-next{visibility: visible;}
 
-
-
 .car-search-img>.slick-dots {
     top: 88% !important;
     z-index: 1;
@@ -707,7 +716,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 
-/*====================
+/*==========================
     USER DASHBOARD CSS
  ==============================*/
 
@@ -730,23 +739,25 @@ input[type="number"]::-webkit-inner-spin-button {
     color: tomato;
 }
 
-
 .modal{background: #000000a6;}
+.tab {
+    display: none;
+}
 
 
+/*==========================
+   CAR UPLOAD PAGE CSS
+ ==============================*/
+#add-for{min-height:1000px;}
 
-
-  /*================form styles===============*/
-#add-form{min-height:500px;}
   #add-form fieldset {
-      background: white;
-      border: 0 none;
-      border-radius: 8px;
-      padding: 20px 30px;
       box-sizing: border-box;
-      width: 80%;
-      margin: 0 10%;
       position: relative;
+      background-color: white;
+      width: 100%;
+      margin: auto;
+      padding: 30px;
+      border-radius: 8px;
   }
 
   /*Hide all except first fieldset*/
@@ -777,7 +788,79 @@ a[href="https://elfsight.com/facebook-reviews-widget/?utm_source=websites&utm_me
         top: -14px;
         left: -4px;
     }
-/* =============== END FOOTER ================*/
+
+        .yottie-popup-video-content {
+            display: none !important;
+        }
+    
+        .yottie-popup .yottie-popup-video-content {
+            display: none !important;
+        }
+    
+        .yottie-popup-inner {
+            top: 0 !important;
+        }
+    
+        .yottie-popup .yottie-popup-control-close {
+            background-color: #fff;
+            border-radius: 5px;
+        }
+    
+        .yottie-widget-video-preview-thumbnail {
+            border-radius: 8px;
+        }
+.huflDf{
+display: none!important;
+}
+
+/*==========================
+    CONTACT PAGE CSS
+ ==============================*/
+#breadcrumb {
+    background-color: black;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#000000ab), to(#000000ab)), url('../img/inner-banner.jpg');
+    background-image: -o-linear-gradient(#000000ab, #000000ab), url('../img/inner-banner.jpg');
+    background-image: linear-gradient(#192733, #000000ab), url('../img/inner-banner.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#contact {
+    margin-top: -150px;
+}
+
+/* ======Placeholder Loading Effect ============*/
+.skeleton {
+    position: relative;
+}
+
+.skeleton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #eee, #f9f9f9, #eee);
+    background-size: 200%;
+    animation: skeleton 1s infinite reverse;
+}
+
+@keyframes skeleton {
+    0% {
+        background-position: -100% 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+/* =============== START FOOTER ================*/
 .footer {
     background: #283949;
     padding-top: 30px;
@@ -805,95 +888,9 @@ footer .copy-right {
     background-color: var(--secondary-color);
     font-size: 12px;
 }
-/* SKELETON */
-.skeleton {
-    position: relative;
-}
+/* =============== END FOOTER ================*/
 
-.skeleton::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    border-radius: 12px;
-    background: linear-gradient(90deg, #eee, #f9f9f9, #eee);
-    background-size: 200%;
-    animation: skeleton 1s infinite reverse;
-}
-@keyframes skeleton {
-    0% {
-        background-position: -100% 0;
-    }
-
-    100% {
-        background-position: 100% 0;
-    }
-}
-
-/* SKELETON */
-
-
-#breadcrumb {
-    background-color: black;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#000000ab), to(#000000ab)), url('../img/inner-banner.jpg');
-    background-image: -o-linear-gradient(#000000ab, #000000ab), url('../img/inner-banner.jpg');
-    background-image: linear-gradient(#192733, #000000ab), url('../img/inner-banner.jpg');
-    background-position: center;
-    background-size: cover;
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
-#contact{margin-top: -150px;}
-/* =============== END HOME PAGE CSS ================*/
-
-/* Hide all steps by default: */
-.tab {
-    display: none;
-}
-
-button {
-    background-color: #04AA6D;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 17px;
-    font-family: Raleway;
-    cursor: pointer;
-}
-
-button:hover {
-    opacity: 0.8;
-}
-
-#prevBtn {
-    background-color: #bbbbbb;
-}
-
-.yottie-popup-video-content {
-    display: none !important;
-}
-
-.yottie-popup .yottie-popup-video-content {
-    display: none !important;
-}
-
-.yottie-popup-inner {
-    top: 0 !important;
-}
-.yottie-popup .yottie-popup-control-close{
-    background-color: #fff;
-    border-radius: 5px;
-}
-.yottie-widget-video-preview-thumbnail{
-    border-radius: 8px;
-}
-
-
-
-/* CUSTOME MEDIA QUERY */
+/* ==========CUSTOME MEDIA QUERY=============== */
 @media (min-width:992px){
     .sell-car-btn {width: 20%}
         .filter-label {
@@ -904,6 +901,9 @@ button:hover {
             padding: 0px 10px;
             z-index: 1;
         }
+                 .stander-price {
+                     margin-top: -40px;
+                 }
  
                 .w-12{width: 12%;}
     .rounded-end-3 {border-top-right-radius: 12px; border-bottom-right-radius: 12px}
@@ -915,6 +915,7 @@ button:hover {
             font-size: 20px !important
         }
           .filter-shorting{width: 50%!important;}
+          .width-50{width: 50%;}
 }
 
 @media (max-width:768px) {
@@ -944,6 +945,9 @@ button:hover {
     display: block;
 }
 .filter-sidebar{max-height: 100vh;}
+   .stander-price {
+       margin: 1.5rem;
+   }
 }
 
 @media (max-width: 1200px) {

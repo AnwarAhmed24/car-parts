@@ -114,11 +114,11 @@
                             </div>
                             <!--===Filter Bar===-->
                             <div class="col-md-2">
-                                <button class="btn btn-outline-danger d-none d-md-block fw-medium m-auto" type="button"
+                                <button class="btn btn-dark bg-hover border-0 d-none d-md-block fw-medium m-auto" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"> <i
                                         class="fa-solid fa-filter"></i>Filters<span
-                                        class="mx-1 p-1 fs-normal fw-normal text-dark rounded-pill"
-                                        style="background: #eeecd8;">1</span> </button>
+                                        class="mx-1 p-1 fs-normal fw-normal text-dark bg-light rounded-pill"
+                                        >1</span> </button>
                             </div>
                         </div>
                         <!--End Filter Input Field-->
@@ -832,7 +832,6 @@
                             <div class="col-12 py-3 position-relative"> <span
                                     class="feature-label fw-bold">Features</span>
                                 <div class="form-group">
-                                    <div class="co">
                                         <select multiple name="feature" class="features">
                                             <option value="1">Cruise Control</option>
                                             <option value="2">Blind Spot Warning</option>
@@ -850,7 +849,6 @@
                                             <option value="15">Paddle Shift (Triptronic)</option>
                                             <option value="16">Seat Belt Reminder</option>
                                         </select>
-                                    </div>
                                 </div>
                             </div>
                             <!--Fuel Selector Selector-->
@@ -888,7 +886,7 @@
                                 </div>
                             </div>
                             <!--Applly Filter Buttopn-->
-                            <button type="submit" class="btn btn-dark my-3 bg-hover border-0 w-100 fw-medium">Apply
+                            <button type="submit" class="btn btn-dark my-3 py-6 bg-hover border-0 w-100 fw-medium">Apply
                                 Filter</button>
                         </form>
                     </div>
@@ -902,7 +900,27 @@
 <footer></footer>
 <!--=======END FOOTER SECTION===========-->
 <script src="assets/js/nice-select.js" type=""></script>
+<script type="text/javascript" src="assets/js/filter-multi-select-bundle.js"></script>
 <script>
+             //Car featires select detai
+                const feature = $('.features').filterMultiSelect({
+                    selectAllText: 'Select All...',
+                    placeholderText: 'Select',
+                    filterText: 'search',
+                    caseSensitive: true,
+                });
+                //=======Search Result Tamplate FIlter========//
+  document.querySelector("#filter-show").addEventListener("click", hide_show);
+
+  function hide_show() {
+    var element = document.querySelector("#hide-filter");
+    element.classList.toggle("show");
+
+    var element2 = document.querySelector("#arrow-roted");
+    element2.classList.toggle("rotate");
+
+  }
+    
     NiceSelect.bind(document.querySelector(".filter-location"), {placeholder: 'Select City'});
     NiceSelect.bind(document.querySelector(".filter-make"), {searchable: true, placeholder: 'Select Make'});
     NiceSelect.bind(document.querySelector(".filter-model"), {searchable: true, placeholder: 'Select Model'});

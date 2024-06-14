@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.2.16/build/css/intlTelInput.css">
     <link rel="stylesheet" href="assets/css/scrolling-tabs.css">
     <link rel="stylesheet" href="assets/css/filter_multi_select.css">
-
 </head>
 
 <body>
@@ -42,8 +41,7 @@
                                     <span
                                         class="position-absolute top-0 start-100 translate-middle badge rounded-circle text-dark">
                                         2</span>
-                                </i><a href="cart.html" target="" class="text-dark topbar-text">Favorite</a>
-                            </li>
+                                </i><a href="cart.html" target="" class="text-dark topbar-text">Favorite</a> </li>
                             <li class="d-inline mx-3"><i
                                     class="fa-regular fa-comment position-relative  mx-1 bg-white p-2 rounded-circle text-color">
                                     <span
@@ -59,47 +57,38 @@
                             </li>
                         </ul>
                     </div>
-
                     <!--======User Login/Sign Up Button =====-->
                     <div class="col-3">
                         <ul class="m-0">
-                            <li class="d-inline dropdown dropdown-center"> <img class="align-bottom " src="assets/img/user.png" width="25px"> <a
-                                    href="#"  class="text-dark fw-light mx-1 fw-bold user dropdown-toggle" data-bs-toggle="dropdown">Account</a> 
-
-                                <ul class="dropdown-menu fs-normal shadow-medium mt-1 p-0 rounded-4 row py-3" style="width: 254px;">
-                          
+                            <li class="d-inline dropdown dropdown-center"> <img class="align-bottom "
+                                    src="assets/img/user.png" width="25px"> <a href="#"
+                                    class="text-dark fw-light mx-1 fw-bold user dropdown-toggle"
+                                    data-bs-toggle="dropdown">Account</a>
+                                <ul class="dropdown-menu fs-normal shadow-medium mt-1 p-0 rounded-4 row py-3"
+                                    style="width: 254px;">
                                     <!--Dropdown Menu Item-->
-                                    <li class="nav-item">
-                                        <a href="signup-login.html" class="btn btn-dark w-100 fw-bold rounded-pill bg-hover border-0">Login or Sign Up</a>
-                                    </li>
-                                    
+                                    <li class="nav-item"> <a href="signup-login.html"
+                                            class="btn btn-dark w-100 fw-bold rounded-pill bg-hover border-0">Login or
+                                            Sign Up</a> </li>
                                     <hr class="m-0 mt-2">
-                                    <li class="nav-item">
-                                        <a class="nav-link link-hover fw-medium  text-color3 py-2" href="dashboard.html"><i class="fa-regular fa-address-card mx-1"></i>Dashboard</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link link-hover fw-medium  text-color3 py-2" href="#"><i class="fa-solid fa-layer-group mx-1"></i>My Ads</a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link link-hover fw-medium  text-color3 py-2" href="#"><i class="fa-regular fa-heart mx-1"></i>Favorite</a>
-                                    </li>  
-                                    
-                                    <li class="nav-item">
-                                        <a class="nav-link link-hover  fw-medium text-color3 py-2" href="#"><i class="fa-regular fa-comment mx-1"></i>My Chats</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link link-hover fw-medium  text-color3 py-2" href="#"><i
-                                                class="fa-solid fa-magnifying-glass-location mx-1"></i></i>My Searces</a>
-                                    </li>
+                                    <li class="nav-item"> <a class="nav-link link-hover fw-medium  text-color3 py-2"
+                                            href="dashboard.html"><i
+                                                class="fa-regular fa-address-card mx-1"></i>Dashboard</a> </li>
+                                    <li class="nav-item"> <a class="nav-link link-hover fw-medium  text-color3 py-2"
+                                            href="#"><i class="fa-solid fa-layer-group mx-1"></i>My Ads</a> </li>
+                                    <li class="nav-item"> <a class="nav-link link-hover fw-medium  text-color3 py-2"
+                                            href="#"><i class="fa-regular fa-heart mx-1"></i>Favorite</a> </li>
+                                    <li class="nav-item"> <a class="nav-link link-hover  fw-medium text-color3 py-2"
+                                            href="#"><i class="fa-regular fa-comment mx-1"></i>My Chats</a> </li>
+                                    <li class="nav-item"> <a class="nav-link link-hover fw-medium  text-color3 py-2"
+                                            href="#"><i class="fa-solid fa-magnifying-glass-location mx-1"></i></i>My
+                                            Searces</a> </li>
                                     <hr class="m-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link link-hover fw-medium  text-color3 py-2" href="signup-login.html"><i class="fa-solid fa-right-from-bracket mx-1"></i>Sign Out</a>
-                                    </li>
-
+                                    <li class="nav-item"> <a class="nav-link link-hover fw-medium  text-color3 py-2"
+                                            href="signup-login.html"><i
+                                                class="fa-solid fa-right-from-bracket mx-1"></i>Sign Out</a> </li>
                                 </ul>
-
-                                </li>
+                            </li>
                         </ul>
                     </div>
                     <!--======End User Login/Sign Up Button =====-->
@@ -119,44 +108,662 @@
                     </ul>
                 </div>
                 <ul class="navbar-nav fs-normal align-items-center flex-row display-media">
-                    <li class="nav-item dropdown mx-2"> <a class="nav-link text-dark   fw-bold py-3 dropdown-toggle"
+                    <li class="nav-item dropdown mx-2"> <a class="nav-link text-dark fw-bold py-3 dropdown-toggle"
                             href="#">Buy Cars</a>
-                        <ul class="dropdown-menu menu-item fs-normal border border-secondary border-2 shadow p-0 rounded-4 row py-3"
-                            style="width: 300px;">
-                            <li
-                                class="pb-2 align-items-center  justify-content-between d-flex border-bottom border-secondary ">
+                        <!--=========Dropdown Menu Start=====-->
+                        <ul class="dropdown-menu menu-item fs-normal border-0 border-top border-danger border-2 shadow p-0 rounded-4 row py-3"
+                            style="width: 880px; background-color: #fefefe;">
+                            <li class="pb-2 align-items-center  justify-content-between d-flex border-bottom ">
                                 <div class="mt-2">
-                                    <h5 class="text-dark fs-6 ">
-                                        <i class="fa-solid fa-car"></i>
-                                        Used Cars
+                                    <h5 class="fw-bold fs-5 ">
+                                        Find out your perfect car in <b class="text-color">Dubai.</b>
                                     </h5>
                                 </div>
-                                <div class=""> <a href="car-search-result.html"
-                                        class="btn border-0 btn-dark bg-hover">View All</a> </div>
                             </li>
-                            <!--Dropdown Menu Item-->
-                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-1"
-                                    href="#"><img src="assets/img/brand/make_6493f1164f12a_toyota-logo.png" class="me-2" width="30" alt="">Toyota Hilux <span style="color:#4e4ec9">(25)</span></a></li>
-                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-1"
-                                    href="#"><img src="assets/img/brand/make_64818b686420c_suzuki-logo.png" class="me-2" width="30" alt="">Toyota Prado <span style="color:#4e4ec9">(32)</span></a></li>
-                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-1"
-                                    href="#"><img src="assets/img/brand/make_6493f1164f12a_toyota-logo.png" class="me-2" width="30" alt="">Toyota Camry <span style="color:#4e4ec9">(26)</span></a> </li>
-                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-1"
-                                    href="#"><img src="assets/img/brand/make_6493f1164f12a_toyota-logo.png" class="me-2" width="30" alt="">Toyota Fortuner <span style="color:#4e4ec9">(6)</span></a></li>
-                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-1"
-                                    href="#"><img src="assets/img/brand/make_648186f78a84a_land-rover-logo.png" class="me-2" width="30" alt="">Nissan Patrol <span style="color:#4e4ec9">(12)</span></a></li>
-                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-1" href="#"><img src="assets/img/brand/make_64818542d5049_hyundai-logo.png" class="me-2" width="30" alt="">Ford
-                                    Mustang <span style="color:#4e4ec9">(25)</span></a> </li>
-                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-1"
-                                    href="#"><img src="assets/img/brand/make_6493f1164f12a_toyota-logo.png" class="me-2" width="30" alt="">Toyota Corolla <span style="color:#4e4ec9">(35)</span></a></li>
-                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-1"
-                                    href="#"><img src="assets/img/brand/make_64818b686420c_suzuki-logo.png" class="me-2" width="30" alt="">Toyota Nore <span style="color:#4e4ec9">(25)</span></a></li>
-                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-1"
-                                    href="#"><img src="assets/img/brand/make_6493f1164f12a_toyota-logo.png" class="me-2" width="30" alt="">Toyota Nore <span style="color:#4e4ec9">(16)</span></a></li>
-                            <li class="nav-item"><a class="nav-link link-hover fw-medium text-color3 py-1"
-                                    href="#"><img src="assets/img/brand/make_6493f1164f12a_toyota-logo.png" class="me-2" width="30" alt="">Toyota Nore <span style="color:#4e4ec9">(25)</span></a></li>
+                            <!--Mega Menu Start-->
+                            <div class="row p-0 m-0">
+                                <!--Mega Menu Left TabBar-->
+                                <div class="col-3 border-end" id="mega-menu">
+                                    <div class="nav  flex-column nav-pills py-3" role="tablist"
+                                        aria-orientation="vertical">
+                                        <button class="nav-link active fw-medium  text-start" data-bs-toggle="pill"
+                                            data-bs-target="#best-car" type="button" role="tab"
+                                            aria-selected="true">Best Cars</button>
+                                        <button class="nav-link fw-medium text-start" id="v-pills-profile-tab"
+                                            data-bs-toggle="pill" data-bs-target="#top-brands" type="button" role="tab"
+                                            aria-selected="false">Top Brands</button>
+                                        <button class="nav-link fw-medium text-start" id="v-pills-messages-tab"
+                                            data-bs-toggle="pill" data-bs-target="#best-seller" type="button" role="tab"
+                                            aria-selected="false">Best Seller</button>
+                                        <button class="nav-link fw-medium text-start" id="v-pills-settings-tab"
+                                            data-bs-toggle="pill" data-bs-target="#featured-car" type="button"
+                                            role="tab" aria-selected="false">Featured Car</button>
+                                    </div>
+                                    <div class="mt-5 pt-3"> <a href="car-search-result.html"
+                                            class="btn btn-danger fw-medium mt-5 w-100">Search Car</a> </div>
+                                </div>
+                                <!--Mega Menu Right  Tab Content-->
+                                <div class="col-9">
+                                    <!--========Start Tab Content===========-->
+                                    <div dir="ltr" class="tab-content">
+                                        <!--========Best Car Tab===========-->
+                                        <div class="tab-pane fade show active" id="best-car" role="tabpanel"
+                                            tabindex="0">
+                                            <!-- Row Item Loop-->
+                                            <div class="row py-2 g-0">
+                                                <div class="col-6">
+                                                    <div class="card m-2 p-2 card-content">
+                                                        <div class="row">
+                                                            <div class="col-4 m-auto"> <abbr title="Add to Favorite">
+                                                                    <i
+                                                                        class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+                                                                <a href="#"><img class="card-img"
+                                                                        src="assets/img/featured-car.webp"
+                                                                        class="card-img-top" alt=""></a>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <div class="card-body p-0">
+                                                                    <h2 class="card-title fs-6 skeleton col-11"><a
+                                                                            href="#" class="text-color3">Cadillac
+                                                                            CT4</a></h2>
+                                                                    <h6 class="text-danger skeleton col-9 fs-6">AED
+                                                                        34,344</h6>
+                                                                    <p class="card-text skeleton">2013 <span>|</span>
+                                                                        200,839km <span>|</span> Sprots</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card m-2 p-2 card-content">
+                                                        <div class="row">
+                                                            <div class="col-4 m-auto"> <abbr title="Add to Favorite">
+                                                                    <i
+                                                                        class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+                                                                <a href="#"><img class="card-img"
+                                                                        src="assets/img/car2.webp" class="card-img-top"
+                                                                        alt=""></a>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <div class="card-body p-0">
+                                                                    <h2 class="card-title fs-6 skeleton col-11"><a
+                                                                            href="#" class="text-color3">Cadillac
+                                                                            CT4</a></h2>
+                                                                    <h6 class="text-danger skeleton col-9 fs-6">AED
+                                                                        34,344</h6>
+                                                                    <p class="card-text skeleton">2013 <span>|</span>
+                                                                        200,839km <span>|</span> Sprots</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card m-2 p-2 card-content">
+                                                        <div class="row">
+                                                            <div class="col-4 m-auto"> <abbr title="Add to Favorite">
+                                                                    <i
+                                                                        class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+                                                                <a href="#"><img class="card-img"
+                                                                        src="assets/img/car5.webp" class="card-img-top"
+                                                                        alt=""></a>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <div class="card-body p-0">
+                                                                    <h2 class="card-title fs-6 skeleton col-11"><a
+                                                                            href="#" class="text-color3">Cadillac
+                                                                            CT4</a></h2>
+                                                                    <h6 class="text-danger skeleton col-9 fs-6">AED
+                                                                        34,344</h6>
+                                                                    <p class="card-text skeleton">2013 <span>|</span>
+                                                                        200,839km <span>|</span> Sprots</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card m-2 p-2 card-content">
+                                                        <div class="row">
+                                                            <div class="col-4 m-auto"> <abbr title="Add to Favorite">
+                                                                    <i
+                                                                        class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+                                                                <a href="#"><img class="card-img"
+                                                                        src="assets/img/car8.webp" class="card-img-top"
+                                                                        alt=""></a>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <div class="card-body p-0">
+                                                                    <h2 class="card-title fs-6 skeleton col-11"><a
+                                                                            href="#" class="text-color3">Cadillac
+                                                                            CT4</a></h2>
+                                                                    <h6 class="text-danger skeleton col-9 fs-6">AED
+                                                                        34,344</h6>
+                                                                    <p class="card-text skeleton">2013 <span>|</span>
+                                                                        200,839km <span>|</span> Sprots</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card m-2 p-2 card-content">
+                                                        <div class="row">
+                                                            <div class="col-4 m-auto"> <abbr title="Add to Favorite">
+                                                                    <i
+                                                                        class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+                                                                <a href="#"><img class="card-img"
+                                                                        src="assets/img/car8.webp" class="card-img-top"
+                                                                        alt=""></a>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <div class="card-body p-0">
+                                                                    <h2 class="card-title fs-6 skeleton col-11"><a
+                                                                            href="#" class="text-color3">Cadillac
+                                                                            CT4</a></h2>
+                                                                    <h6 class="text-danger skeleton col-9 fs-6">AED
+                                                                        34,344</h6>
+                                                                    <p class="card-text skeleton">2013 <span>|</span>
+                                                                        200,839km <span>|</span> Sprots</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card m-2 p-2 card-content">
+                                                        <div class="row">
+                                                            <div class="col-4 m-auto"> <abbr title="Add to Favorite">
+                                                                    <i
+                                                                        class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+                                                                <a href="#"><img class="card-img"
+                                                                        src="assets/img/car8.webp" class="card-img-top"
+                                                                        alt=""></a>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <div class="card-body p-0">
+                                                                    <h2 class="card-title fs-6 skeleton col-11"><a
+                                                                            href="#" class="text-color3">Cadillac
+                                                                            CT4</a></h2>
+                                                                    <h6 class="text-danger skeleton col-9 fs-6">AED
+                                                                        34,344</h6>
+                                                                    <p class="card-text skeleton">2013 <span>|</span>
+                                                                        200,839km <span>|</span> Sprots</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="text-end"> <a href="car-search-result.html"
+                                                    class="btn border-0 btn-dark bg-hover px-4">View All <i
+                                                        class="fa-solid fa-arrow-right-long mx-1"></i></a> </div>
+                                        </div>
+                                        <!--========Top Brands Tab===========-->
+                                        <div class="tab-pane fade" id="top-brands" role="tabpanel" tabindex="0">
+                                            <!---Row Item Loop-->
+                                            <div class="row g-2 py-3">
+                                                <div class="col-4">
+                                                    <li class="nav-item border rounded-5">
+                                                        <a class="nav-link link-hover fw-medium text-color3 py-1"
+                                                            href="#"><img
+                                                                src="assets/img/brand/make_64818b686420c_suzuki-logo.png"
+                                                                class="me-2" width="30" alt="">Toyota Prado <span
+                                                                style="color:#4e4ec9">(32)</span></a>
+                                                    </li>
+                                                </div>
+                                                <div class="col-4">
+                                                    <li class="nav-item border rounded-5">
+                                                        <a class="nav-link link-hover fw-medium text-color3 py-1"
+                                                            href="#"><img
+                                                                src="assets/img/brand/make_6493f1164f12a_toyota-logo.png"
+                                                                class="me-2" width="32" alt="">Toyota Hilux <span
+                                                                style="color:#4e4ec9">(25)</span></a>
+                                                    </li>
+                                                </div>
+                                                <div class="col-4">
+                                                    <li class="nav-item border rounded-5">
+                                                        <a class="nav-link link-hover fw-medium text-color3 py-1"
+                                                            href="#"><img
+                                                                src="assets/img/brand/make_64818876ea09e_mercedes-benz-logo.png"
+                                                                class="me-2" width="30" alt="">Toyota Camry <span
+                                                                style="color:#4e4ec9">(26)</span></a>
+                                                    </li>
+                                                </div>
+                                                <div class="col-4">
+                                                    <li class="nav-item border rounded-5">
+                                                        <a class="nav-link link-hover fw-medium text-color3 py-1"
+                                                            href="#"><img
+                                                                src="assets/img/brand/make_64818b686420c_suzuki-logo.png"
+                                                                class="me-2" width="30" alt="">Toyota Prado <span
+                                                                style="color:#4e4ec9">(32)</span></a>
+                                                    </li>
+                                                </div>
+                                                <div class="col-4">
+                                                    <li class="nav-item border rounded-5">
+                                                        <a class="nav-link link-hover fw-medium text-color3 py-1"
+                                                            href="#"><img
+                                                                src="assets/img/brand/make_6493f1164f12a_toyota-logo.png"
+                                                                class="me-2" width="32" alt="">Toyota Hilux <span
+                                                                style="color:#4e4ec9">(25)</span></a>
+                                                    </li>
+                                                </div>
+                                                <div class="col-4">
+                                                    <li class="nav-item border rounded-5">
+                                                        <a class="nav-link link-hover fw-medium text-color3 py-1"
+                                                            href="#"><img
+                                                                src="assets/img/brand/make_64818876ea09e_mercedes-benz-logo.png"
+                                                                class="me-2" width="30" alt="">Toyota Camry <span
+                                                                style="color:#4e4ec9">(26)</span></a>
+                                                    </li>
+                                                </div>
+                                                <div class="col-4">
+                                                    <li class="nav-item border rounded-5">
+                                                        <a class="nav-link link-hover fw-medium text-color3 py-1"
+                                                            href="#"><img
+                                                                src="assets/img/brand/make_64818b686420c_suzuki-logo.png"
+                                                                class="me-2" width="30" alt="">Toyota Prado <span
+                                                                style="color:#4e4ec9">(32)</span></a>
+                                                    </li>
+                                                </div>
+                                                <div class="col-4">
+                                                    <li class="nav-item border rounded-5">
+                                                        <a class="nav-link link-hover fw-medium text-color3 py-1"
+                                                            href="#"><img
+                                                                src="assets/img/brand/make_6493f1164f12a_toyota-logo.png"
+                                                                class="me-2" width="32" alt="">Toyota Hilux <span
+                                                                style="color:#4e4ec9">(25)</span></a>
+                                                    </li>
+                                                </div>
+                                                <div class="col-4">
+                                                    <li class="nav-item border rounded-5">
+                                                        <a class="nav-link link-hover fw-medium text-color3 py-1"
+                                                            href="#"><img
+                                                                src="assets/img/brand/make_64818876ea09e_mercedes-benz-logo.png"
+                                                                class="me-2" width="30" alt="">Toyota Camry <span
+                                                                style="color:#4e4ec9">(26)</span></a>
+                                                    </li>
+                                                </div>
+                                                <div class="col-4">
+                                                    <li class="nav-item border rounded-5">
+                                                        <a class="nav-link link-hover fw-medium text-color3 py-1"
+                                                            href="#"><img
+                                                                src="assets/img/brand/make_64818b686420c_suzuki-logo.png"
+                                                                class="me-2" width="30" alt="">Toyota Prado <span
+                                                                style="color:#4e4ec9">(32)</span></a>
+                                                    </li>
+                                                </div>
+                                                <div class="col-4">
+                                                    <li class="nav-item border rounded-5">
+                                                        <a class="nav-link link-hover fw-medium text-color3 py-1"
+                                                            href="#"><img
+                                                                src="assets/img/brand/make_6493f1164f12a_toyota-logo.png"
+                                                                class="me-2" width="32" alt="">Toyota Hilux <span
+                                                                style="color:#4e4ec9">(25)</span></a>
+                                                    </li>
+                                                </div>
+                                                <div class="col-4">
+                                                    <li class="nav-item border rounded-5">
+                                                        <a class="nav-link link-hover fw-medium text-color3 py-1"
+                                                            href="#"><img
+                                                                src="assets/img/brand/make_64818876ea09e_mercedes-benz-logo.png"
+                                                                class="me-2" width="30" alt="">Toyota Camry <span
+                                                                style="color:#4e4ec9">(26)</span></a>
+                                                    </li>
+                                                </div>
+                                                <div class="col-4">
+                                                    <li class="nav-item border rounded-5">
+                                                        <a class="nav-link link-hover fw-medium text-color3 py-1"
+                                                            href="#"><img
+                                                                src="assets/img/brand/make_64818b686420c_suzuki-logo.png"
+                                                                class="me-2" width="30" alt="">Toyota Prado <span
+                                                                style="color:#4e4ec9">(32)</span></a>
+                                                    </li>
+                                                </div>
+                                                <div class="col-4">
+                                                    <li class="nav-item border rounded-5">
+                                                        <a class="nav-link link-hover fw-medium text-color3 py-1"
+                                                            href="#"><img
+                                                                src="assets/img/brand/make_6493f1164f12a_toyota-logo.png"
+                                                                class="me-2" width="32" alt="">Toyota Hilux <span
+                                                                style="color:#4e4ec9">(25)</span></a>
+                                                    </li>
+                                                </div>
+                                                <div class="col-4">
+                                                    <li class="nav-item border rounded-5">
+                                                        <a class="nav-link link-hover fw-medium text-color3 py-1"
+                                                            href="#"><img
+                                                                src="assets/img/brand/make_64818876ea09e_mercedes-benz-logo.png"
+                                                                class="me-2" width="30" alt="">Toyota Camry <span
+                                                                style="color:#4e4ec9">(26)</span></a>
+                                                    </li>
+                                                </div>
+                                                <div class="text-end"> <a href="car-search-result.html"
+                                                        class="btn border-0 btn-dark bg-hover px-4 mt-2">View All <i
+                                                            class="fa-solid fa-arrow-right-long mx-1"></i></a> </div>
+                                            </div>
+                                        </div>
+                                        <!--========Best Seller Tab===========-->
+                                        <div class="tab-pane fade" id="best-seller" role="tabpanel" tabindex="0">
+                                            <!-- Row Item Loop-->
+                                            <div class="row py-2 g-0">
+                                                <div class="col-6">
+                                                    <div class="card m-2 p-2 card-content">
+                                                        <div class="row">
+                                                            <div class="col-4 m-auto"> <abbr title="Add to Favorite">
+                                                                    <i
+                                                                        class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+                                                                <a href="#"><img class="card-img"
+                                                                        src="assets/img/featured-car.webp"
+                                                                        class="card-img-top" alt=""></a>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <div class="card-body p-0">
+                                                                    <h2 class="card-title fs-6 skeleton col-11"><a
+                                                                            href="#" class="text-color3">Cadillac
+                                                                            CT4</a>
+                                                                    </h2>
+                                                                    <h6 class="text-danger skeleton col-9 fs-6">AED
+                                                                        34,344</h6>
+                                                                    <p class="card-text skeleton">2013 <span>|</span>
+                                                                        200,839km <span>|</span> Sprots</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card m-2 p-2 card-content">
+                                                        <div class="row">
+                                                            <div class="col-4 m-auto"> <abbr title="Add to Favorite">
+                                                                    <i
+                                                                        class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+                                                                <a href="#"><img class="card-img"
+                                                                        src="assets/img/car2.webp" class="card-img-top"
+                                                                        alt=""></a>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <div class="card-body p-0">
+                                                                    <h2 class="card-title fs-6 skeleton col-11"><a
+                                                                            href="#" class="text-color3">Cadillac
+                                                                            CT4</a>
+                                                                    </h2>
+                                                                    <h6 class="text-danger skeleton col-9 fs-6">AED
+                                                                        34,344</h6>
+                                                                    <p class="card-text skeleton">2013 <span>|</span>
+                                                                        200,839km <span>|</span> Sprots</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card m-2 p-2 card-content">
+                                                        <div class="row">
+                                                            <div class="col-4 m-auto"> <abbr title="Add to Favorite">
+                                                                    <i
+                                                                        class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+                                                                <a href="#"><img class="card-img"
+                                                                        src="assets/img/car5.webp" class="card-img-top"
+                                                                        alt=""></a>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <div class="card-body p-0">
+                                                                    <h2 class="card-title fs-6 skeleton col-11"><a
+                                                                            href="#" class="text-color3">Cadillac
+                                                                            CT4</a>
+                                                                    </h2>
+                                                                    <h6 class="text-danger skeleton col-9 fs-6">AED
+                                                                        34,344</h6>
+                                                                    <p class="card-text skeleton">2013 <span>|</span>
+                                                                        200,839km <span>|</span> Sprots</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card m-2 p-2 card-content">
+                                                        <div class="row">
+                                                            <div class="col-4 m-auto"> <abbr title="Add to Favorite">
+                                                                    <i
+                                                                        class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+                                                                <a href="#"><img class="card-img"
+                                                                        src="assets/img/car8.webp" class="card-img-top"
+                                                                        alt=""></a>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <div class="card-body p-0">
+                                                                    <h2 class="card-title fs-6 skeleton col-11"><a
+                                                                            href="#" class="text-color3">Cadillac
+                                                                            CT4</a>
+                                                                    </h2>
+                                                                    <h6 class="text-danger skeleton col-9 fs-6">AED
+                                                                        34,344</h6>
+                                                                    <p class="card-text skeleton">2013 <span>|</span>
+                                                                        200,839km <span>|</span> Sprots</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card m-2 p-2 card-content">
+                                                        <div class="row">
+                                                            <div class="col-4 m-auto"> <abbr title="Add to Favorite">
+                                                                    <i
+                                                                        class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+                                                                <a href="#"><img class="card-img"
+                                                                        src="assets/img/car8.webp" class="card-img-top"
+                                                                        alt=""></a>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <div class="card-body p-0">
+                                                                    <h2 class="card-title fs-6 skeleton col-11"><a
+                                                                            href="#" class="text-color3">Cadillac
+                                                                            CT4</a>
+                                                                    </h2>
+                                                                    <h6 class="text-danger skeleton col-9 fs-6">AED
+                                                                        34,344</h6>
+                                                                    <p class="card-text skeleton">2013 <span>|</span>
+                                                                        200,839km <span>|</span> Sprots</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card m-2 p-2 card-content">
+                                                        <div class="row">
+                                                            <div class="col-4 m-auto"> <abbr title="Add to Favorite">
+                                                                    <i
+                                                                        class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+                                                                <a href="#"><img class="card-img"
+                                                                        src="assets/img/car8.webp" class="card-img-top"
+                                                                        alt=""></a>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <div class="card-body p-0">
+                                                                    <h2 class="card-title fs-6 skeleton col-11"><a
+                                                                            href="#" class="text-color3">Cadillac
+                                                                            CT4</a>
+                                                                    </h2>
+                                                                    <h6 class="text-danger skeleton col-9 fs-6">AED
+                                                                        34,344</h6>
+                                                                    <p class="card-text skeleton">2013 <span>|</span>
+                                                                        200,839km <span>|</span> Sprots</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="text-end"> <a href="car-search-result.html"
+                                                    class="btn border-0 btn-dark bg-hover px-4">View All <i
+                                                        class="fa-solid fa-arrow-right-long mx-1"></i></a> </div>
+                                        </div>
+                                        <!--========Feature Car Tab=====-->
+                                        <div class="tab-pane fade" id="featured-car" role="tabpanel" tabindex="0">
+                                            <div class="row py-2 g-0">
+                                                <div class="col-6">
+                                                    <div class="card m-2 p-2 card-content">
+                                                        <div class="row">
+                                                            <div class="col-4 m-auto"> <abbr title="Add to Favorite">
+                                                                    <i
+                                                                        class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+                                                                <a href="#"><img class="card-img"
+                                                                        src="assets/img/cars/car2.avif"
+                                                                        class="card-img-top" alt=""></a>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <div class="card-body p-0">
+                                                                    <h2 class="card-title fs-6 skeleton col-11"><a
+                                                                            href="#" class="text-color3">Cadillac
+                                                                            CT4</a></h2>
+                                                                    <h6 class="text-danger skeleton col-9 fs-6">AED
+                                                                        34,344</h6>
+                                                                    <p class="card-text skeleton">2013 <span>|</span>
+                                                                        200,839km <span>|</span> Sprots</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card m-2 p-2 card-content">
+                                                        <div class="row">
+                                                            <div class="col-4 m-auto"> <abbr title="Add to Favorite">
+                                                                    <i
+                                                                        class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+                                                                <a href="#"><img class="card-img"
+                                                                        src="assets/img/cars/fea-car.jpeg"
+                                                                        class="card-img-top" alt=""></a>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <div class="card-body p-0">
+                                                                    <h2 class="card-title fs-6 skeleton col-11"><a
+                                                                            href="#" class="text-color3">Cadillac
+                                                                            CT4</a></h2>
+                                                                    <h6 class="text-danger skeleton col-9 fs-6">AED
+                                                                        34,344</h6>
+                                                                    <p class="card-text skeleton">2013 <span>|</span>
+                                                                        200,839km <span>|</span> Sprots</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card m-2 p-2 card-content">
+                                                        <div class="row">
+                                                            <div class="col-4 m-auto"> <abbr title="Add to Favorite">
+                                                                    <i
+                                                                        class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+                                                                <a href="#"><img class="card-img"
+                                                                        src="assets/img/cars/car2.avif"
+                                                                        class="card-img-top" alt=""></a>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <div class="card-body p-0">
+                                                                    <h2 class="card-title fs-6 skeleton col-11"><a
+                                                                            href="#" class="text-color3">Cadillac
+                                                                            CT4</a></h2>
+                                                                    <h6 class="text-danger skeleton col-9 fs-6">AED
+                                                                        34,344</h6>
+                                                                    <p class="card-text skeleton">2013 <span>|</span>
+                                                                        200,839km <span>|</span> Sprots</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card m-2 p-2 card-content">
+                                                        <div class="row">
+                                                            <div class="col-4 m-auto"> <abbr title="Add to Favorite">
+                                                                    <i
+                                                                        class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+                                                                <a href="#"><img class="card-img"
+                                                                        src="assets/img/cars/car2.avif"
+                                                                        class="card-img-top" alt=""></a>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <div class="card-body p-0">
+                                                                    <h2 class="card-title fs-6 skeleton col-11"><a
+                                                                            href="#" class="text-color3">Cadillac
+                                                                            CT4</a></h2>
+                                                                    <h6 class="text-danger skeleton col-9 fs-6">AED
+                                                                        34,344</h6>
+                                                                    <p class="card-text skeleton">2013 <span>|</span>
+                                                                        200,839km <span>|</span> Sprots</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card m-2 p-2 card-content">
+                                                        <div class="row">
+                                                            <div class="col-4 m-auto"> <abbr title="Add to Favorite">
+                                                                    <i
+                                                                        class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+                                                                <a href="#"><img class="card-img"
+                                                                        src="assets/img/cars/car2.avif"
+                                                                        class="card-img-top" alt=""></a>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <div class="card-body p-0">
+                                                                    <h2 class="card-title fs-6 skeleton col-11"><a
+                                                                            href="#" class="text-color3">Cadillac
+                                                                            CT4</a></h2>
+                                                                    <h6 class="text-danger skeleton col-9 fs-6">AED
+                                                                        34,344</h6>
+                                                                    <p class="card-text skeleton">2013 <span>|</span>
+                                                                        200,839km <span>|</span> Sprots</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="card m-2 p-2 card-content">
+                                                        <div class="row">
+                                                            <div class="col-4 m-auto"> <abbr title="Add to Favorite">
+                                                                    <i
+                                                                        class="fa-regular fa-heart position-absolute end-0 top-0 p-3 fs-4 text-danger hover"></i></abbr>
+                                                                <a href="#"><img class="card-img"
+                                                                        src="assets/img/cars/fea-car.jpeg"
+                                                                        class="card-img-top" alt=""></a>
+                                                            </div>
+                                                            <div class="col-8">
+                                                                <div class="card-body p-0">
+                                                                    <h2 class="card-title fs-6 skeleton col-11"><a
+                                                                            href="#" class="text-color3">Cadillac
+                                                                            CT4</a></h2>
+                                                                    <h6 class="text-danger skeleton col-9 fs-6">AED
+                                                                        34,344</h6>
+                                                                    <p class="card-text skeleton">2013 <span>|</span>
+                                                                        200,839km <span>|</span> Sprots</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="text-end"> <a href="car-search-result.html"
+                                                        class="btn border-0 btn-dark bg-hover px-4">View All <i
+                                                            class="fa-solid fa-arrow-right-long mx-1"></i></a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--========End Tab Content===========-->
+                                </div>
+                            </div>
+                            <!--Mega Menu End-->
                         </ul>
+                        <!--=========Dropdown Menu End=====-->
                     </li>
+                    <!-- ========Start Car Parts Nav=============-->
                     <li class="nav-item dropdown mx-2"> <a class="nav-link text-dark fw-bold py-3 dropdown-toggle"
                             href="#">Car Parts</a>
                         <ul class="dropdown-menu menu-item fs-normal border border-secondary border-2 shadow p-0 rounded-4 row py-3"
@@ -195,6 +802,7 @@
                                     href="#">Steering Wheel</a></li>
                         </ul>
                     </li>
+                    <!-- ========Start Car Parts Nav=============-->
                     <li class="nav-item px-2"> <a class="nav-link fw-bold text-dark" href="car-video.html">Car
                             Videos</a> </li>
                     <li class="nav-item px-2"> <a class="nav-link fw-bold text-dark" href="about-us.html">
@@ -347,7 +955,6 @@
         </nav>
     </header>
     <!--===== End Header Menu =====-->
-    
     <script type="text/javascript" src="assets/js/nice-select.js"></script>
     <script>
         //============Search bar Funciton=======//

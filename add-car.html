@@ -9,158 +9,718 @@
 <!--===== Start Header Section =====-->
 <header></header>
 <!--===== End Header Section =====-->
-<!--===== Start Benifits Car Section =====-->
+<!--===== Start Upload Car/Parts Section =====-->
 <section id="get-add-car" style="background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);">
-    <div class="container py-5 mt-5">
-     <!--    <h2 class="text-center text-color fw-bold fs-3">Why sell your car with <span class="text-danger">XCars?</span>
-        </h2>
-        <p class="pb-4 text-center">Drive in style! Make your first car rental a great experience with luxury rental
-            vehicles from top brands such as
-            Rolls
-            Royce, BMW, Land Rover, among others.
-        </p>
- -->
-
-
-
-
-        <div class="row g-4 g-md-5">
-
-            <div class="col px-md-3 px-4">
-
-
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item border border-2" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                        type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-                        <div class="text-center">
-                            <img src="assets/img/brand/experience.png" class="card-img-top pt-3 w-25 m-auto">
-                            <div class="card-body">
-                                <h6 class="card-subtitle mb-2">Smoothest experience</h6>
-                                <p class="card-text text-muted">Sold with absolute ease, fast and secure. we promise!
-                                </p>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col">
+                <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+                    <!--Tab Panel-->
+                    <li class="nav-item col-md-6" role="presentation">
+                        <button class="nav-link active border border-danger m-2" data-bs-toggle="pill"
+                            data-bs-target="#car-form" type="button" role="tab" aria-selected="true">
+                            <div class="row">
+                                <div class="col-md-4 m-auto"> <img src="assets/img/post-your-ad.webp"
+                                        class="card-img-top width-50"> </div>
+                                <div class="col-md-8">
+                                    <div class="card-body text-start text-dark">
+                                        <h6 class="card-subtitle fs-3 mb-2">Post your Car on X.Car</h6>
+                                        <p class="card-text text-muted">Sold with absolute ease, fast and secure. we
+                                            promise! </p>
+                                        <ul class="list-group text-start">
+                                            <li class="py-2"><img src="assets/img/brand/checklist.png"
+                                                    class="mx-1 mb-1 " width="20">Post your car ad in just 2 minutes
+                                            </li>
+                                            <li class="py-2"><img src="assets/img/brand/checklist.png"
+                                                    class="mx-1 mb-1 " width="20">Reach 2M+ potential buyers</li>
+                                            <li class="py-2"><img src="assets/img/brand/checklist.png"
+                                                    class="mx-1 mb-1 " width="20">Get your car ad live for just 149 AED
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </button>
-                </li>
-
-                <li class="nav-item border border-3" role="presentation">
-                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                        type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
-                        <div class="text-center">
-                            <img src="assets/img/brand/experience.png" class="card-img-top pt-3 w-25 m-auto">
-                            <div class="card-body">
-                                <h6 class="card-subtitle mb-2">Smoothest experience</h6>
-                                <p class="card-text text-muted">Sold with absolute ease, fast and secure. we promise!
-                                </p>
+                        </button>
+                    </li>
+                    <li class="nav-item col-md-6" role="presentation">
+                        <button class="nav-link border-danger border m-2" data-bs-toggle="pill"
+                            data-bs-target="#parts-form" type="button" role="tab" aria-selected="false">
+                            <div class="row">
+                                <div class="col-md-4 m-auto"> <img src="assets/img/vip-home-package.webp"
+                                        class="card-img-top width-50"> </div>
+                                <div class="col-md-8">
+                                    <div class="card-body text-start text-dark">
+                                        <h6 class="card-subtitle fs-3 mb-2">Post your Parts on X.Car</h6>
+                                        <p class="card-text text-muted">Sold with absolute ease, fast and secure. we
+                                            promise! </p>
+                                        <ul class="list-group text-start">
+                                            <li class="py-2"><img src="assets/img/brand/checklist.png"
+                                                    class="mx-1 mb-1 " width="20">Post your car ad in just 2 minutes
+                                            </li>
+                                            <li class="py-2"><img src="assets/img/brand/checklist.png"
+                                                    class="mx-1 mb-1 " width="20">Reach 2M+ potential buyers</li>
+                                            <li class="py-2"><img src="assets/img/brand/checklist.png"
+                                                    class="mx-1 mb-1 " width="20">Get your car ad live for just 99 AED
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </button>
-                </li>
-               
-            </ul>
+                        </button>
+                    </li>
+                    <!--End Tab Panel-->
+                </ul>
             </div>
-
-
-
-        
-<div class="tab-content">
-    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-        tabindex="0">
-    
-    
-    <!-- multistep form -->
-    <form id="add-form" class="text-center position-relative py-5">
-    
-        <!-- fieldsets -->
-        <fieldset>
-            <h2 class="fs-title">Auto-fill your car details by
-                entering your VIN / Chassis number</h2>
-            <p>What is a VIN / Chassis number?</p>
-            <img src="assets/img/vin_details.png" class="w-50" alt="">
-            <input type="text" class="form-control" name="email" placeholder="Email" />
-    
-            <input type="submit" class=" btn btn-danger" value="Auto Fill my car details" />
-            <input type="button" name="next" class="next action-button" value="No thanks, I'll do it manually">
-        </fieldset>
-        <fieldset>
-            <h2 class="fs-title">Social Profiles</h2>
-            <h3 class="fs-subtitle">Your presence on the social network</h3>
-            <input type="text" name="twitter" placeholder="Twitter" />
-            <input type="text" name="facebook" placeholder="Facebook" />
-            <input type="text" name="gplus" placeholder="Google Plus" />
-            <input type="button" name="previous" class="previous action-button" value="Previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
-        </fieldset>
-        <fieldset>
-            <h2 class="fs-title">Business Profiles</h2>
-            <h3 class="fs-subtitle">Your presence on the social network</h3>
-            <input type="text" name="twitter" placeholder="Twitter" />
-            <input type="text" name="facebook" placeholder="Facebook" />
-            <input type="text" name="gplus" placeholder="Google Plus" />
-            <input type="button" name="previous" class="previous action-button" value="Previous" />
-            <input type="button" name="next" class="next action-button" value="Next" />
-        </fieldset>
-    
-        <fieldset>
-            <h2 class="fs-title">Personal Details</h2>
-            <h3 class="fs-subtitle">We will never sell it</h3>
-            <input type="text" name="fname" placeholder="First Name" />
-            <input type="text" name="lname" placeholder="Last Name" />
-            <input type="text" name="phone" placeholder="Phone" />
-            <textarea name="address" placeholder="Address"></textarea>
-            <input type="button" name="previous" class="previous action-button" value="Previous" />
-            <a href="https://twitter.com/GoktepeAtakan" class="submit action-button" target="_top">Submit</a>
-        </fieldset>
-    
-    </form>
-
-    </div>
-        
-    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-
-            <!-- multistep form -->
-            <form id="add-form" class="text-center position-relative py-5">
-            
-                <!-- fieldsets -->
-                <fieldset>
-                    <h2 class="fs-title">Social Profiles</h2>
-                    <h3 class="fs-subtitle">Your presence on the social network</h3>
-                    <input type="text" name="twitter" placeholder="Twitter" />
-                    <input type="text" name="facebook" placeholder="Facebook" />
-                    <input type="text" name="gplus" placeholder="Google Plus" />
-                    <input type="button" name="next" class="next action-button" value="Next" />
-                </fieldset>
-                <fieldset>
-                    <h2 class="fs-title">Business Profiles</h2>
-                    <h3 class="fs-subtitle">Your presence on the social network</h3>
-                    <input type="text" name="twitter" placeholder="Twitter" />
-                    <input type="text" name="facebook" placeholder="Facebook" />
-                    <input type="text" name="gplus" placeholder="Google Plus" />
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="button" name="next" class="next action-button" value="Next" />
-                </fieldset>
-            
-                <fieldset>
-                    <h2 class="fs-title">Personal Details</h2>
-                    <h3 class="fs-subtitle">We will never sell it</h3>
-                    <input type="text" name="fname" placeholder="First Name" />
-                    <input type="text" name="lname" placeholder="Last Name" />
-                    <input type="text" name="phone" placeholder="Phone" />
-                    <textarea name="address" placeholder="Address"></textarea>
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <a href="https://twitter.com/GoktepeAtakan" class="submit action-button" target="_top">Submit</a>
-                </fieldset>
-            
-            </form>
-</div>
-
+            <!---===========Start Form Content Tab=========-->
+            <div dir="ltr" class="tab-content">
+                <!--Car Upload Form-->
+                <div class="tab-pane fade show active mt-5" id="car-form" role="tabpanel" tabindex="0">
+                    <!-- Car Multistep Form -->
+                    <form id="add-form" class="text-center position-relative m-5 col-md-6 m-auto">
+                        <!--=======VIN fieldsets======== -->
+                        <fieldset>
+                            <h2 class="fs-4 fw-bold">Auto-fill your car details by
+                                entering <br> your VIN / Chassis number</h2>
+                            <p>What is a VIN / Chassis number <i class="fa-solid fa-circle-info text-secondary"></i></p>
+                            <img src="assets/img/vin_details.png" class="w-50 my-2" alt="">
+                            <div class="form-floating ">
+                                <input type="number" class="form-control rounded-3 border border-dark"
+                                    id="floatingInput" placeholder="">
+                                <label for="floatingInput">Enter VIN/Classis Number</label>
+                            </div>
+                            <p class="text-start fs-normal text-muted mt-2">*This number will not show on your ad</p>
+                            <button type="submit" class="btn  py-3 bg-color bg-hover fw-medium text-light w-100 my-3"
+                                value="">Auto-fill my car details</button>
+                            <input type="button" name="next" class="next action-button text-info border-0 bg-white"
+                                value="No thanks, I'll do it manually">
+                        </fieldset>
+                        <!---=====Car Details fieldsets======== -->
+                        <fieldset class="text-end">
+                            <button type="button" name="previous"
+                                class="previous action-button border-0 bg-white w-100 text-start" value="Previous"><i
+                                    class="fa-solid fa-arrow-left-long border p-2 border-danger text-danger border-2 rounded-circle"></i></button>
+                            <h2 class="fs-3 fw-bold pb-2 text-center border-bottom">Tell us about your Car.</h2>
+                            <br>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select
+                                            class="form-select rounded-3 border border-dark text-dark cursor-pointer fw-medium"
+                                            id="floatingSelect">
+                                            <option value="Dubai">Dubai</option>
+                                            <option value="Abu Dhabi">Abu Dhabi</option>
+                                            <option value="Ras al Khaimah">Ras al Khaimah</option>
+                                            <option value="Fujairah">Fujairah</option>
+                                            <option value="Sharjah">Sharjah</option>
+                                            <option value="Ajman">Ajman</option>
+                                            <option value="Umm al Quwain">Umm al Quwain</option>
+                                            <option value="Al Ain">Al Ain</option>
+                                        </select>
+                                        <label class="fw-medium" for="floatingSelect">Emirate</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select
+                                            class="form-select rounded-3 border border-dark text-dark cursor-pointer fw-medium"
+                                            id="floatingSelect">
+                                            <option value="">Toyota</option>
+                                            <option value="">Acura</option>
+                                            <option value="">Alfa Romeo</option>
+                                            <option value="">Bentley</option>
+                                            <option value="">BMW</option>
+                                            <option value="">Bugatti</option>
+                                            <option value="">Daewoo</option>
+                                            <option value="">Fisker</option>
+                                            <option value="">Lamborghini</option>
+                                            <option value="">Honda</option>
+                                        </select>
+                                        <label class="fw-medium" for="floatingSelect">Make & Model</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select
+                                            class="form-select rounded-3 border border-dark text-dark cursor-pointer fw-medium"
+                                            id="floatingSelect">
+                                            <option value="Dubai">DX</option>
+                                            <option value="Abu Dhabi">FPX</option>
+                                            <option value="Ras al Khaimah">LX</option>
+                                            <option value="Fujairah">STD</option>
+                                            <option value="Sharjah">Others</option>
+                                        </select>
+                                        <label class="fw-medium" for="floatingSelect">Trim</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select
+                                            class="form-select rounded-3 border border-dark text-dark cursor-pointer fw-medium"
+                                            id="floatingSelect">
+                                            <option value="Dubai">American Specs</option>
+                                            <option value="Abu Dhabi">GCC Specs</option>
+                                            <option value="Ras al Khaimah">Canadian Specs</option>
+                                            <option value="Fujairah">Chinese Specs</option>
+                                        </select>
+                                        <label class="fw-medium" for="floatingSelect">Regional Spec</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="date" class="form-control rounded-3 border border-dark"
+                                            id="floatingInput" placeholder="">
+                                        <label for="floatingInput">Year</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control rounded-3 border border-dark"
+                                            id="floatingInput" placeholder="">
+                                        <label for="floatingInput">Kilometers</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select
+                                            class="form-select rounded-3 border border-dark text-dark cursor-pointer fw-medium"
+                                            id="floatingSelect">
+                                            <option value="Umm al Quwain">Yes</option>
+                                            <option value="Al Ain">No</option>
+                                        </select>
+                                        <label class="fw-medium" for="floatingSelect">Is your car insured in
+                                            UAE?</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control rounded-3 border border-dark"
+                                            id="floatingInput" placeholder="">
+                                        <label for="floatingInput">Price (AED)</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control rounded-3 border border-dark"
+                                            id="floatingInput" placeholder="">
+                                        <label for="floatingInput">Title</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="url" class="form-control rounded-3 border border-dark"
+                                            id="floatingInput" placeholder="">
+                                        <label for="floatingInput">360 Tour URL <small
+                                                class="text-muted">(*Optional)</small></label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control rounded-3 border border-dark" id="floatingInput"
+                                            placeholder="" style="height: 100px"></textarea>
+                                        <label for="floatingInput">Describe your car... <small>(*max 1200
+                                                words)</small></label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <input id="mobile_number" required
+                                        class="form-control border border-dark rounded-3 py-3" type="tel">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control rounded-3 border border-dark"
+                                            id="floatingInput" placeholder="">
+                                        <label for="floatingInput">Email@</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" name="next"
+                                class="next action-button btn rounded-3  border-0 py-3 text-light bg-color bg-hover w-50 fw-medium mt-4">Next
+                                Step<i class="fa-solid fa-arrow-right-long px-1"></i></button>
+                        </fieldset>
+                        <!---=====Car Features fieldsets======== -->
+                        <fieldset class="text-end">
+                            <button type="button" name="previous"
+                                class="previous action-button border-0 bg-white w-100 text-start" value="Previous"><i
+                                    class="fa-solid fa-arrow-left-long border p-2 border-danger text-danger border-2 rounded-circle"></i></button>
+                            <h2 class="fs-3 fw-bold pb-2 text-center border-bottom">You’re almost there!</h2>
+                            <p class="fs-subtitle">Include as much details and pictures as possible, and set the right
+                                price!</p>
+                            <br>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select
+                                            class="form-select rounded-3 border border-dark text-dark cursor-pointer fw-medium"
+                                            id="floatingSelect">
+                                            <option value="Dubai">Partol</option>
+                                            <option value="Abu Dhabi">Disel</option>
+                                            <option value="Ras al Khaimah">Octel</option>
+                                        </select>
+                                        <label class="fw-medium" for="floatingSelect">Fuel Type</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select
+                                            class="form-select rounded-3 border border-dark text-dark cursor-pointer fw-medium"
+                                            id="floatingSelect">
+                                            <option value="Dubai">Black</option>
+                                            <option value="Abu Dhabi">Red</option>
+                                            <option value="Ras al Khaimah">Gold</option>
+                                            <option value="Ras al Khaimah">Silver</option>
+                                            <option value="Ras al Khaimah">Yellow</option>
+                                        </select>
+                                        <label class="fw-medium" for="floatingSelect">Car Color</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 rounded-4 text-center" style="border: 2px dashed">
+                                        <label class="cursor-pointer py-4" for="i-Tag"> <i
+                                                class="fa-solid fa-camera fa-fw"></i>
+                                            <input id="i-Tag" type="file" />
+                                            <h6 id="imageName" class="text-center">Add Picter</h6>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select
+                                            class="form-select rounded-3 border border-dark text-dark cursor-pointer fw-medium"
+                                            id="floatingSelect">
+                                            <option value="Dubai">2 door</option>
+                                            <option value="Abu Dhabi">4 door</option>
+                                            <option value="Ras al Khaimah">5+ door</option>
+                                        </select>
+                                        <label class="fw-medium" for="floatingSelect">Door</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select
+                                            class="form-select rounded-3 border border-dark text-dark cursor-pointer fw-medium"
+                                            id="floatingSelect">
+                                            <option value="Dubai">Yes</option>
+                                            <option value="Abu Dhabi">No</option>
+                                            <option selected value="Abu Dhabi">Don't Apply</option>
+                                        </select>
+                                        <label class="fw-medium" for="floatingSelect">Warranty</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select
+                                            class="form-select rounded-3 border border-dark text-dark cursor-pointer fw-medium"
+                                            id="floatingSelect">
+                                            <option value="">Auto</option>
+                                            <option value="">Manual</option>
+                                        </select>
+                                        <label class="fw-medium" for="floatingSelect">Transmission</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select
+                                            class="form-select rounded-3 border border-dark text-dark cursor-pointer fw-medium"
+                                            id="floatingSelect">
+                                            <option value="Dubai">2 Seater</option>
+                                            <option value="Abu Dhabi">4 Seater</option>
+                                            <option value="Ras al Khaimah">6 Seater</option>
+                                            <option value="Ras al Khaimah">7+ Seater</option>
+                                        </select>
+                                        <label class="fw-medium" for="floatingSelect">Setting Capacity</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select
+                                            class="form-select rounded-3 border border-dark text-dark cursor-pointer fw-medium"
+                                            id="floatingSelect">
+                                            <option value="Dubai">0 - 99 HP</option>
+                                            <option value="Abu Dhabi">100 - 199 HP</option>
+                                            <option value="Ras al Khaimah">200 - 299 HP</option>
+                                            <option value="Ras al Khaimah">300 - 399 HP</option>
+                                            <option value="Ras al Khaimah">400 - 599 HP</option>
+                                        </select>
+                                        <label class="fw-medium" for="floatingSelect">Horse Power (HP)</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select
+                                            class="form-select rounded-3 border border-dark text-dark cursor-pointer fw-medium"
+                                            id="floatingSelect">
+                                            <option value="Dubai">0 - 500 cc</option>
+                                            <option value="Abu Dhabi">500 - 999 cc</option>
+                                            <option value="Ras al Khaimah">1000 - 1499 cc</option>
+                                            <option value="Fujairah">1500 - 1999 cc</option>
+                                        </select>
+                                        <label class="fw-medium" for="floatingSelect">Engine Capacity (CC)</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-start position-relative rounded-3  border border-dark"> <span
+                                            class="post-feature-label fw-medium">Features</span>
+                                        <select
+                                            class="form-select  text-dark cursor-pointer fw-medium features text-start"
+                                            multiple name="feature">
+                                            <option value="1">Cruise Control</option>
+                                            <option value="2">Blind Spot Warning</option>
+                                            <option value="3">Digital HUD</option>
+                                            <option value="4">Built-in GPS</option>
+                                            <option value="5">Touchscreen LCD</option>
+                                            <option value="6">Gesture Control</option>
+                                            <option value="7">Bluetooth</option>
+                                            <option value="8">Power Windows</option>
+                                            <option value="9">Alloy Wheels</option>
+                                            <option value="10">Detachable Roof</option>
+                                            <option value="11">Butterfly Doors</option>
+                                            <option value="12">USB</option>
+                                            <option value="14">ABS</option>
+                                            <option value="15">Paddle Shift (Triptronic)</option>
+                                            <option value="16">Seat Belt Reminder</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="search" class="form-control rounded-3 border border-dark"
+                                            id="floatingInput" placeholder="">
+                                        <label for="floatingInput">Locate your car <small>(*Search
+                                                Location)</small></label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d115537.95764644654!2d55.264059!3d25.184291!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6caafcff169b%3A0xc2d193b01a8ef809!2sOneClickDrive%20-%20Rent%20A%20Car%20Dubai%2C%20Chauffeur%20Service%2C%20Yacht%20Rental!5e0!3m2!1sen!2sae!4v1709391151654!5m2!1sen!2sae"
+                                        width="100%" height="150" style="border:0; border-radius: 12px;"
+                                        allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <!--Button -->
+                            <button type="button" name="next"
+                                class="next action-button btn rounded-3  border-0 py-3 text-light bg-color bg-hover w-50 fw-medium mt-4">Next
+                                Step<i class="fa-solid fa-arrow-right-long px-1"></i></button>
+                        </fieldset>
+                        <!--====Review Step==========-->
+                        <fieldset>
+                            <button type="button" name="previous"
+                                class="previous action-button border-0 bg-white w-100 text-start" value="Previous"><i
+                                    class="fa-solid fa-arrow-left-long border p-2 border-danger text-danger border-2 rounded-circle"></i></button>
+                            <h2 class="fs-3 fw-bold pb-2 text-center border-bottom">Sefty First.</h2>
+                            <br>
+                            <p>We want to keep everyone safe and happy in Dubai Review all ads.</p>
+                            <h5 class="text-danger">Your ad won't go live if it:</h5>
+                            <br>
+                            <ul class="list-group text-start">
+                                <li class="py-2"><img src="assets/img/info.png" class="mx-1 mb-1 " width="20">For any
+                                    prohibited item or activity that violates UAE law</li>
+                                <li class="py-2"><img src="assets/img/info.png" class="mx-1 mb-1 " width="20">Reach 2M+
+                                    potential buyers </li>
+                                <li class="py-2"><img src="assets/img/info.png" class="mx-1 mb-1 " width="20">In the
+                                    wrong category</li>
+                                <li class="py-2"><img src="assets/img/info.png" class="mx-1 mb-1 " width="20">Placed
+                                    more than once, or in more than one section</li>
+                                <li class="py-2"><img src="assets/img/info.png" class="mx-1 mb-1 " width="20">With
+                                    deceptive or misleading information</li>
+                                <li class="py-2"><img src="assets/img/info.png" class="mx-1 mb-1 " width="20">For an
+                                    item located outside the UAE</li>
+                            </ul> <a href="priching.html" type="submit"
+                                class="submit action-button btn rounded-3  border-0 py-3 text-light bg-color bg-hover w-50 fw-medium mt-4">Yes,
+                                I Agree!</a>
+                        </fieldset>
+                    </form>
+                </div>
+                <!--Parts Upload Form-->
+                <div class="tab-pane fade mt-5" id="parts-form" role="tabpanel" tabindex="0">
+                    <!-- multistep form -->
+                    <form id="add-form" class="text-center position-relative m-5 col-md-6 m-auto">
+                        <!--===Parts Details===== -->
+                        <fieldset>
+                            <h2 class="fs-3 fw-bold pb-2 text-center border-bottom">Tell us about your Car Parts.</h2>
+                            <p class="fs-subtitle">Include as much details and pictures as possible, and set the right
+                                price!</p>
+                            <br>
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select
+                                            class="form-select rounded-3 border border-dark text-dark cursor-pointer fw-medium"
+                                            id="floatingSelect">
+                                            <option value="Dubai">Dubai</option>
+                                            <option value="Abu Dhabi">Abu Dhabi</option>
+                                            <option value="Ras al Khaimah">Ras al Khaimah</option>
+                                            <option value="Fujairah">Fujairah</option>
+                                            <option value="Sharjah">Sharjah</option>
+                                            <option value="Ajman">Ajman</option>
+                                            <option value="Umm al Quwain">Umm al Quwain</option>
+                                            <option value="Al Ain">Al Ain</option>
+                                        </select>
+                                        <label class="fw-medium" for="floatingSelect">Emirate</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select
+                                            class="form-select rounded-3 border border-dark text-dark cursor-pointer fw-medium"
+                                            id="floatingSelect">
+                                            <option value="">Toyota</option>
+                                            <option value="">Acura</option>
+                                            <option value="">Alfa Romeo</option>
+                                            <option value="">Bentley</option>
+                                            <option value="">BMW</option>
+                                            <option value="">Bugatti</option>
+                                            <option value="">Daewoo</option>
+                                            <option value="">Fisker</option>
+                                            <option value="">Lamborghini</option>
+                                            <option value="">Honda</option>
+                                        </select>
+                                        <label class="fw-medium" for="floatingSelect">Brand</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control rounded-3 border border-dark"
+                                            id="floatingInput" placeholder="">
+                                        <label for="floatingInput">Title</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="url" class="form-control rounded-3 border border-dark"
+                                            id="floatingInput" placeholder="">
+                                        <label for="floatingInput">360 Tour URL <small
+                                                class="text-muted">(*Optional)</small></label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="p-3 rounded-4 text-center" style="border: 2px dashed">
+                                        <label class="cursor-pointer py-4" for="i-Tag"> <i
+                                                class="fa-solid fa-camera fa-fw"></i>
+                                            <input id="i-Tag" type="file" />
+                                            <h6 id="imageName" class="text-center">Add Picter</h6>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="number" class="form-control rounded-3 border border-dark"
+                                            id="floatingInput" placeholder="">
+                                        <label for="floatingInput">Price (AED)</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <input id="mobile_number2" required
+                                        class="form-control border border-dark rounded-3 py-3" type="tel">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control rounded-3 border border-dark"
+                                            id="floatingInput" placeholder="">
+                                        <label for="floatingInput">Email@</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select
+                                            class="form-select rounded-3 border border-dark text-dark cursor-pointer fw-medium"
+                                            id="floatingSelect">
+                                            <option value="">Toyota</option>
+                                            <option value="">Acura</option>
+                                            <option value="">Alfa Romeo</option>
+                                            <option value="">Bentley</option>
+                                            <option value="">BMW</option>
+                                            <option value="">Bugatti</option>
+                                            <option value="">Daewoo</option>
+                                            <option value="">Fisker</option>
+                                            <option value="">Lamborghini</option>
+                                            <option value="">Honda</option>
+                                        </select>
+                                        <label class="fw-medium" for="floatingSelect">Uages</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select
+                                            class="form-select rounded-3 border border-dark text-dark cursor-pointer fw-medium"
+                                            id="floatingSelect">
+                                            <option value="">Toyota</option>
+                                            <option value="">Acura</option>
+                                            <option value="">Alfa Romeo</option>
+                                            <option value="">Bentley</option>
+                                            <option value="">BMW</option>
+                                            <option value="">Bugatti</option>
+                                            <option value="">Daewoo</option>
+                                            <option value="">Fisker</option>
+                                            <option value="">Lamborghini</option>
+                                            <option value="">Honda</option>
+                                        </select>
+                                        <label class="fw-medium" for="floatingSelect">Condtions</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select
+                                            class="form-select rounded-3 border border-dark text-dark cursor-pointer fw-medium"
+                                            id="floatingSelect">
+                                            <option value="">Toyota</option>
+                                            <option value="">Acura</option>
+                                            <option value="">Alfa Romeo</option>
+                                            <option value="">Bentley</option>
+                                            <option value="">BMW</option>
+                                            <option value="">Bugatti</option>
+                                            <option value="">Daewoo</option>
+                                            <option value="">Fisker</option>
+                                            <option value="">Lamborghini</option>
+                                            <option value="">Honda</option>
+                                        </select>
+                                        <label class="fw-medium" for="floatingSelect">Seller Type</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="search" class="form-control rounded-3 border border-dark"
+                                            id="floatingInput" placeholder="">
+                                        <label for="floatingInput">Locate your car <small>(*Search
+                                                Location)</small></label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d115537.95764644654!2d55.264059!3d25.184291!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6caafcff169b%3A0xc2d193b01a8ef809!2sOneClickDrive%20-%20Rent%20A%20Car%20Dubai%2C%20Chauffeur%20Service%2C%20Yacht%20Rental!5e0!3m2!1sen!2sae!4v1709391151654!5m2!1sen!2sae"
+                                        width="100%" height="150" style="border:0; border-radius: 12px;"
+                                        allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <button type="button" name="next"
+                                class="next action-button btn rounded-3  border-0 py-3 text-light bg-color bg-hover w-50 fw-medium mt-4">Next
+                                Step<i class="fa-solid fa-arrow-right-long px-1"></i></button>
+                        </fieldset>
+                        <!--======Parts Review====-->
+                        <fieldset>
+                            <button type="button" name="previous"
+                                class="previous action-button border-0 bg-white w-100 text-start" value="Previous"><i
+                                    class="fa-solid fa-arrow-left-long border p-2 border-danger text-danger border-2 rounded-circle"></i></button>
+                            <h2 class="fs-3 fw-bold pb-2 text-center border-bottom">Sefty First.</h2>
+                            <br>
+                            <p>We want to keep everyone safe and happy in Dubai Review all ads.</p>
+                            <h5 class="text-danger">Your ad won't go live if it:</h5>
+                            <br>
+                            <ul class="list-group text-start">
+                                <li class="py-2"><img src="assets/img/info.png" class="mx-1 mb-1 " width="20">For any
+                                    prohibited item or activity that violates UAE law</li>
+                                <li class="py-2"><img src="assets/img/info.png" class="mx-1 mb-1 " width="20">Reach 2M+
+                                    potential buyers </li>
+                                <li class="py-2"><img src="assets/img/info.png" class="mx-1 mb-1 " width="20">In the
+                                    wrong category</li>
+                                <li class="py-2"><img src="assets/img/info.png" class="mx-1 mb-1 " width="20">Placed
+                                    more than once, or in more than one section</li>
+                                <li class="py-2"><img src="assets/img/info.png" class="mx-1 mb-1 " width="20">With
+                                    deceptive or misleading information</li>
+                                <li class="py-2"><img src="assets/img/info.png" class="mx-1 mb-1 " width="20">For an
+                                    item located outside the UAE </li>
+                            </ul> <a href="priching.html" type="submit"
+                                class="submit action-button btn rounded-3  border-0 py-3 text-light bg-color bg-hover w-50 fw-medium mt-4">Yes,
+                                I
+                                Agree!</a>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <!---===========End Form Content Tab=========-->
         </div>
-    </div>
 </section>
 <!--===== End Benifits Car Section =====-->
-
-
 <!--=======FOOTER SECTION===========-->
 <footer></footer>
 <!--=======END FOOTER SECTION===========-->
+<script type="text/javascript" src="assets/js/filter-multi-select-bundle.js"></script>
+<script>
+    var current_fs, next_fs, previous_fs; //fieldsets
+    var left, opacity, scale; //fieldset properties which we will animate
+    var animating; //flag to prevent quick multi-click glitches
+    $(".next").click(function () {
+        if (animating) return false;
+        animating = true;
+        current_fs = $(this).parent();
+        next_fs = $(this).parent().next();
+        //activate next step on progressbar using the index of next_fs
+        // $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+        //show the next fieldset
+        next_fs.show();
+        //hide the current fieldset with style
+        current_fs.animate({
+            opacity: 0
+        }, {
+            step: function (now, mx) {
+                //as the opacity of current_fs reduces to 0 - stored in "now"
+                //1. scale current_fs down to 80%
+                scale = 1 - (1 - now) * 0.2;
+                //2. bring next_fs from the right(50%)
+                left = (now * 50) + "%";
+                //3. increase opacity of next_fs to 1 as it moves in
+                opacity = 1 - now;
+                current_fs.css({
+                    'transform': 'scale(' + scale + ')',
+                });
+                next_fs.css({
+                    'left': left,
+                    'opacity': opacity
+                });
+            },
+            duration: 300,
+            complete: function () {
+                current_fs.hide();
+                animating = false;
+            },
+            //this comes from the custom easing plugin
+            easing: 'easeInOutBack'
+        });
+    });
+    $(".previous").click(function () {
+        if (animating) return false;
+        animating = true;
+        current_fs = $(this).parent();
+        previous_fs = $(this).parent().prev();
+        //de-activate current step on progressbar
+        //  $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+        //show the previous fieldset
+        previous_fs.show();
+        //hide the current fieldset with style
+        current_fs.animate({
+            opacity: 0
+        }, {
+            step: function (now, mx) {
+                //as the opacity of current_fs reduces to 0 - stored in "now"
+                //1. scale previous_fs from 80% to 100%
+                scale = 0.8 + (1 - now) * 0.2;
+                //2. take current_fs to the right(50%) - from 0%
+                left = ((1 - now) * 50) + "%";
+                //3. increase opacity of previous_fs to 1 as it moves in
+                opacity = 1 - now;
+                current_fs.css({
+                    'left': left
+                });
+                previous_fs.css({
+                    'transform': 'scale(' + scale + ')',
+                    'opacity': opacity
+                });
+            },
+            duration: 300,
+            complete: function () {
+                current_fs.hide();
+                animating = false;
+            },
+            //this comes from the custom easing plugin
+            easing: 'easeInOutBack'
+        });
+    });
+    //Car featires select details //
+    const feature = $('.features').filterMultiSelect({
+        selectAllText: 'Select All...',
+        placeholderText: 'Select',
+        filterText: 'search',
+        caseSensitive: true,
+    });
+</script>
