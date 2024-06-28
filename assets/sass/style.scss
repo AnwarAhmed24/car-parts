@@ -1140,7 +1140,6 @@ input[type="number"] {
 }
 
 a {
-
     &[href="https://elfsight.com/facebook-reviews-widget/?utm_source=websites&utm_medium=clients&utm_content=facebook-reviews&utm_term=127.0.0.1&utm_campaign=free-widget"]::after,
     &[href="https://elfsight.com/youtube-channel-plugin-yottie/?utm_source=websites&utm_medium=clients&utm_content=yottie&utm_term=%website_domain%&utm_campaign=free-widget"]::after {
         content: '';
@@ -1152,7 +1151,15 @@ a {
         left: -4px;
     }
 }
-
+[style="animation:none!important;background-color:rgba(238,238,238,0.9)!important;border:none!important;bottom:auto!important;color:rgba(0,0,0,.5)!important;display:inline-flex!important;align-items:center!important;gap:6px!important;float:none!important;height:28px!important;left:50%!important;margin:8px auto!important;opacity:1!important;padding:6px!important;position:relative!important;right:auto!important;top:auto!important;transform:translateX(-50%)!important;zoom:1!important;visibility:visible!important;box-sizing:border-box!important;border-radius:6px!important;font-family:Roboto,Arial,Sans-serif!important;font-size:12px!important;font-weight:700!important;line-height:16px!important;text-align:left!important;text-decoration:none!important;max-width:240px!important;text-indent:0!important;z-index:99999!important;margin-top:20px!important"]::after {
+    content: '';
+    position: absolute;
+    width: 236px;
+    height: 45px;
+    background-color: #ffffff;
+    top: -14px;
+    left: -4px;
+}
 .yottie-popup-video-content,
 .yottie-popup .yottie-popup-video-content {
     display: none !important;
